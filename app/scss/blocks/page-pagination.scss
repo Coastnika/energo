@@ -1,0 +1,37 @@
+.page-pagination{
+  margin-bottom: 50px;
+  &__container{}
+  &__list{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  &__item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $whiteF2;
+    background: $white;
+    border-radius: 6px;
+    cursor: pointer;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+    &:first-child{
+      margin-right: 20px;
+    }
+    &:last-child{
+      margin-left: 20px;
+    }
+    &:hover{
+      background: $whiteF2;
+    }
+    &--current{
+      background: $white!important;
+      color: $orangeF1;
+      border: 1px solid $orangeF1;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/node_modules/
+/.idea/
+/package-lock.json
+/dist/
+/.git/
+/app/css/
+/app/js/script.js

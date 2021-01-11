@@ -1,0 +1,60 @@
+.sidebar{
+  padding: 15px;
+  border: 1px solid $whiteF7;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
+  &__element{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $whiteF2;
+    &-wrapper{
+      display: none;
+      margin-top: 5px;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
+      cursor: pointer;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%) ;
+        width: 9px;
+        height: 5px;
+        background-image: url('../assets/icon/dropdown-arrow.svg');
+        background-repeat: no-repeat ;
+      }
+    }
+    &-container{
+      display: flex;
+      flex-wrap: wrap;
+      width: 210px;
+    }
+    &-label{
+      display: flex;
+      cursor: pointer;
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+    }
+    &-number{
+      margin-right: 10px;
+    }
+    &-span{
+      width: 87%;
+    }
+    &-span--gray{
+      color: $grey77;
+    }
+    &-checkbox{
+      margin-right: 9px;
+      transform: translateY(5px);
+    }
+    &-span{
+      font-size: 15px;
+    }
+  }
+}

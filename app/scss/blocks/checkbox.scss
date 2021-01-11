@@ -1,0 +1,42 @@
+.checkbox{
+  appearance: none;
+  background: $whiteF7;
+  border: 1px solid $whiteF2;
+  border-radius: 3px;
+  width: 12px!important;
+  height: 12px!important;
+  cursor: pointer;
+  outline: none;
+
+  &:hover:not(:checked){
+    border: 1px solid $orangeF1;
+    background: $white;
+  }
+
+  &:checked{
+    background-image: url("../assets/icon/checkbox-active.svg");
+    background-size: cover;
+    border: none;
+    background-color: none;
+  }
+}
+
+.checkbox-number{
+  appearance: none;
+  &__text{
+    font-size: 15px;
+    width: 42px;
+    height: 25px;
+    background: $whiteF7;
+    border: 1px solid $whiteF2;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  &:checked + &__text{
+    border: 1px solid $orangeF1;
+    color: $orangeF1;
+  }
+}
+
+

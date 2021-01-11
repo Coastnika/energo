@@ -1,0 +1,127 @@
+.products{
+  margin-bottom: 30px;
+  cursor: pointer;
+  &__wrapper{
+    display: flex;
+    margin-left: auto;
+  }
+  &__card{
+    display: flex;
+    padding: 20px;
+    border: 1px solid $whiteF2;
+    border-radius: 6px;
+    &:hover{
+      border: 1px solid $orangeF1;
+    }
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    &-image{
+      margin-right: 30px;
+    }
+    &-title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 10px;
+    }
+    &-text{
+      font-size: 15px;
+      &--grey{
+        color: $greyAA;
+      }
+      &--orange{
+        color: $orangeF1;
+      }
+    }
+    &-counter{
+      display: flex;
+      align-items: flex-end;
+      margin-left: auto;
+      padding-bottom: 10px;
+      &-element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 40px;
+        background: $whiteF7;
+        border: 1px solid $whiteF2;
+        cursor: pointer;
+        font-weight: 500;
+      }
+      &-minus{
+        border-radius: 6px 0px 0px 6px;
+      }
+      &-plus{
+        border-radius: 0px 6px 6px 0px;
+      }
+      &-num{}
+    }
+    &-info{
+      margin-left: 15px;
+      text-align: right;
+    }
+    &-price{
+      color: $orangeF1;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 120%;
+      margin-bottom: 10px;
+    }
+    &-button{
+      margin-top: 14px;
+    }
+
+    &:hover &-title{
+      color: $orangeF1;
+    }
+    &:hover a{
+      background: $orangeGradient;
+      color: $white;
+    }
+    &:hover svg{
+      fill: $white
+    }
+  }
+}
+
+.products-card{
+  width: 270px;
+  padding: 20px;
+  border: 1px solid $whiteF2;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 30px;
+  &:hover{
+    border: 1px solid $orangeF1;
+  }
+  &__image{
+    width: 100%;
+    padding-top: 15px;
+    & img{
+      width: 100%;
+    }
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: $orangeF1;
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    & a{
+      width: 230px;
+      text-align: center;
+      font-size: 18px;
+      padding-top: 16px;
+      padding-bottom: 18px;
+    }
+    & svg{
+      right: 66px;
+    }
+  }
+}

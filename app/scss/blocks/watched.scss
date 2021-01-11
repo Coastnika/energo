@@ -1,0 +1,67 @@
+.watched{
+  position: relative;
+  margin-bottom: 100px;
+  &__content{
+    max-width: 1155px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  &__container{
+    overflow: hidden;
+    width: 100%;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 110%;
+    margin-bottom: 30px;
+  }
+  .watched-button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 44%;
+    background: $white;
+    border: 1px solid $whiteF2;
+    bottom:46px;
+    z-index: 2;
+    outline: none;
+    @media(max-width: 540px){
+      width: 40px;
+      height: 40px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+    }
+    &:hover{
+      background: $whiteF2;
+      @media(max-width:540px){
+        background: $white;
+      }
+    }
+  }
+  .watched-button-prev{
+    left: -80px;
+    border-radius: 6px 0px 0px 6px;
+    &::before{
+      background-image: url('../assets/icon/slider-arrow-left.svg');
+    }
+  }
+  .watched-button-next{
+    right: -80px;
+    border-radius: 0px 6px 6px 0px;
+    &::before{
+      background-image: url('../assets/icon/slider-arrow-right.svg');
+    }
+  }
+}
