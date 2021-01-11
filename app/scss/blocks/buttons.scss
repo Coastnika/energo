@@ -64,6 +64,8 @@
     }
   }
   &:hover a{
+    border: none;
+    padding: 18px 65px 19px 34px;
     background: $orangeGradient;
     color: $white;
   }
@@ -71,7 +73,8 @@
     
   }
   &:hover svg{
-    fill: $white
+    fill: $white;
+    transform: translate(-1px, -50% )
   }
 }
 
@@ -107,6 +110,8 @@
     }
   }
   &:hover a{
+    border: none;
+    padding: 12px 61px 13px 31px;
     background: $orangeGradient;
     color: $white;
   }

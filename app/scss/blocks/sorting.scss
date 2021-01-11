@@ -14,6 +14,7 @@
       margin-right: 7px;
     }
     &-dropdown{
+      color: $grey77;
       padding: 12px 32px 12px 10px;
       background: $whiteF7;
       border: 1px solid $whiteF2;
@@ -90,6 +91,7 @@
         fill: orange
       }
       &:checked + .sorting__view-icon{
+        background: $white!important;
         border: 1px solid $orangeF1;
       }
     }

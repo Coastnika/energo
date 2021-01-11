@@ -15,6 +15,8 @@
     border: 1px solid $whiteF2;
     background: $white;
     border-radius: 6px;
+    font-weight: 500;
+    font-size: 18px;
     cursor: pointer;
     &:not(:last-child){
       margin-right: 10px;
