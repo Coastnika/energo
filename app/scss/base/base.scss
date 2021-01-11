@@ -59,7 +59,9 @@ label{
 .show{
     display: block!important;
 }
-
+.hide{
+    display: none!important;
+}
 .arrow--active{
     &::before{
       transform: rotate(180deg) translateY(1px)!important;
