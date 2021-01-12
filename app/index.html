@@ -536,6 +536,131 @@
       </div>
     </footer>
   </div>
+
+  <!--POP-UP'S-->
+  <!--callback-->
+  <div class="popup-callback hide">
+    <div class="popup-callback__content">
+      <div class="popup-callback__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="popup-callback__title">Заказать обратный звонок</div>
+      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время</div>
+      <form action="" class="popup-callback__form">
+        <input class="popup-callback__form-input" type="text" placeholder="+7 (987) 756-43-21">
+        <button type="submit" class="popup-callback__form-button button-default">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <!--calculator-light-->
+  <div class="calculator-light hide">
+    <div class="calculator-light__content">
+      <div class="calculator-light__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="calculator-light__title">Подобрать светильники по освещенности</div>
+      <form class="calculator-light__form">
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Габариты помещения (м):</div>
+          <div class="calculator-light__form-size">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <img src="./assets/icon/X.svg" alt="">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Ширина">
+            <img src="./assets/icon/X.svg" alt="">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Высота">
+          </div>
+        </div>
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Объект для освещения:</div>
+          <div class="calculator-light__form-type">
+            <div class="calculator-light__form-dropdown">Тип объекта</div>
+            <div class="calculator-light__form-dropdown">Тип помещения</div>
+          </div>
+        </div>
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Требуемая освещенность:</div>
+          <input class="calculator-light__form-input" type="number" placeholder="Тип помещения">
+        </div>
+        <div class="calculator-light__form-container calculator-light__form-container--radio">
+          <div class="calculator-light__form-name">Тип источника света:</div>
+          <div class="calculator-light__form-radio">
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type">
+              <span class="calculator-light__form-span">Светодиод</span>
+            </label>
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type">
+              <span>Люминесцентная лампа</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator-light__form-container calculator-light__form-container--radio">
+          <div class="calculator-light__form-name">Тип светильников:</div>
+          <div class="calculator-light__form-radio">
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type_2">
+              <span>Встраиваемый</span>
+            </label>
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type_2">
+              <span>Накладной</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator-light__form-submit">
+          <button type="submit" class="button-default">Подобрать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--calculator-weight-->
+  <div class="calculator-weight">
+    <div class="calculator-weight__content">
+      <div class="calculator-weight__close"></div>
+      <div class="calculator-weight__title">Расчет веса кабеля</div>
+      <form class="calculator-weight__form">
+        <div class="calculator-weight__form-wrapper">
+          <div class="calculator-weight__form-title">
+            <p>ВВГнг-LS 5х50</p>
+            <p>Барабан № 14</p>
+          </div>
+          <div class="calculator-weight__form-size">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <img src="./assets/icon/X.svg" alt="">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <img src="./assets/icon/X.svg" alt="">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <img src="./assets/icon/X.svg" alt="">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Ширина">
+            <input class="calculator-light__form-size-input"type="number" placeholder="Высота">
+            <div class="calculator-weight__form-size-del">X</div>
+          </div>
+        </div>
+        <div class="calculator-weight__add">
+          <div class="calculator-weight__add-text">Добавить ещё кабель</div>
+          <div class="calculator-weight__add-icon">
+            <img src="./assets/icon/plus-2.svg" alt="">
+          </div>
+        </div>
+        <div class="calculator-weight__submit">
+          <button type="submit" class="button-default">Рассчитать</button>
+        </div>
+        <div class="calculator-weight__footer">
+          <div class="calculator-weight__footer-text">
+            Общий вес:
+            <span>0 кг</span>
+          </div>
+          <div class="calculator-weight__footer-text">
+            Общий объем
+            <span>0 м3</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>
