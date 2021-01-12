@@ -554,7 +554,7 @@
   </div>
 
   <!--calculator-light-->
-  <div class="calculator-light hide">
+  <div class="calculator-light  hide">
     <div class="calculator-light__content">
       <div class="calculator-light__close">
         <img src="./assets/icon/close.svg" alt="">
@@ -564,11 +564,11 @@
         <div class="calculator-light__form-container">
           <div class="calculator-light__form-name calculator-light__form-name--padding">Габариты помещения (м):</div>
           <div class="calculator-light__form-size">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <input class="input calculator-light__form-size-input"type="number" placeholder="Длина, м">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Ширина">
+            <input class="input calculator-light__form-size-input"type="number" placeholder="Ширина">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Высота">
+            <input class="input calculator-light__form-size-input"type="number" placeholder="Высота">
           </div>
         </div>
         <div class="calculator-light__form-container">
@@ -616,9 +616,9 @@
   </div>
 
   <!--calculator-weight-->
-  <div class="calculator-weight">
+  <div class="calculator-weight hide">
     <div class="calculator-weight__content">
-      <div class="calculator-weight__close"></div>
+      <div class="calculator-weight__close"><img src="./assets/icon/close.svg" alt=""></div>
       <div class="calculator-weight__title">Расчет веса кабеля</div>
       <form class="calculator-weight__form">
         <div class="calculator-weight__form-wrapper">
@@ -627,15 +627,18 @@
             <p>Барабан № 14</p>
           </div>
           <div class="calculator-weight__form-size">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <input class="input calculator-weight__form-size-input"type="number" placeholder="Кол-во, м">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <input class="input calculator-weight__form-size-input"type="number" placeholder="Длина, м">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--width"type="number" placeholder="Ширина, м">    
             <img src="./assets/icon/X.svg" alt="">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Ширина">
-            <input class="calculator-light__form-size-input"type="number" placeholder="Высота">
-            <div class="calculator-weight__form-size-del">X</div>
+            <input class="input calculator-weight__form-size-input"type="number" placeholder="Высота, м">
+
+            <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight"type="number" placeholder="Вес, кг">
+            <div class="calculator-weight__form-size-del">
+              <img src="./assets/icon/delete.svg" alt="">
+            </div>
           </div>
         </div>
         <div class="calculator-weight__add">
@@ -647,19 +650,22 @@
         <div class="calculator-weight__submit">
           <button type="submit" class="button-default">Рассчитать</button>
         </div>
-        <div class="calculator-weight__footer">
-          <div class="calculator-weight__footer-text">
-            Общий вес:
-            <span>0 кг</span>
-          </div>
-          <div class="calculator-weight__footer-text">
-            Общий объем
-            <span>0 м3</span>
-          </div>
-        </div>
       </form>
+      <div class="calculator-weight__footer">
+        <div class="calculator-weight__footer-text">
+          Общий вес:
+          <span>0 кг</span>
+        </div>
+        <div class="calculator-weight__footer-text">
+          Общий объем
+          <span>0 м3</span>
+        </div>
+      </div>
     </div>
   </div>
+
+   <!--calculator-delivery-->
+   <div class="calculator-delivery"></div>
 
   <script src="js/script.js"></script>
 </body>
