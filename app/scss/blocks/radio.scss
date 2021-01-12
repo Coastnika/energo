@@ -1,0 +1,23 @@
+.radio{
+  appearance: none;
+  // border: 1px solid $whiteF2;
+  // border-radius: 3px;
+  width: 12px!important;
+  height: 15px!important;
+  // border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background-image: url("../assets/icon/radio-default.svg");
+  background-repeat: no-repeat;
+
+  &:hover:not(:checked){
+    background-image: url("../assets/icon/radio-hover.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:checked{
+    border: none;
+    background-image: url("../assets/icon/radio-active.svg");
+    background-repeat: no-repeat;
+  }
+}

@@ -3,6 +3,8 @@
 @import "./helpers/mixins.scss";
 @import "./base/base.scss";
 @import "./blocks/checkbox.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/input.scss";
 @import "./blocks/fixed.scss";
 @import "./blocks/buttons.scss";
 @import "./blocks/header.scss";
@@ -17,3 +19,6 @@
 @import "./blocks/page-pagination.scss";
 @import "./blocks/watched.scss";
 @import "./blocks/card-info.scss";
+@import "./blocks/popup-callback.scss";
+@import "./blocks/calculator-light.scss";
+@import "./blocks/calculator-weight.scss";

@@ -70,7 +70,6 @@
     color: $white;
   }
   &:active a{
-    font-size: inherit;
   }
   &:hover svg{
     fill: $white;
@@ -120,5 +119,24 @@
   }
   &:hover svg{
     fill: $white
+  }
+}
+
+.button-default{
+  color: $orangeF1;
+  border: 1px solid $orangeF1;
+  border-radius: 6px;
+  padding: 16px 32px 16px 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: $white;
+  outline: none;
+  &:hover{
+    padding: 17px 33px 17px 33px;
+    border: none;
+    background: $orangeGradient;
+    color: $white;
+    outline: none;
   }
 }

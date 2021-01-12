@@ -1,0 +1,130 @@
+.calculator-weight{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51,51,51, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__form{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &__content{
+    width: 900px;
+    background-color: $white;
+    padding-top: 40px;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05), 0px 2px 6px rgba(0, 0, 0, 0.03), 0px 0px 1px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+    position: relative;
+  }
+  &__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+  &__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  &__form{
+    &-wrapper{
+      display: flex ;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &-title{
+      font-size: 15px;
+      line-height: 100%;
+      width: 160px;
+      margin-right: 20px;
+      & p{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1px;
+      }
+    }
+    &-size{
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      font-size: 15px;
+      &-input{
+        width: 96px;
+        &--width{
+          width: 106px;
+        }
+        &--weight{
+          width: 73px;
+          margin-left: 20px;
+        }
+      }
+     
+      & img{
+        width: 24px;
+        height: 24px;
+        &:not(:last-child){
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+      }
+      &-del{
+        margin-left: auto;
+        cursor: pointer;
+        img{
+          width: 19px;
+          height: 19px;
+        }
+      }
+    }
+  }
+  &__add{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    width: 201px;
+    margin-left: auto;
+    cursor: pointer;
+    &-text{
+      color: $green21;
+      margin-right: 7px;
+    }
+    &-icon{
+      transform: translateX(2px);
+    }
+  }
+  &__submit{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  &__footer{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    height: 67px;
+    color: $grey77;
+    background-color: $whiteF7;
+    padding-left: 40px;
+    border-radius: 0px 0px 6px 6px;
+    &-text{
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+      & span{
+        color: $black33;
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+  }
+
+}
