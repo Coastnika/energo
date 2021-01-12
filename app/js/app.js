@@ -86,8 +86,7 @@ counterContainer.forEach(container => {
     counterNum.textContent = counter
   }
 })
-/// 999999999999
-console.log(1)
+/// card-info
 let infoTitle = document.querySelectorAll('.card-info__title')
 let infoWrap = document.querySelectorAll('.card-info__text-wrap')
 let infoTitles = document.querySelector('.card-info__titles')
@@ -128,3 +127,23 @@ function highlights(select) {
   selected = select
   selected.classList.add('card-info__title--active')
 }
+
+
+//dropdown card-info
+
+let mobileToggle = document.querySelectorAll('.card-info__mobile-content-title')
+let mobileList = document.querySelectorAll('.card-info__text-wrap')
+
+mobileToggle.forEach(item => {
+  item.addEventListener('click', () => {
+    mobileList.forEach(table => {
+      if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
+        table.classList.toggle('hide')
+        item.classList.toggle('arrow--active')
+      }
+      else {
+      }
+    })
+  })
+})
+

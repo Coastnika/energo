@@ -81,3 +81,8 @@ label{
       transform: rotate(180deg) translateY(1px)!important;
     }
   }
+  .arrow--inactive{
+    &::before{
+      transform: rotate(180deg) translateY(1px)!important;
+    }
+  }

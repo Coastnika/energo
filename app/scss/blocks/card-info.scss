@@ -1,5 +1,8 @@
 .card-info{
     margin-top: 41px;
+    @media(max-width:540px){
+        margin-top: 10px;
+    }
     &__wrap{
         box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
     }
@@ -7,6 +10,9 @@
         display: flex;
         justify-content: space-between;
         width: 50%;
+        @media(max-width:540px){
+            display: none;
+        }
     }
     &__title{
         font-weight: 600;
@@ -25,11 +31,60 @@
     &__text-wrap{
         margin-top: 20px;
         margin-bottom: 50px;
+        @media(max-width:540px){
+            margin-bottom: 0;
+        } 
     }
     &__text{
         font-size: 15px;
         line-height: 160%;
         color: $black33;
         margin-bottom: 10px;
+        @media(max-width:540px){
+            font-size: 14px;
+            line-height: 150%;
+        } 
+    }
+    &__mobile-content{
+        @media(max-width:540px){
+            border: 1px solid $whiteF7;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
+            border-radius: 6px;
+            margin-bottom: 30px;
+            width: 90%;
+            padding-bottom: 15px;
+            margin: auto;
+            margin-bottom: 30px;
+        }  
+        &-title{
+            display: none;
+            @media(max-width:540px){
+                display: block;
+                font-size: 16px;
+                line-height: 110%;
+                font-weight: 600;
+                padding-top:15px;
+                position: relative;
+                cursor: pointer;
+                &::before{
+                  content: '';
+                  position: absolute;
+                  top: 75%;
+                  right: 0px;
+                  transform: translateY(-50%) ;
+                  width: 9px;
+                  height: 5px;
+                  background-image: url('../assets/icon/dropdown-arrow.svg');
+                  background-repeat: no-repeat ;
+                }
+            } 
+        } 
+    }
+    &__mobile-wrap{
+        @media(max-width:540px){
+            padding-bottom: 10px;
+            border-bottom: 1px solid $whiteF2;
+        }
     }
 }
+
