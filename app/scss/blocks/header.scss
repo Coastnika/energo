@@ -103,21 +103,21 @@
     align-items: center;
     
     &-input{
-      color: $black33;
+      color: $grey77;
       font-size: 15px;
       width: 100%;
       height: 40px;
       padding-left: 23px;
       background: #FFFFFF;
       border: 1px solid #F7F7F7;
-      border-radius: 6px 0px 0px 6px;
+      border-radius: 6px;
       @media(max-width: 768px){
         border-radius: 6px;
       }
     }
     &-link{
       position: absolute;
-      right: 8px;
+      right: 15px;
       top: 50%;
       transform: translateY(-50%);
       background-image: url('../assets/icon/search.svg');

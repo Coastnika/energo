@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page" id="to-top">
+        <!--FIXED-->
+        <div class="fixed">
+            <div class="fixed__login">
+                <a href="" class="fixed__login-link">
+                    <img src="./assets/icon/login.svg" class="fixed__login-icon" />
+                </a>
+            </div>
+            <div class="fixed__cart">
+                <a href="" class="fixed__cart-link">
+                    <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
+                    <div class="fixed__cart-counter">0</div>
+                </a>
+            </div>
+        </div>
+        <div class="to-top">
+            <a href="#to-top">
+                <img src="./assets/icon/to-top.svg" alt="">
+            </a>
+        </div>
+        <!--HEADER-->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="./assets/icon/logo.svg" alt=""></a>
+                        </div>
+                        <div class="header__phone">
+                            <div class="header__phone-wrapper">
+                                <div class="header__phone-num">8(987) 654-32-10</div>
+                                <div class="header__phone-city">Санкт-Петербург</div>
+                            </div>
+                            <div class="header__phone-wrapper">
+                                <div class="header__phone-num">8(800) 555-32-10</div>
+                                <div class="header__phone-city">Москва</div>
+                            </div>
+                        </div>
+                        <div class="header__info">
+                            <div class="header__info-email">info@rosenergy.ru</div>
+                            <a href="" class="header__info-call">Заказать звонок</a>
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__toggle">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./assets/sprite.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <input class="header__search-input" type="text" placeholder="Поиск...">
+                            <a href="" class="header__search-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="container">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <div href="" class="header__nav-link header__nav-menu">
+                                <img class="header__nav-icon" src="./assets/icon/burger.svg" alt="">
+                                Каталог
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-link">
+                                <img class="header__nav-icon" src="./assets/icon/sale.svg" alt="">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Спецпредложения</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Услуги</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">О компании</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Наши партнеры</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Новости</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__breadcrumbs">
+                <div class="container">
+                    <ul class="header__breadcrumbs-list">
+                        <li class="header__breadcrumbs-item">
+                            <a href="" class="header__breadcrumbs-link">Главная</a>
+                        </li>
+                        <li class="header__breadcrumbs-item">
+                            <span href="" class="header__breadcrumbs-current">Склады</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__title">
+                <div class="container">
+                    <h1>Склады</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="storage">
+            <div class="container">
+                <div class="storage__content">
+                    <div class="storage__choose">
+                        <div class="storage__choose-wrap border-city">
+                            <div class="storage__choose-title">Склад г. Москва</div>
+                        </div>
+                        <div class="storage__choose-wrap border-none">
+                         <div class="storage__choose-title">Склад г. Пермь</div>
+                     </div>
+                     <div class="storage__choose-wrap border-all">
+                         <div class="storage__choose-title">Все</div>
+                     </div>
+                    </div>
+        
+                    <div class="storage__search">
+                        <div class="storage__search-title">Поиск по складу</div>
+                        <div class="header__search">
+                            <div class="header__toggle">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./assets/sprite.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <input class="header__search-input" type="text" placeholder="Поиск по складу...">
+                            <a href="" class="header__search-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="storage__download">
+                    <div class="storage__download-title">38 позиций</div>
+                    <a href="" class="storage__download-link">Скачать xlxs</a>
+                </div>
+                
+                <div class="storage__table">
+                    <div class="storage__headline">
+                        <div class="storage__text storage__text-mark storage__text--bold">Марка</div>
+                        <div class="storage__text storage__text-size storage__text--bold">Сечение</div>
+                        <div class="storage__text storage__text-amount storage__text--bold">Кол-во, м</div>
+                        <div class="storage__text storage__text-breakdown storage__text--bold">Разбивка</div>
+                        <div class="storage__text storage__text-sum storage__text--bold">Цена</div>
+                        <div class="storage__text storage__text-year storage__text--bold">Завод, год</div>
+                    </div>
+
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (мн)</div>
+                        <div class="storage__text storage__text-size">5х70</div>
+                        <div class="storage__text storage__text-amount">57 500</div>
+                        <div class="storage__text storage__text-breakdown">6 640, 5 325, 5 100, 5 008, 4 890, 3 580, 3 450, 3 955, 3 000, 2 520, 2 034, 1 127, 1 030, 740, 676, 515, 372, 175</div>
+                        <div class="storage__text storage__text-sum">71,00</div>
+                        <div class="storage__text storage__text-year">Юлимак, Марпосад, 2018</div>
+                    </div>
+
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">3х240</div>
+                        <div class="storage__text storage__text-amount">16 173</div>
+                        <div class="storage__text storage__text-breakdown">578, 576, 576, 574, 573, 571, 571, 571, 571, 566, 566, 564, 562, 561, 561, 561, 561, 559, 559, 557, 556, 356, 350, 271, 157, 110, 35, 3000</div>
+                        <div class="storage__text storage__text-sum">71,00</div>
+                        <div class="storage__text storage__text-year">Юлимак, Марпосад, 2018</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (мн)</div>
+                        <div class="storage__text storage__text-size">5х70</div>
+                        <div class="storage__text storage__text-amount">57 500</div>
+                        <div class="storage__text storage__text-breakdown">6 640, 5 325, 5 100, 5 008, 4 890, 3 580, 3 450, 3 955, 3 000, 2 520, 2 034, 1 127, 1 030, 740, 676, 515, 372, 175</div>
+                        <div class="storage__text storage__text-sum">71,00</div>
+                        <div class="storage__text storage__text-year">Юлимак, Марпосад, 2018</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (мн)</div>
+                        <div class="storage__text storage__text-size">5х70</div>
+                        <div class="storage__text storage__text-amount">57 500</div>
+                        <div class="storage__text storage__text-breakdown">6 640, 5 325, 5 100, 5 008, 4 890, 3 580, 3 450, 3 955, 3 000, 2 520, 2 034, 1 127, 1 030, 740, 676, 515, 372, 175</div>
+                        <div class="storage__text storage__text-sum">71,00</div>
+                        <div class="storage__text storage__text-year">Юлимак, Марпосад, 2018</div>
+                    </div>
+
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">3х240</div>
+                        <div class="storage__text storage__text-amount">16 173</div>
+                        <div class="storage__text storage__text-breakdown">578, 576, 576, 574, 573, 571, 571, 571, 571, 566, 566, 564, 562, 561, 561, 561, 561, 559, 559, 557, 556, 356, 350, 271, 157, 110, 35, 3000</div>
+                        <div class="storage__text storage__text-sum">71,00</div>
+                        <div class="storage__text storage__text-year">Юлимак, Марпосад, 2018</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-mark">АСБл-10 (ож)</div>
+                        <div class="storage__text storage__text-size">1х500/70</div>
+                        <div class="storage__text storage__text-amount">591</div>
+                        <div class="storage__text storage__text-breakdown">254, 253, 90, 90</div>
+                        <div class="storage__text storage__text-sum">1 339,00</div>
+                        <div class="storage__text storage__text-year">Саранск, Рыбинск, 2019</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Кампания</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика
+                                        конфиденциальности </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Каталог</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Услуги</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__contacts">
+                            <div class="footer__title">
+                                Наши контакты
+                            </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon footer__contacts-icon--align">
+                                    <img src="./assets/icon/mobile.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-wrapper">
+                                    <div class="footer__contacts-text">+7(987) 654-32-10</div>
+                                    <div class="footer__contacts-subtext">Санкт-Петербург</div>
+                                    <div class="footer__contacts-text">8(800) 555-32-10</div>
+                                    <div class="footer__contacts-subtext">Москва</div>
+                                </div>
+                            </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon">
+                                    <img src="./assets/icon/mail.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-text">info@rosenergy.ru</div>
+                            </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon">
+                                    <img src="./assets/icon/periscope.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-text">г. Санкт-Петербург, ул. Капитана Воронина, 25</div>
+                            </div>
+                            <div class="footer__contacts-map">
+                                <img src="./assets/images/map.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-text">© ЭнергоАльянс, 2020-2021</div>
+                    <div class="footer__copyright-text">Coockie</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
