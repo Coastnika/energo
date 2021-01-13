@@ -90,9 +90,12 @@
     border-radius: 6px;
     position: relative;
     display: inline-block;  
+    // @media(max-width:540px){
+    //   font-size: 14px;
+    //   padding: 6px 41px 6px 18px;
+    // }
     @media(max-width:540px){
-      font-size: 14px;
-      padding: 6px 41px 6px 18px;
+      margin-left: 10px;
     }
   }
   & svg{

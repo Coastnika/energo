@@ -168,12 +168,19 @@
       display: flex;
       align-items: center;
       height: 44px;
+      @media(max-width:540px){
+        height: 60px;
+        flex-wrap: wrap;
+      }
     }
     &-item{
       margin-right: 24px;
       position: relative;
       font-size: 14px;
       padding-top: 1px;
+      @media(max-width:540px){
+        font-size: 16px;
+      }
       &::before{
         content: '';
         position: absolute;
@@ -210,6 +217,9 @@
       font-weight: bold;
       font-size: 36px;
       line-height: 110%;
+      @media(max-width:540px){
+        font-size: 23px;
+      }
     }
   }
 
