@@ -47,7 +47,7 @@
             </div>
             <div class="header__info">
               <div class="header__info-email">info@rosenergy.ru</div>
-              <a href="" class="header__info-call">Заказать звонок</a>
+              <span class="header__info-call" id="infoCall">Заказать звонок</span>
             </div>
             
             <div class="header__search">
@@ -411,39 +411,33 @@
           <div class="calculators__subtitle">Удобные инструменты для расчета полезных в поставке данных</div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="calculators__card">
-                <a href="" class="calculators__card-link">
-                  <div class="calculators__card-icon">
-                    <img src="./assets/icon/calculator-weight.svg" alt="">
-                  </div>
-                  <div class="calculators__card-text">
-                    Расчитать<br> вес и объем кабеля
-                  </div>
-                </a>
+              <div class="calculators__card" id="calculatorWeight">
+                <div class="calculators__card-icon">
+                  <img src="./assets/icon/calculator-weight.svg" alt="">
+                </div>
+                <div class="calculators__card-text">
+                  Расчитать<br> вес и объем кабеля
+                </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="calculators__card">
-                <a href="" class="calculators__card-link">
-                  <div class="calculators__card-icon">
-                    <img src="./assets/icon/calculator-light.svg" alt="">
-                  </div>
-                  <div class="calculators__card-text">
-                    Подобрать светильникипо<br> освещенности
-                  </div>
-                </a>
+              <div class="calculators__card" id="calculatorLight">
+                <div class="calculators__card-icon">
+                  <img src="./assets/icon/calculator-light.svg" alt="">
+                </div>
+                <div class="calculators__card-text">
+                  Подобрать светильникипо<br> освещенности
+                </div>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <div class="calculators__card">
-                <a href="" class="calculators__card-link">
-                  <div class="calculators__card-icon">
-                    <img src="./assets/icon/calculator-delivery.svg" alt="">
-                  </div>
-                  <div class="calculators__card-text">
-                    Расчитать <br> стоимость доставки
-                  </div>
-                </a>
+              <div class="calculators__card" id="calculatorDelivery">
+                <div class="calculators__card-icon">
+                  <img src="./assets/icon/calculator-delivery.svg" alt="">
+                </div>
+                <div class="calculators__card-text">
+                  Расчитать <br> стоимость доставки
+                </div>
               </div>
             </div>
           </div>
@@ -665,8 +659,82 @@
   </div>
 
    <!--calculator-delivery-->
-   <div class="calculator-delivery">
-     
+   <div class="calculator-delivery hide">
+      <div class="calculator-delivery__content">
+        <div class="calculator-delivery__close">
+          <img src="./assets/icon/close.svg" alt="">
+        </div>
+        <div class="calculator-delivery__title">Расчет стоимости доставки</div>
+        <form class="calculator-delivery__form">
+          <div class="calculator-delivery__container">
+            <div class="calculator-delivery__form-name">Данные о грузе:</div>
+            <div class="calculator-delivery__form-wrapper calculator-delivery__form-wrapper-input">
+              <input class="calculator-delivery__form-input input" type="text" placeholder="Вес, кг ">
+              <input class="calculator-delivery__form-input input" type="text" placeholder="Объем, м3">
+            </div>
+          </div>
+          <div class="calculator-delivery__container">
+            <div class="calculator-delivery__form-name">Точка отпраления:</div>
+            <div class="calculator-delivery__form-container">
+              <div class="calculator-delivery__form-wrapper">
+                <label class="calculator-delivery__form-label">
+                  <input class="calculator-delivery__form-radio radio" type="radio" name="radio_1">
+                  <span class="calculator-delivery__form-span">Пункт приема/выдачи</span>
+                </label>
+                <label class="calculator-delivery__form-label">
+                  <input class="calculator-delivery__form-radio radio" type="radio" name="radio_1">
+                  <span class="calculator-delivery__form-span">Забрать по адресу</span>
+                </label>
+              </div>
+              <div class="calculator-delivery__map">Выбрать пункт на карте</div>
+            </div>
+          </div>
+          <div class="calculator-delivery__container">
+            <div class="calculator-delivery__form-name">Данные о грузе:</div>
+            <div class="calculator-delivery__form-container">
+              <div class="calculator-delivery__form-wrapper">
+                <label class="calculator-delivery__form-label">
+                  <input class="calculator-delivery__form-radio radio" type="radio" name="radio_2">
+                  <span class="calculator-delivery__form-span">Пункт приема/выдачи</span>
+                </label>
+                <label class="calculator-delivery__form-label">
+                  <input class="calculator-delivery__form-radio radio" type="radio" name="radio_2">
+                  <span class="calculator-delivery__form-span">Забрать по адресу</span>
+                </label>
+              </div>
+              <div class="calculator-delivery__map">Показать адрес на карте</div>
+            </div>
+          </div>
+          <div class="calculator-delivery__container">
+            <div class="calculator-delivery__form-name">Дополнительные услуги:</div>
+            <div class="calculator-delivery__form-container">
+              <label class="calculator-delivery__form-label">
+                <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                <span class="calculator-delivery__form-span">Защитная транспортировочная упаковка</span>
+              </label>
+              <label class="calculator-delivery__form-label">
+                <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                <span class="calculator-delivery__form-span">Пломбировка груза</span>
+              </label>
+              <label class="calculator-delivery__form-label">
+                <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                <span class="calculator-delivery__form-span">Перевозка сопроводительных документов</span>
+              </label>
+            </div>
+          </div>
+          <div class="calculator-delivery__submit">
+            <button type="submit" class="button-default">Рассчитать</button>
+          </div>
+        </form>
+        <div class="calculator-delivery__footer">
+          <div class="calculator-delivery__footer-wrapper">
+            <div class="calculator-delivery__footer-text">
+              <span>Предварительная цена доставки из</span> г. Санкт-петербург, 8 линия ВО, 56, отделение №123132123 в г. Москва, пр-т Просвещения, 2 груза весом 0кг, объемом 0,001м3
+            </div>
+            <div class="calculator-delivery__footer-price">0 рублей</div>
+          </div>
+        </div>
+      </div>
    </div>
 
   <script src="js/script.js"></script>

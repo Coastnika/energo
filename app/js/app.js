@@ -86,64 +86,101 @@ counterContainer.forEach(container => {
     counterNum.textContent = counter
   }
 })
+
 /// card-info
 let infoTitle = document.querySelectorAll('.card-info__title')
 let infoWrap = document.querySelectorAll('.card-info__text-wrap')
 let infoTitles = document.querySelector('.card-info__titles')
 let selected
 
-infoTitle.forEach(item => {
-  item.addEventListener('click', () => {
-    console.log('1')
-    infoWrap.forEach(table => {
-      if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
-        table.classList.remove('hide')
-      }
-      else {
-        table.classList.add('hide')
-      }
+if(infoTitle){
+  infoTitle.forEach(item => {
+    item.addEventListener('click', () => {
+      console.log('1')
+      infoWrap.forEach(table => {
+        if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
+          table.classList.remove('hide')
+        }
+        else {
+          table.classList.add('hide')
+        }
+      })
     })
   })
-})
 
-//Подсвечиваем элементы
-infoTitles.addEventListener('click', e => {
-  let target = e.target
+  // ------ ошибка в коде ------
+  // //Подсвечиваем элементы
+  // infoTitles.addEventListener('click', e => {
+  //   let target = e.target
 
-  if (!target.classList.contains('card-info__title')) return;
+  //   if (!target.classList.contains('card-info__title')) return;
 
-  highlights(target)
-})
+  //   highlights(target)
+  // })
 
-function highlights(select) {
-  if (selected) {
-    selected.classList.remove('card-info__title--active')
+  function highlights(select) {
+    if (selected) {
+      selected.classList.remove('card-info__title--active')
+    }
+
+    infoTitle.forEach(item => {
+      item.classList.remove('card-info__title--active')
+    })
+
+    selected = select
+    selected.classList.add('card-info__title--active')
   }
-
-  infoTitle.forEach(item => {
-    item.classList.remove('card-info__title--active')
-  })
-
-  selected = select
-  selected.classList.add('card-info__title--active')
 }
-
 
 //dropdown card-info
 
 let mobileToggle = document.querySelectorAll('.card-info__mobile-content-title')
 let mobileList = document.querySelectorAll('.card-info__text-wrap')
 
-mobileToggle.forEach(item => {
-  item.addEventListener('click', () => {
-    mobileList.forEach(table => {
-      if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
-        table.classList.toggle('hide')
-        item.classList.toggle('arrow--active')
-      }
-      else {
-      }
+if(mobileToggle){
+  mobileToggle.forEach(item => {
+    item.addEventListener('click', () => {
+      mobileList.forEach(table => {
+        if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
+          table.classList.toggle('hide')
+          item.classList.toggle('arrow--active')
+        }
+      })
     })
   })
-})
+}
 
+
+//function show modal
+function showModal(trigger, content, close){
+  trigger.addEventListener('click', () => {
+    content.classList.remove('hide')
+  })
+  close.addEventListener('click', () => {
+    content.classList.add('hide')
+  })
+}
+
+let calculatorWeightTrigger = document.querySelector('#calculatorWeight')
+let calculatorWeightContent = document.querySelector('.calculator-weight')
+let calculatorWeightClose = document.querySelector('.calculator-weight__close')
+
+showModal(calculatorWeightTrigger,calculatorWeightContent, calculatorWeightClose )
+
+let calculatorLightTrigger = document.querySelector('#calculatorLight')
+let calculatorLightContent = document.querySelector('.calculator-light')
+let calculatorLightClose = document.querySelector('.calculator-light__close')
+
+showModal(calculatorLightTrigger,calculatorLightContent, calculatorLightClose )
+
+let calculatorDeliveryTrigger = document.querySelector('#calculatorDelivery')
+let calculatorDeliveryContent = document.querySelector('.calculator-delivery')
+let calculatorDeliveryClose = document.querySelector('.calculator-delivery__close')
+
+showModal(calculatorDeliveryTrigger,calculatorDeliveryContent, calculatorDeliveryClose )
+
+let callbackTrigger = document.querySelector('#infoCall')
+let callbackContent = document.querySelector('.popup-callback')
+let callbackClose = document.querySelector('.popup-callback__close')
+
+showModal(callbackTrigger, callbackContent, callbackClose )
