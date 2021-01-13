@@ -38,6 +38,9 @@
     @media(max-width: 540px){
       margin-bottom: 15px;
     }
+    &:hover{
+      transform: translateY(-5px)
+    }
     
     &-background{
       z-index: -1;

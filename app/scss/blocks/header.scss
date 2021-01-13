@@ -87,6 +87,7 @@
       display: inline-block;
       color: $orangeF1;
       padding-bottom: 1px;
+      cursor: pointer;
       &:hover{
         padding-bottom: 0px;
         border-bottom: 1px $orangeF1 solid;
