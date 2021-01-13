@@ -108,13 +108,13 @@ infoTitle.forEach(item => {
 })
 
 //Подсвечиваем элементы
-infoTitles.addEventListener('click', e => {
+if(infoTitles) infoTitles.addEventListener('click', e => {
   let target = e.target
 
   if (!target.classList.contains('card-info__title')) return;
 
   highlights(target)
-})
+});
 
 function highlights(select) {
   if (selected) {
@@ -128,3 +128,34 @@ function highlights(select) {
   selected = select
   selected.classList.add('card-info__title--active')
 }
+
+//header dropdown
+function headerDropdown(){
+  let desktopTrigger = document.querySelector('.header__nav-menu'),
+      dropdown = document.querySelector('.header__dropdown'),
+      dropdownModifier = 'header__dropdown--show';
+
+  if(window.innerWidth > 768){
+    hoverBtn(desktopTrigger, dropdown, dropdownModifier);
+    desktopTrigger.addEventListener('mouseover', () => {
+      hoverDropdown(dropdown);
+    })
+  }
+
+  function hoverBtn(btnSelector, boxSelector, boxModifier) {
+      btnSelector.addEventListener('mouseover', () => {
+        boxSelector.classList.add(boxModifier);
+      });
+  }
+  function hoverDropdown(boxSelector) {
+      boxSelector.addEventListener('mouseover', function(e) {
+        let target = e.target;
+      });
+      boxSelector.addEventListener('mouseleave', () => {
+      boxSelector.classList.remove(dropdownModifier);
+    })
+  }
+}
+window.addEventListener('resize', headerDropdown);
+headerDropdown();
+
