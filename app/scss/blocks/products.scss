@@ -38,6 +38,10 @@
     }
     &-image{
       margin-right: 30px;
+      width: 40%;
+      & img{
+        width: 100%;
+      }
       &--more{
         width: 45%;
         @media(max-width:540px){
@@ -53,6 +57,7 @@
       font-size: 18px;
       line-height: 120%;
       margin-bottom: 10px;
+      width: 202px;
       &--more{
         font-weight: 600;
         font-size: 14px;
