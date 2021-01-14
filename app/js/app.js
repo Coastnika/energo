@@ -116,15 +116,14 @@ if(infoTitle){
     })
   })
 
-  // ------ ошибка в коде ------
-  // //Подсвечиваем элементы
-  // infoTitles.addEventListener('click', e => {
-  //   let target = e.target
+  //Подсвечиваем элементы
+  infoTitles.addEventListener('click', e => {
+    let target = e.target
 
-  //   if (!target.classList.contains('card-info__title')) return;
+    if (!target.classList.contains('card-info__title')) return;
 
-  //   highlights(target)
-  // })
+    highlights(target)
+  })
 
   function highlights(select) {
     if (selected) {
