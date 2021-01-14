@@ -39,6 +39,7 @@
     &-image{
       margin-right: 30px;
       width: 40%;
+      margin-bottom: 5px;
       & img{
         width: 100%;
       }
@@ -58,6 +59,7 @@
       line-height: 120%;
       margin-bottom: 10px;
       width: 202px;
+      height: 43px;
       &--more{
         font-weight: 600;
         font-size: 14px;
@@ -149,9 +151,9 @@
       }
     }
 
-    // &:hover &-title{
-    //   color: $orangeF1;
-    // }
+    &:hover &-title{
+      color: $orangeF1;
+    }
     // &:hover a{
     //   border: none;
     //   padding: 12px 61px 13px 31px;
@@ -162,6 +164,7 @@
     //   fill: $white
     // }
   }
+
 }
 
 .products-card{
@@ -225,5 +228,7 @@
       padding-bottom: 19px;
     }
   }
-  
+  &:hover .products__card-title{
+    color: $orangeF1;
+  }
 }
