@@ -14,25 +14,14 @@
       margin-right: 7px;
     }
     &-dropdown{
-      color: $grey77;
-      padding: 12px 32px 12px 10px;
+      color: $black33;
       background: $whiteF7;
       border: 1px solid $whiteF2;
       border-radius: 3px;
       cursor: pointer;
       position: relative;
-      &::before{
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 14px;
-        transform: translateY(-50%) ;
-        width: 9px;
-        height: 5px;
-        background-image: url('../assets/icon/dropdown-arrow.svg');
-        background-repeat: no-repeat ;
-      }
-
+      width: 220px;
+      
     }
   }
 
