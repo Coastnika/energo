@@ -152,12 +152,18 @@ if(mobileToggle){
 
 
 //function show modal
-function showModal(trigger, content, close){
+function showModal(trigger, content, close, closestParent){
   trigger.addEventListener('click', () => {
     content.classList.remove('hide')
   })
   close.addEventListener('click', () => {
     content.classList.add('hide')
+  })
+
+  content.addEventListener('click', (e) => {
+    if(!e.target.closest(closestParent)){
+      content.classList.add('hide')
+    }
   })
 }
 
@@ -165,22 +171,101 @@ let calculatorWeightTrigger = document.querySelector('#calculatorWeight')
 let calculatorWeightContent = document.querySelector('.calculator-weight')
 let calculatorWeightClose = document.querySelector('.calculator-weight__close')
 
-showModal(calculatorWeightTrigger,calculatorWeightContent, calculatorWeightClose )
+if(calculatorWeightTrigger){
+  showModal(calculatorWeightTrigger,calculatorWeightContent, calculatorWeightClose, '.calculator-weight__content' )
+}
 
 let calculatorLightTrigger = document.querySelector('#calculatorLight')
 let calculatorLightContent = document.querySelector('.calculator-light')
 let calculatorLightClose = document.querySelector('.calculator-light__close')
 
-showModal(calculatorLightTrigger,calculatorLightContent, calculatorLightClose )
+if(calculatorLightTrigger){
+  showModal(calculatorLightTrigger,calculatorLightContent, calculatorLightClose, '.calculator-light__content' )
+}
 
 let calculatorDeliveryTrigger = document.querySelector('#calculatorDelivery')
 let calculatorDeliveryContent = document.querySelector('.calculator-delivery')
 let calculatorDeliveryClose = document.querySelector('.calculator-delivery__close')
 
-showModal(calculatorDeliveryTrigger,calculatorDeliveryContent, calculatorDeliveryClose )
+if(calculatorDeliveryTrigger){
+  showModal(calculatorDeliveryTrigger,calculatorDeliveryContent, calculatorDeliveryClose, '.calculator-delivery__content' )
+}
 
 let callbackTrigger = document.querySelector('#infoCall')
 let callbackContent = document.querySelector('.popup-callback')
 let callbackClose = document.querySelector('.popup-callback__close')
 
-showModal(callbackTrigger, callbackContent, callbackClose )
+if(callbackTrigger){
+  showModal(callbackTrigger, callbackContent, callbackClose, '.popup-callback__content' )
+}
+
+//custom select
+
+let selectTitle = document.querySelectorAll('.custom__select-title')
+let selectContent = document.querySelectorAll('.custom__select-content')
+let selectText = document.querySelectorAll('.custom__select-text')
+let selectCustom = document.querySelectorAll('.custom__select')
+
+selectContent.forEach((content, contentIndex) => {
+  content.addEventListener('click', function(e) {
+    if(e.target != this){
+      selectTitle.forEach((title, titleIndex) => {
+        if(titleIndex == contentIndex){
+          title.textContent = e.target.textContent
+        }
+      })
+      selectTitle.forEach((select) => {
+        select.classList.remove('custom__select-title--active')
+      })
+      selectCustom.forEach(select => {
+        select.classList.remove('custom__select--active')
+      })
+      
+      content.classList.toggle('hide')
+    }
+  })
+})
+
+selectTitle.forEach((title, titleIndex) => {
+  title.addEventListener('click', function(){
+    selectContent.forEach((content, contentIndex) => {
+      if(titleIndex == contentIndex){
+        content.classList.toggle('hide')
+      }
+      else{
+        content.classList.add('hide')
+      }
+    })
+    selectCustom.forEach((select, selectIndex) => {
+      if(titleIndex == selectIndex){
+        select.classList.toggle('custom__select--active')
+      }
+      else{
+        select.classList.remove('custom__select--active')
+      }
+    })
+    selectTitle.forEach((select, selectIndex) => {
+      if(titleIndex == selectIndex){
+        select.classList.toggle('custom__select-title--active')
+      }
+      else{
+        select.classList.remove('custom__select-title--active')
+      }
+    })
+  })
+})
+
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('.custom__select-content') && !e.target.closest('.custom__select-title')){
+    selectContent.forEach(content => {
+      content.classList.add('hide')
+    })
+    selectTitle.forEach(select => {
+      select.classList.remove('custom__select-title--active')
+    })
+    selectCustom.forEach(select => {
+      select.classList.remove('custom__select--active')
+    })
+  }
+})

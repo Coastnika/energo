@@ -7,7 +7,7 @@
   }
   &__card{
     display: flex;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
     border: 1px solid $whiteF2;
     border-radius: 6px;
     &:hover{
@@ -98,9 +98,8 @@
     }
     &-counter{
       display: flex;
-      align-items: flex-end;
       margin-left: auto;
-      padding-bottom: 10px;
+      padding-top: 72px;
       &--more{
         margin-left: 0;
       }
