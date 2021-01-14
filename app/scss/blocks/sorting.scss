@@ -59,6 +59,13 @@
   &__view{
     display: flex;
     align-items: center;
+    &-button{
+      &--mobile{
+        @media(max-width:540px){
+          display: none;
+        }
+      }
+    }
     &-label{
       display: flex;
       align-items: center;

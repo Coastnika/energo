@@ -113,159 +113,165 @@
       <div class="container mb-5">
         <div class="row">
           <!--sidebar-->
-          <div class="col-3 sidebar--mobile">
+          <div class="col-12 col-sm-3">
             <div class="sidebar">
-              <div class="sidebar__element">
-                <div class="sidebar__element-title arrow--active">Материал жилы</div>
+              <div class="sidebar__element sidebar__element--border">
+                <div class="sidebar__element-title sidebar__element-title--mobile">Фильтры</div>
                 <div class="sidebar__element-wrapper show">
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span"> Медь </span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span"> Алюминий </span>
-                  </label>
+                    <div class="sidebar__element  sidebar__element--mobile">
+                      <div class="sidebar__element-title arrow--active">Материал жилы</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span"> Медь </span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span"> Алюминий </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Броня и экран</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Без брони и экрана</span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Бронированный</span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Экранированный</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Тип кабеля</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">НГ <span class="sidebar__element-span--gray"> (негорючий)</span></span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">
+                            LS <span class="sidebar__element-span--gray">(с пониженным дымо- и газо-выделением)</span>
+                          </span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">FR <span class="sidebar__element-span--gray"> (огнестойкий)</span></span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">LTX <span class="sidebar__element-span--gray"> (низкотоксичный)</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Количество жил</div>
+                      <div class="sidebar__element-wrapper show">
+                        <div class="sidebar__element-container">
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">1</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">2</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">3</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">3+N</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">4</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">5</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Сечение</div>
+                      <div class="sidebar__element-wrapper show">
+                        <div class="sidebar__element-container">
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">1,5</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">2,5</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">4</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">6</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">10</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">16</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">25</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">35</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">50</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">70</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">95</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">120</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">150</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">185</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">240</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
-              <div class="sidebar__element">
-                <div class="sidebar__element-title arrow--active">Броня и экран</div>
-                <div class="sidebar__element-wrapper show">
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">Без брони и экрана</span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">Бронированный</span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">Экранированный</span>
-                  </label>
-                </div>
-              </div>
-              <div class="sidebar__element">
-                <div class="sidebar__element-title arrow--active">Тип кабеля</div>
-                <div class="sidebar__element-wrapper show">
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">НГ <span class="sidebar__element-span--gray"> (негорючий)</span></span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">
-                      LS <span class="sidebar__element-span--gray">(с пониженным дымо- и газо-выделением)</span>
-                    </span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">FR <span class="sidebar__element-span--gray"> (огнестойкий)</span></span>
-                  </label>
-                  <label class="sidebar__element-label">
-                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                    <span class="sidebar__element-span">LTX <span class="sidebar__element-span--gray"> (низкотоксичный)</span></span>
-                  </label>
-                </div>
-              </div>
-              <div class="sidebar__element">
-                <div class="sidebar__element-title arrow--active">Количество жил</div>
-                <div class="sidebar__element-wrapper show">
-                  <div class="sidebar__element-container">
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">1</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">2</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">3</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">3+N</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">4</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">5</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar__element">
-                <div class="sidebar__element-title arrow--active">Сечение</div>
-                <div class="sidebar__element-wrapper show">
-                  <div class="sidebar__element-container">
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">1,5</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">2,5</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">4</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">6</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">10</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">16</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">25</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">35</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">50</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">70</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">95</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">120</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">150</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">185</span>
-                    </label>
-                    <label class="sidebar__element-label sidebar__element-number">
-                      <input type="checkbox" class="sidebar__element-counter checkbox-number">
-                      <span class="checkbox-number__text">240</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
           <div class="col-12 col-sm-9">
@@ -293,9 +299,9 @@
                     </label>
                   </div>
                   <div class="sorting__view">
-                    <div class="sorting__view-button">
+                    <div class="sorting__view-button sorting__view-button--mobile">
                       <label class="sorting__view-label">
-                        <input type="radio" class="sorting__view-checkbox" name="view" checked>
+                        <input type="radio" class="sorting__view-checkbox" name="view">
                         <div class="sorting__view-icon">
                           <svg>  
                             <use xlink:href="./assets/sprite.svg#sorting_1"></use>
@@ -315,7 +321,7 @@
                     </div>
                     <div class="sorting__view-button">
                       <label class="sorting__view-label">
-                        <input type="radio" class="sorting__view-checkbox" name="view">
+                        <input type="radio" class="sorting__view-checkbox" name="view" checked>
                         <div class="sorting__view-icon">
                           <svg>  
                             <use xlink:href="./assets/sprite.svg#sorting_3"></use>
@@ -367,12 +373,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -410,12 +416,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -453,12 +459,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -496,12 +502,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -539,12 +545,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -582,12 +588,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -625,12 +631,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -668,12 +674,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -711,12 +717,12 @@
                           3580.10 руб/м
                         </div>
                         <div class="products-card__button button-buy">
-                          <a href="#">
+                          <span href="#">
                             Купить
                             <svg>
                               <use xlink:href="./assets/sprite.svg#cart"></use>
                             </svg>
-                          </a>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -781,12 +787,12 @@
                       3580.10 руб/м
                     </div>
                     <div class="products-card__button button-buy">
-                      <a href="#">
+                      <span href="#">
                         Купить
                         <svg>
                           <use xlink:href="./assets/sprite.svg#cart"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                   </div>
                   <div class="products-card swiper-slide">
@@ -822,12 +828,12 @@
                       765.00 руб/м
                     </div>
                     <div class="products-card__button button-buy">
-                      <a href="#">
+                      <span href="#">
                         Купить
                         <svg>
                           <use xlink:href="./assets/sprite.svg#cart"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                   </div>
                   <div class="products-card swiper-slide">
@@ -863,12 +869,12 @@
                       765.00 руб/м
                     </div>
                     <div class="products-card__button button-buy">
-                      <a href="#">
+                      <span href="#">
                         Купить
                         <svg>
                           <use xlink:href="./assets/sprite.svg#cart"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                   </div>
                   <div class="products-card swiper-slide">
@@ -904,12 +910,12 @@
                       765.00 руб/м
                     </div>
                     <div class="products-card__button button-buy">
-                      <a href="#">
+                      <span href="#">
                         Купить
                         <svg>
                           <use xlink:href="./assets/sprite.svg#cart"></use>
                         </svg>
-                      </a>
+                      </span>
                     </div>
                   </div>
                 </div>

@@ -145,7 +145,7 @@
 .button-cart{
   position: relative;
   display: inline-block;
-  & span{
+  & a{
     padding: 11px 48px 12px 16px;
     font-weight: 500;
     font-size: 15px;
@@ -174,7 +174,7 @@
       
     }
   }
-  &:hover span{
+  &:hover a{
     border: 1px solid $orangeF1;
     color: $orangeF1;
 

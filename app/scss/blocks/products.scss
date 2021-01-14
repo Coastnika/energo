@@ -7,7 +7,7 @@
   }
   &__card{
     display: flex;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 20px 20px;
     border: 1px solid $whiteF2;
     border-radius: 6px;
     &:hover{
@@ -210,7 +210,7 @@
   &__button{
     display: flex;
     margin-top: 10px;
-    & a{
+    & span{
       width: 230px;
       text-align: center;
       font-size: 18px;
@@ -220,7 +220,7 @@
         width: 100%;
       }
     }
-    &:hover a {
+    &:hover span {
       padding-top: 17px;
       padding-bottom: 19px;
     }
