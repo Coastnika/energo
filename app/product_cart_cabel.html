@@ -25,10 +25,10 @@
             </div>
         </div>
         <div class="to-top">
-            <a href="#to-top">
-                <img src="./assets/icon/to-top.svg" alt="">
-            </a>
-        </div>
+            <span>
+              <img class=" opener"  id="to-top" src="./assets/icon/to-top.svg" alt="">
+            </span>
+          </div>
         <!--HEADER-->
         <header class="header">
             <div class="header__top">
@@ -49,7 +49,7 @@
                         </div>
                         <div class="header__info">
                             <div class="header__info-email">info@rosenergy.ru</div>
-                            <a href="" class="header__info-call">Заказать звонок</a>
+                            <span class="header__info-call" id="infoCall">Заказать звонок</span>
                         </div>
 
                         <div class="header__search">
@@ -118,7 +118,7 @@
             <div class="container">
                 <div class="products__card--more">
                     <div class="products__card-image--more">
-                        <img src="./assets/images/products-image-2.png" alt="">
+                        <img src="./assets/images/product_cart_kabel.png" alt="">
                     </div>
                     <div class="products__card-сharacterictics">
                         <div class="products__card-title products__card-title--more">Краткая характеристика</div>
@@ -158,12 +158,12 @@
                                 <div class="products__card-counter-plus products__card-counter-element">+</div>
                             </div>
                             <div class="products__card-button button-buy products__card-button--more">
-                                <a href="#">
+                                <span>
                                     Купить
                                     <svg>
                                         <use xlink:href="./assets/sprite.svg#cart"></use>
                                     </svg>
-                                </a>
+                                </span>
                             </div>
                         </div>
                         <div class="products__card-text">
@@ -610,11 +610,28 @@
                 </div>
                 <div class="footer__copyright">
                     <div class="footer__copyright-text">© ЭнергоАльянс, 2020-2021</div>
-                    <div class="footer__copyright-text">Coockie</div>
+                    <div class="footer__copyright-text">Cookie</div>
                 </div>
             </div>
         </footer>
     </div>
+
+     <!--POP-UP'S-->
+  <!--callback-->
+  <div class="popup-callback hide">
+    <div class="popup-callback__content">
+      <div class="popup-callback__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="popup-callback__title">Заказать обратный звонок</div>
+      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время</div>
+      <form action="" class="popup-callback__form form">
+        <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
+        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
 </body>
 
