@@ -69,6 +69,10 @@ if (sidebarToggle && sidebarList) {
   dropDown(sidebarToggle, sidebarList)
 }
 
+if(innerWidth < 540){
+  sidebarList[0].classList.remove('show')
+}
+
 //counter cards
 let counterContainer = document.querySelectorAll('.products__card-counter')
 
@@ -76,7 +80,7 @@ counterContainer.forEach(container => {
   let counterPlus = container.querySelector('.products__card-counter-plus')
   let counterMinus = container.querySelector('.products__card-counter-minus')
   let counterNum = container.querySelector('.products__card-counter-num')
-  let counter = 0
+  let counter = 1
 
   counterPlus.addEventListener('click', plus)
   counterMinus.addEventListener('click', minus)
@@ -104,7 +108,6 @@ let selected
 if(infoTitle){
   infoTitle.forEach(item => {
     item.addEventListener('click', () => {
-      console.log('1')
       infoWrap.forEach(table => {
         if (item.getAttribute('tab-index') == table.getAttribute('tab-index')) {
           table.classList.remove('hide')
@@ -358,3 +361,37 @@ $(document).ready(function() {
        $("html, body").animate({ scrollTop: 0 }, 900);
   });
 })
+
+
+// card-buttons-logic 
+
+
+let buttonBuy = document.querySelectorAll('.button-buy')
+let cartCounter = document.querySelector('.fixed__cart-counter')
+
+let counterValue = 0;
+let value = 0;
+
+buttonBuy.forEach(button => {
+  button.addEventListener('click', function(){
+    // value++
+    // localStorage.counter = value;
+    // console.log(localStorage.counter)
+    let buttonsContainer = this.closest('.products__wrapper')
+
+    if(buttonsContainer){
+      let buttonCart = buttonsContainer.querySelector('.button-cart')
+
+      this.classList.add('hide')
+      buttonCart.classList.remove('hide')
+    }
+
+    let cardNum = buttonsContainer.querySelector('.products__card-counter-num')
+    
+    cartCounter.classList.remove('hide')
+    counterValue += +cardNum.textContent
+    cartCounter.textContent = counterValue
+  })
+})
+
+

@@ -3,6 +3,10 @@
   border: 1px solid $whiteF7;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
   border-radius: 6px;
+  @media(max-width:540px){
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+  }
   &--mobile{
     @media(max-width:540px){
       display: none;
@@ -12,15 +16,43 @@
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid $whiteF2;
+    &--mobile{
+      @media(max-width:540px){
+        padding-top: 15px;
+        border-top: 1px solid $whiteF2;
+      }
+    }
+    &--border{
+      border: none;
+      @media(max-width: 540px){
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      @media(max-width:540px){
+        
+      }
+      
+    }
     &-wrapper{
       display: none;
       margin-top: 5px;
+      @media(max-width:540px){
+        margin-top: 0px;
+      }
     }
     &-title{
       font-weight: 600;
       font-size: 14px;
       position: relative;
       cursor: pointer;
+      &--mobile{
+        @media(max-width:540px){
+          padding-bottom: 15px;
+        }
+        @media(min-width:541px){
+          display: none;
+        }
+      }
       &::before{
         content: '';
         position: absolute;

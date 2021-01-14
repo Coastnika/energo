@@ -71,7 +71,7 @@
 
   .swiper-pagination{
     text-align: left;
-    bottom: 55px;
+    bottom: 95px;
     @media(max-width: 540px){
       bottom: 18px;
       left: 50%;
@@ -105,7 +105,7 @@
     position: absolute;
     background: $white;
     border: 1px solid $whiteF2;
-    bottom:46px;
+    bottom:86px;
     z-index: 2;
     outline: none;
     @media(max-width: 540px){
