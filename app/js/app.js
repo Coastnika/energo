@@ -277,3 +277,84 @@ document.addEventListener('click', e => {
     })
   }
 })
+
+//Phone mask
+
+var elements = document.getElementsByClassName('input-phone');
+    for (var i = 0; i < elements.length; i++) {
+      new IMask(elements[i], {
+        mask: '+{7} (000) 000-00-00',
+      });
+    }
+
+let phoneInputs = document.querySelectorAll('.input-phone')
+
+phoneInputs.forEach(phone => {
+  phone.addEventListener('keypress' , function(e){
+    if(this.value.length == 0 && e.key == 8){
+      e.preventDefault()
+      this.value += '+7 '
+    }
+  })
+})
+
+
+//valid form
+
+// validation Form
+let form = document.querySelectorAll('.form')
+
+let formSubmits = document.querySelectorAll('.form__payer button[type="submit"]')
+let errorText = document.querySelectorAll('.input-error-text')
+
+form.forEach(form => {
+  let formInputs = form.querySelectorAll('.input-valid')
+  let submit = form.querySelectorAll('.submit')
+
+  submit.forEach(submit => {
+    submit.addEventListener('click', (e) => {
+      e.preventDefault()
+      formInputs.forEach((input, inputIndex) => {
+        //Проверяем на наличие пустой строки
+        if(input.value.trim() == ''){
+          input.classList.add('input-error')
+          errorText.forEach((text, textIndex) => {
+            if(inputIndex == textIndex){
+              text.classList.add('input-error-text--active')
+            }
+          })
+        }
+        else{
+          return false
+          //Асинхронная отправка формы
+        }
+      })
+    })
+   
+  })
+})
+
+let formInputs = document.querySelectorAll('.input-valid')
+ //Убираем класс error если пользователь начал ввод
+ formInputs.forEach((input, inputIndex) => {
+  input.addEventListener('input', () => {
+    input.classList.remove('input-error')
+      errorText.forEach((text, textIndex) => {
+        if(textIndex == inputIndex){
+          text.classList.remove('input-error-text--active')
+        }
+      })
+  })
+})
+
+//scroll
+$(document).ready(function() {
+   if(!$(".to-top").length){
+       $("body").prepend('<div id="totop"></div>');
+   }
+
+  $(document).on('click','.to-top',function (e) {
+      e.preventDefault();
+       $("html, body").animate({ scrollTop: 0 }, 900);
+  });
+})

@@ -175,7 +175,7 @@
     &-text{
       font-weight: 600;
       line-height: 150%;
-      width: 87%;
+      width: 85%;
       color:$grey77;
       @media(max-width:540px){
         width: 100%;
@@ -189,6 +189,11 @@
     &-price{
       font-weight: 600;
       color: $black33;
+      font-size: 18px;
+      transform: translateY(-3px);
+      @media(max-width:540px){
+        font-size: 16px;
+      }
     }
     
   }

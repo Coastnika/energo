@@ -99,7 +99,7 @@
     &-counter{
       display: flex;
       margin-left: auto;
-      padding-top: 72px;
+      padding-top: 61px;
       &--more{
         margin-left: 0;
       }
@@ -108,7 +108,7 @@
         align-items: center;
         justify-content: center;
         width: 30px;
-        height: 40px;
+        height: 42px;
         background: $whiteF7;
         border: 1px solid $whiteF2;
         cursor: pointer;
@@ -126,6 +126,9 @@
     &-info{
       margin-left: 15px;
       text-align: right;
+      & svg{
+        right: 19%;
+      }
     }
     &-price{
       color: $orangeF1;
@@ -138,25 +141,25 @@
       }
     }
     &-button{
-      margin-top: 14px;
+      margin-top: 5px;
       &--more{
         margin-top: 0;
         margin-bottom: 10px;
       }
     }
 
-    &:hover &-title{
-      color: $orangeF1;
-    }
-    &:hover a{
-      border: none;
-      padding: 12px 61px 13px 31px;
-      background: $orangeGradient;
-      color: $white;
-    }
-    &:hover svg{
-      fill: $white
-    }
+    // &:hover &-title{
+    //   color: $orangeF1;
+    // }
+    // &:hover a{
+    //   border: none;
+    //   padding: 12px 61px 13px 31px;
+    //   background: $orangeGradient;
+    //   color: $white;
+    // }
+    // &:hover svg{
+    //   fill: $white
+    // }
   }
 }
 

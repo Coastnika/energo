@@ -23,9 +23,9 @@
       </div>
     </div>
     <div class="to-top">
-      <a href="#to-top">
-        <img src="./assets/icon/to-top.svg" alt="">
-      </a>
+      <span>
+        <img class=" opener"  id="to-top" src="./assets/icon/to-top.svg" alt="">
+      </span>
     </div>
     <!--HEADER-->
     <header class="header">
@@ -426,7 +426,7 @@
                   <img src="./assets/icon/calculator-light.svg" alt="">
                 </div>
                 <div class="calculators__card-text">
-                  Подобрать светильникипо<br> освещенности
+                  Подобрать светильники по<br> освещенности
                 </div>
               </div>
             </div>
@@ -540,9 +540,9 @@
       </div>
       <div class="popup-callback__title">Заказать обратный звонок</div>
       <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время</div>
-      <form action="" class="popup-callback__form">
-        <input class="popup-callback__form-input" type="text" placeholder="+7 (987) 756-43-21">
-        <button type="submit" class="popup-callback__form-button button-default">Отправить</button>
+      <form action="" class="popup-callback__form form">
+        <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
+        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
       </form>
     </div>
   </div>
@@ -554,19 +554,19 @@
         <img src="./assets/icon/close.svg" alt="">
       </div>
       <div class="calculator-light__title">Подобрать светильники по освещенности</div>
-      <form class="calculator-light__form">
+      <form class="calculator-light__form form">
         <div class="calculator-light__form-container">
-          <div class="calculator-light__form-name calculator-light__form-name--padding">Габариты помещения (м):</div>
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Габариты помещения (м):<sup class="input-error-text">*</sup></div>
           <div class="calculator-light__form-size">
-            <input class="input calculator-light__form-size-input"type="number" placeholder="Длина, м">
+            <input class="input calculator-light__form-size-input input-valid"type="number" placeholder="Длина, м">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="input calculator-light__form-size-input"type="number" placeholder="Ширина">
+            <input class="input calculator-light__form-size-input input-valid"type="number" placeholder="Ширина">
             <img src="./assets/icon/X.svg" alt="">
-            <input class="input calculator-light__form-size-input"type="number" placeholder="Высота">
+            <input class="input calculator-light__form-size-input input-valid"type="number" placeholder="Высота">
           </div>
         </div>
         <div class="calculator-light__form-container">
-          <div class="calculator-light__form-name calculator-light__form-name--padding">Объект для освещения:</div>
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Объект для освещения:<sup class="input-error-text">*</sup></div>
           <div class="calculator-light__form-type">
             <div class="calculator-light__form-dropdown sorting__price-dropdown custom__select">
               <div class="custom__select-title ">Тип объекта</div>
@@ -589,11 +589,11 @@
           </div>
         </div>
         <div class="calculator-light__form-container">
-          <div class="calculator-light__form-name calculator-light__form-name--padding">Требуемая освещенность:</div>
-          <input class="calculator-light__form-input" type="number" placeholder="Тип помещения">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Требуемая освещенность:<sup class="input-error-text">*</sup></div>
+          <input class="calculator-light__form-input input-valid" type="number" placeholder="Тип помещения">
         </div>
         <div class="calculator-light__form-container calculator-light__form-container--radio">
-          <div class="calculator-light__form-name">Тип источника света:</div>
+          <div class="calculator-light__form-name">Тип источника света:<sup class="input-error-text">*</sup></div>
           <div class="calculator-light__form-radio">
             <label class="calculator-light__form-label">
               <input class="radio" type="radio" class="radio" name="light-type" checked>
@@ -606,7 +606,7 @@
           </div>
         </div>
         <div class="calculator-light__form-container calculator-light__form-container--radio">
-          <div class="calculator-light__form-name">Тип светильников:</div>
+          <div class="calculator-light__form-name">Тип светильников:<sup class="input-error-text">*</sup></div>
           <div class="calculator-light__form-radio">
             <label class="calculator-light__form-label">
               <input class="radio" type="radio" class="radio" name="light-type_2" checked>
@@ -619,7 +619,7 @@
           </div>
         </div>
         <div class="calculator-light__form-submit">
-          <button type="submit" class="button-default">Подобрать</button>
+          <button type="submit" class="button-default submit">Подобрать</button>
         </div>
       </form>
     </div>
@@ -630,7 +630,7 @@
     <div class="calculator-weight__content">
       <div class="calculator-weight__close"><img src="./assets/icon/close.svg" alt=""></div>
       <div class="calculator-weight__title">Расчет веса кабеля</div>
-      <form class="calculator-weight__form">
+      <form class="calculator-weight__form form">
         <!--1-->
         <div class="calculator-weight__form-wrapper">
           <div class="calculator-weight__form-title">
@@ -639,16 +639,16 @@
           </div>
           <div class="calculator-weight__form-size">
             <div class="calculator-weight__form-size-wrapper">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile"type="number" placeholder="Кол-во, м">
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile input-valid"type="number" placeholder="Кол-во, м">
               <img class="calculator-weight__form-size-input--mobile" src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input"type="number" placeholder="Длина, м">
+              <input class="input calculator-weight__form-size-input input-valid"type="number" placeholder="Длина, м">
               <img src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--width"type="number" placeholder="Ширина, м">    
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--width input-valid"type="number" placeholder="Ширина, м">    
               <img src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input"type="number" placeholder="Высота, м">
+              <input class="input calculator-weight__form-size-input input-valid"type="number" placeholder="Высота, м">
             </div>
             <div class="calculator-weight__form-mobile-wrapper">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight"type="number" placeholder="Вес, кг">
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight input-valid"type="number" placeholder="Вес, кг">
               <div class="calculator-weight__form-size-del">
                 <img src="./assets/icon/delete.svg" alt="">
               </div>
@@ -664,16 +664,16 @@
           </div>
           <div class="calculator-weight__form-size">
             <div class="calculator-weight__form-size-wrapper">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile"type="number" placeholder="Кол-во, м">
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile input-valid"type="number" placeholder="Кол-во, м">
               <img class="calculator-weight__form-size-input--mobile" src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input"type="number" placeholder="Длина, м">
+              <input class="input calculator-weight__form-size-input input-valid"type="number" placeholder="Длина, м">
               <img src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--width"type="number" placeholder="Ширина, м">    
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--width input-valid"type="number" placeholder="Ширина, м">    
               <img src="./assets/icon/X.svg" alt="">
-              <input class="input calculator-weight__form-size-input"type="number" placeholder="Высота, м">
+              <input class="input calculator-weight__form-size-input input-valid"type="number" placeholder="Высота, м">
             </div>
             <div class="calculator-weight__form-mobile-wrapper">
-              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight"type="number" placeholder="Вес, кг">
+              <input class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight input-valid"type="number" placeholder="Вес, кг">
               <div class="calculator-weight__form-size-del">
                 <img src="./assets/icon/delete.svg" alt="">
               </div>
@@ -688,7 +688,7 @@
           </div>
         </div>
         <div class="calculator-weight__submit">
-          <button type="submit" class="button-default">Рассчитать</button>
+          <button type="submit" class="button-default submit">Рассчитать</button>
         </div>
       </form>
       <div class="calculator-weight__footer">
@@ -711,16 +711,16 @@
           <img src="./assets/icon/close.svg" alt="">
         </div>
         <div class="calculator-delivery__title">Расчет стоимости доставки</div>
-        <form class="calculator-delivery__form">
+        <form class="calculator-delivery__form form">
           <div class="calculator-delivery__container">
-            <div class="calculator-delivery__form-name">Данные о грузе:</div>
+            <div class="calculator-delivery__form-name">Данные о грузе:<sup class="input-error-text">*</sup></div>
             <div class="calculator-delivery__form-wrapper calculator-delivery__form-wrapper-input">
-              <input class="calculator-delivery__form-input input" type="text" placeholder="Вес, кг ">
-              <input class="calculator-delivery__form-input input" type="text" placeholder="Объем, м3">
+              <input class="calculator-delivery__form-input input input-valid" type="text" placeholder="Вес, кг ">
+              <input class="calculator-delivery__form-input input input-valid" type="text" placeholder="Объем, м3">
             </div>
           </div>
           <div class="calculator-delivery__container">
-            <div class="calculator-delivery__form-name">Точка отпраления:</div>
+            <div class="calculator-delivery__form-name">Точка отпраления:<sup class="input-error-text">*</sup></div>
             <div class="calculator-delivery__form-container">
               <div class="calculator-delivery__form-wrapper">
                 <label class="calculator-delivery__form-label">
@@ -736,7 +736,7 @@
             </div>
           </div>
           <div class="calculator-delivery__container">
-            <div class="calculator-delivery__form-name">Данные о грузе:</div>
+            <div class="calculator-delivery__form-name">Данные о грузе:<sup class="input-error-text">*</sup></div>
             <div class="calculator-delivery__form-container">
               <div class="calculator-delivery__form-wrapper">
                 <label class="calculator-delivery__form-label">
@@ -752,7 +752,7 @@
             </div>
           </div>
           <div class="calculator-delivery__container">
-            <div class="calculator-delivery__form-name">Дополнительные услуги:</div>
+            <div class="calculator-delivery__form-name">Дополнительные услуги:<sup class="input-error-text">*</sup></div>
             <div class="calculator-delivery__form-container">
               <label class="calculator-delivery__form-label">
                 <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
@@ -769,7 +769,7 @@
             </div>
           </div>
           <div class="calculator-delivery__submit">
-            <button type="submit" class="button-default">Рассчитать</button>
+            <button type="submit" class="button-default submit">Рассчитать</button>
           </div>
         </form>
         <div class="calculator-delivery__footer">
@@ -782,7 +782,7 @@
         </div>
       </div>
    </div>
-
+   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -48,9 +48,7 @@
       justify-content: center;
       margin-bottom: 10px;
       & img{
-        @media(max-width:540px){
-          height: 50px;
-        }
+        
       }
     }
     &-text{
