@@ -11,6 +11,10 @@
   &__container{
     overflow: hidden;
     width: 100%;
+    @media(max-width: 540px){
+      width: 93%;
+    }
+  
   }
   &__title{
     font-weight: bold;
@@ -29,8 +33,7 @@
     z-index: 2;
     outline: none;
     @media(max-width: 540px){
-      width: 40px;
-      height: 40px;
+      
     }
     &::before{
       content: '';
@@ -55,10 +58,16 @@
     &::before{
       background-image: url('../assets/icon/slider-arrow-left.svg');
     }
+    @media(max-width: 540px){
+      display: none;
+    }
   }
   .watched-button-next{
     right: -80px;
     border-radius: 0px 6px 6px 0px;
+    @media(max-width: 540px){
+      right: 0;
+    }
     &::before{
       background-image: url('../assets/icon/slider-arrow-right.svg');
     }

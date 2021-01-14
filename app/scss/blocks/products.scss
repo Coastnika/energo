@@ -161,14 +161,27 @@
 }
 
 .products-card{
-  width: 270px;
   padding: 20px;
   border: 1px solid $whiteF2;
   border-radius: 6px;
   cursor: pointer;
-  margin-right: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  @media(max-width:540px){
+    margin-bottom: 15px;
+  }
+  &--padding{
+    @media(max-width:540px){
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  
   &:hover{
     border: 1px solid $orangeF1;
+  }
+  &__container{
+
   }
   &__availability{
     position: absolute;
@@ -181,7 +194,6 @@
   }
   &__image{
     width: 100%;
-    padding-top: 19px;
     & img{
       width: 100%;
     }
@@ -189,12 +201,10 @@
   &__price{
     font-size: 18px;
     font-weight: 600;
-    text-align: center;
     color: $orangeF1;
   }
   &__button{
     display: flex;
-    justify-content: center;
     margin-top: 10px;
     & a{
       width: 230px;
@@ -202,13 +212,13 @@
       font-size: 18px;
       padding-top: 16px;
       padding-bottom: 18px;
+      @media(max-width:540px){
+        width: 100%;
+      }
     }
     &:hover a {
       padding-top: 17px;
       padding-bottom: 19px;
-    }
-    & svg{
-      right: 66px;
     }
   }
   

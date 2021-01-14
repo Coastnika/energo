@@ -1,5 +1,4 @@
 .page-pagination{
-  margin-bottom: 50px;
   &__container{}
   &__list{
     display: flex;
@@ -18,14 +17,24 @@
     font-weight: 500;
     font-size: 18px;
     cursor: pointer;
+    &--hide{
+      @media(max-width:540px){
+        display: none;
+      }
+    }
     &:not(:last-child){
-      margin-right: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    &:not(:first-child){
+      margin-right: 5px;
+      margin-left: 5px;
     }
     &:first-child{
-      margin-right: 20px;
+      margin-right: 15px;
     }
     &:last-child{
-      margin-left: 20px;
+      margin-left: 15px;
     }
     &:hover{
       background: $whiteF2;
