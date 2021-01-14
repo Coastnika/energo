@@ -46,7 +46,9 @@ h1{
 input{
     outline:none;
 }
-
+button{
+    outline: none!important;
+}
 input::placeholder{
     color: $black33;
 }
@@ -86,3 +88,15 @@ label{
       transform: rotate(180deg) translateY(1px)!important;
     }
   }
+
+.input-error{
+    border: 1px solid $redEB!important;
+    &::placeholder{
+        color: $redEB;
+    }
+}
+
+.input-error-text{
+    color: #D02D42!important;
+  }
+  
