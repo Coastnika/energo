@@ -7,6 +7,9 @@
     border-right: 1px solid $orangeF1;
     border-radius: 3px 3px 0px 0px;
   }
+  @media(max-width:540px){
+    width: 100%;
+  }
 }
 
 .custom__select-title{
@@ -22,6 +25,9 @@
     height: 5px;
     background-image: url('../assets/icon/dropdown-arrow.svg');
     background-repeat: no-repeat ;
+  }
+  @media(max-width:540px){
+    width: 100%;
   }
 }
 
@@ -43,6 +49,9 @@
   right: -1px;
   z-index: 9;
   border-radius: 0px 0px 3px 3px;
+  @media(max-width:540px){
+    top: 39px;
+  }
 }
 
 .custom__select-text{

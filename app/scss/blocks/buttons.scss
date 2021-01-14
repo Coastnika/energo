@@ -95,20 +95,18 @@
     //   padding: 6px 41px 6px 18px;
     // }
     @media(max-width:540px){
-      margin-left: 10px;
     }
   }
   & svg{
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 28%;
     transform: translateY(-56%);
     width: 22px;
     height: 22px;
     fill: $orangeF1;
     @media(max-width:540px){
-      width: 17px;
-      height: 17px;
+      
     }
   }
   &:hover a{

@@ -2,6 +2,8 @@
 var swiper = new Swiper('.intro__container', {
   speed: 500,
   loop: true,
+  
+
   navigation: {
     nextEl: '.intro-button-next',
     prevEl: '.intro-button-prev',
@@ -15,7 +17,13 @@ var swiper = new Swiper('.intro__container', {
 
 //init watched swiper
 var swiper = new Swiper('.watched__container', {
-  slidesPerView: 4,
+
+  breakpoints: {
+    480: {
+      slidesPerView: 4,
+    }
+  },
+  slidesPerView: 1,
   spaceBetween: 24,
   speed: 500,
   loop: true,
