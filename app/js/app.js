@@ -119,7 +119,8 @@ if(infoTitle){
     })
   })
 
-  //Подсвечиваем элементы
+  if(infoTitles){
+      //Подсвечиваем элементы
   infoTitles.addEventListener('click', e => {
     let target = e.target
 
@@ -127,6 +128,8 @@ if(infoTitle){
 
     highlights(target)
   })
+  }
+
 
   function highlights(select) {
     if (selected) {
@@ -371,26 +374,29 @@ let cartCounter = document.querySelector('.fixed__cart-counter')
 let counterValue = 0;
 let value = 0;
 
-buttonBuy.forEach(button => {
-  button.addEventListener('click', function(){
-    // value++
-    // localStorage.counter = value;
-    // console.log(localStorage.counter)
-    let buttonsContainer = this.closest('.products__wrapper')
-
-    if(buttonsContainer){
-      let buttonCart = buttonsContainer.querySelector('.button-cart')
-
-      this.classList.add('hide')
-      buttonCart.classList.remove('hide')
-    }
-
-    let cardNum = buttonsContainer.querySelector('.products__card-counter-num')
-    
-    cartCounter.classList.remove('hide')
-    counterValue += +cardNum.textContent
-    cartCounter.textContent = counterValue
+if(buttonBuy){
+  buttonBuy.forEach(button => {
+    button.addEventListener('click', function(){
+      // value++
+      // localStorage.counter = value;
+      // console.log(localStorage.counter)
+      let buttonsContainer = this.closest('.products__wrapper')
+  
+      if(buttonsContainer){
+        let buttonCart = buttonsContainer.querySelector('.button-cart')
+  
+        this.classList.add('hide')
+        buttonCart.classList.remove('hide')
+      }
+  
+      let cardNum = buttonsContainer.querySelector('.products__card-counter-num')
+      
+      cartCounter.classList.remove('hide')
+      counterValue += +cardNum.textContent
+      cartCounter.textContent = counterValue
+    })
   })
-})
+  
+}
 
 
