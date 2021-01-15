@@ -121,6 +121,61 @@
   &:hover svg{
     fill: $white
   }
+  &--small{
+    position: relative;
+    &::before{
+      content: 'Купить';
+      font-size: 12px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(30%,-130%);
+      background: $white;
+      box-shadow: 0px 8px 24px rgba(119, 119, 119, 0.06), 0px 0px 6px rgba(119, 119, 119, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.02);
+      border-radius: 6px;
+      padding: 7px 20px;
+      z-index: 1;
+      visibility: hidden;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg) translateY(-200%);
+      background: $white;
+      border-right: .5px solid rgba(119, 119, 119, 0.06);
+      border-bottom: .5px solid rgba(119, 119, 119, 0.06);
+      left: 10px;
+      z-index: 2;
+      visibility: hidden;
+    }
+    &:hover::before{
+      visibility: visible;
+    }
+    &:hover::after{
+      visibility: visible;
+    }
+    
+    & span{
+      padding: 0;
+      width: 65px;
+      height: 56px;
+    }
+    &:hover span{
+      border: none;
+      padding: 0;
+      background: $orangeGradient;
+      color: $white;
+    }
+    svg{
+      top: 50%;
+      right: 50%;
+      transform: translate(-40%, -60%);
+    }
+    
+   
+  }
 }
 
 .button-default{
@@ -186,4 +241,56 @@
     fill: $orangeF1;
 
   }
+  &--small{
+    &::before{
+      content: 'Перейти в корзину';
+      font-size: 12px;
+      line-height: 110%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(30%,-130%);
+      background: $white;
+      box-shadow: 0px 8px 24px rgba(119, 119, 119, 0.06), 0px 0px 6px rgba(119, 119, 119, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.02);
+      border-radius: 6px;
+      padding: 7px 20px;
+      text-align: center;
+      width: 110px;
+      z-index: 1;
+      visibility: hidden;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      transform: rotate(45deg) translateY(-230%);
+      background: $white;
+      border-right: .5px solid rgba(119, 119, 119, 0.06);
+      border-bottom: .5px solid rgba(119, 119, 119, 0.06);
+      left: 10px;
+      z-index: 2;
+      visibility: hidden;
+    }
+    &:hover::before{
+      visibility: visible;
+    }
+    &:hover::after{
+      visibility: visible;
+    }
+    & a{
+      padding: 0;
+      width: 65px;
+      height: 56px;
+    }
+    
+    svg{
+      top: 50%;
+      right: 50%;
+      transform: translate(-65%, -50%);
+    }
+   
+   
+  }
+  
 }

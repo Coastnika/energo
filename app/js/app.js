@@ -120,14 +120,13 @@ if(infoTitle){
   })
 
   if(infoTitles){
-      //Подсвечиваем элементы
-  infoTitles.addEventListener('click', e => {
-    let target = e.target
+    infoTitles.addEventListener('click', e => {
+      let target = e.target
 
-    if (!target.classList.contains('card-info__title')) return;
+      if (!target.classList.contains('card-info__title')) return;
 
-    highlights(target)
-  })
+      highlights(target)
+    })
   }
 
 
