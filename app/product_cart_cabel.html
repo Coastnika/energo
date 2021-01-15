@@ -19,8 +19,8 @@
             </div>
             <div class="fixed__cart">
                 <a href="" class="fixed__cart-link">
-                    <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
-                    <div class="fixed__cart-counter">0</div>
+                  <img src="./assets/icon/cart.svg" class="fixed__cart-icon"/>
+                  <div class="fixed__cart-counter hide">0</div>
                 </a>
             </div>
         </div>
@@ -154,16 +154,26 @@
                         <div class="products__card-buy-wrap">
                             <div class="products__card-counter products__card-counter--more">
                                 <div class="products__card-counter-minus products__card-counter-element">-</div>
-                                <div class="products__card-counter-num products__card-counter-element">0</div>
+                                <div class="products__card-counter-num products__card-counter-element">1</div>
                                 <div class="products__card-counter-plus products__card-counter-element">+</div>
                             </div>
-                            <div class="products__card-button button-buy products__card-button--more">
-                                <span>
+                            <div class="card__buttons">
+                                <div class="products__card-button button-buy products__card-button-more">
+                                  <span>
                                     Купить
                                     <svg>
-                                        <use xlink:href="./assets/sprite.svg#cart"></use>
+                                      <use xlink:href="./assets/sprite.svg#cart"></use>
                                     </svg>
-                                </span>
+                                  </span>
+                                </div>
+                                <div class="products__card-button button-cart hide">
+                                  <a href="">
+                                    В корзину
+                                    <svg>
+                                      <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                                    </svg>
+                                  </a>
+                                </div>
                             </div>
                         </div>
                         <div class="products__card-text">
@@ -205,7 +215,7 @@
                     <div class="container">
                         <div class="card-info__mobile-wrap">
                             <div class="card-info__mobile-content-title arrow--active" tab-index="1">Примечание</div>
-                            <div class="card-info__text-wrap show" tab-index="1">
+                            <div class="card-info__text-wrap" tab-index="1">
                                 <p class="card-info__text">
                                     Кабели предназначены для передачи и распределения электроэнергии в стационарных
                                     электротехнических установках на номинальное переменное напряжение 0,66 и 1 кВ
@@ -345,185 +355,254 @@
             </div>
 
             <!--watched-->
-            <div class="container">
-                <div class="watched">
-                    <div class="container">
-                        <div class="watched__content">
-                            <div class="watched__title">Вы смотрели</div>
-                            <div class="watched__container">
-                                <div class="watched__wrapper swiper-wrapper">
-                                    <div class="products-card swiper-slide">
-                                        <div class="products-card__availability">
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">На складе:</span>
-                                                <span>320м</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__image">
-                                            <img src="./assets/images/products-image-1.png" alt="">
-                                        </div>
-                                        <div class="products__card-specification">
-                                            <div class="products__card-title">ВВГнг 5х95</div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Материал:</span>
-                                                <span>Медь</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Изоляция:</span>
-                                                <span>ПВХ</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Код ЕА:</span>
-                                                <span>3421-0059</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Категория: </span>
-                                                <span class="products__card-text--orange">Кабель</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__price">
-                                            3580.10 руб/м
-                                        </div>
-                                        <div class="products-card__button button-buy">
-                                            <a href="#">
-                                                Купить
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="products-card swiper-slide">
-                                        <div class="products-card__availability">
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">На складе:</span>
-                                                <span>700м</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__image">
-                                            <img src="./assets/images/products-image-2.png" alt="">
-                                        </div>
-                                        <div class="products__card-specification">
-                                            <div class="products__card-title">ВВГнг 5х95</div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Материал:</span>
-                                                <span>Медь</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Изоляция:</span>
-                                                <span>ПВХ</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Код ЕА:</span>
-                                                <span>3421-0059</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Категория: </span>
-                                                <span class="products__card-text--orange">Кабель</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__price">
-                                            765.00 руб/м
-                                        </div>
-                                        <div class="products-card__button button-buy">
-                                            <a href="#">
-                                                Купить
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="products-card swiper-slide">
-                                        <div class="products-card__availability">
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">На складе:</span>
-                                                <span>500м</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__image">
-                                            <img src="./assets/images/products-image-3.png" alt="">
-                                        </div>
-                                        <div class="products__card-specification">
-                                            <div class="products__card-title">ВВГнг 5х95</div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Материал:</span>
-                                                <span>Медь</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Изоляция:</span>
-                                                <span>ПВХ</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Код ЕА:</span>
-                                                <span>3421-0059</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Категория: </span>
-                                                <span class="products__card-text--orange">Кабель</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__price">
-                                            765.00 руб/м
-                                        </div>
-                                        <div class="products-card__button button-buy">
-                                            <a href="#">
-                                                Купить
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="products-card swiper-slide">
-                                        <div class="products-card__availability">
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">На складе:</span>
-                                                <span>300м</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__image">
-                                            <img src="./assets/images/products-image-4.png" alt="">
-                                        </div>
-                                        <div class="products__card-specification">
-                                            <div class="products__card-title">ВВГнг 5х95</div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Материал:</span>
-                                                <span>Медь</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Изоляция:</span>
-                                                <span>ПВХ</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Код ЕА:</span>
-                                                <span>3421-0059</span>
-                                            </div>
-                                            <div class="products__card-text">
-                                                <span class="products__card-text--grey">Категория: </span>
-                                                <span class="products__card-text--orange">Кабель</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-card__price">
-                                            765.00 руб/м
-                                        </div>
-                                        <div class="products-card__button button-buy">
-                                            <a href="#">
-                                                Купить
-                                                <svg>
-                                                    <use xlink:href="./assets/sprite.svg#cart"></use>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
+      <div class="container">
+        <div class="watched">
+            <div class="watched__content">
+              <div class="watched__title">Вы смотрели</div>
+              <div class="watched__container">
+                <div class="watched__wrapper swiper-wrapper">
+                  <div class="products-card swiper-slide">
+                    <div class="products-card__availability">
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">На складе:</span>
+                        <span>320м</span>
+                      </div>
+                    </div>
+                    <div class="products-card__image">
+                      <img src="./assets/images/product-card-new-1.png" alt="">
+                    </div>
+                    <div class="products__card-specification">
+                      <div class="products__card-title">ВВГнг 5х95</div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Бренд:</span>
+                        <span class="products__card-text--orange">IEK</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Артикул:</span>
+                        <span>МКМ-15Е</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Код ЕА:</span>
+                        <span>9454519</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Категория: </span>
+                        <span class="products__card-text--orange">Кабель</span>
+                      </div>
+                    </div>
+                    <div class="products-card__price">
+                      765.00 руб/м
+                    </div>
+
+                    <div class="products__wrapper products__wrapper-card">
+                      <div class="products__card-counter products__card-counter--clearfix">
+                        <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                        <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                        <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                      </div>
+                      <div class="products__card-info">
+                      <div class="card__buttons">
+                        <div class=" button-buy button-buy--small">
+                          <span>
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class=" button-cart button-cart--small hide">
+                          <a href="">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  <div class="products-card swiper-slide">
+                    <div class="products-card__availability">
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">На складе:</span>
+                        <span>700м</span>
+                      </div>
+                    </div>
+                    <div class="products-card__image">
+                      <img src="./assets/images/product-card-new-1.png" alt="">
+                    </div>
+                    <div class="products__card-specification">
+                      <div class="products__card-title">ВВГнг 5х95</div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Бренд:</span>
+                        <span class="products__card-text--orange">IEK</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Артикул:</span>
+                        <span>МКМ-15Е</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Код ЕА:</span>
+                        <span>9454519</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Категория: </span>
+                        <span class="products__card-text--orange">Кабель</span>
+                      </div>
+                    </div>
+                    <div class="products-card__price">
+                      765.00 руб/м
+                    </div>
+                    <div class="products__wrapper products__wrapper-card">
+                      <div class="products__card-counter products__card-counter--clearfix">
+                        <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                        <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                        <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                      </div>
+                      <div class="products__card-info">
+                      <div class="card__buttons">
+                        <div class=" button-buy button-buy--small">
+                          <span>
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class=" button-cart button-cart--small hide">
+                          <a href="">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="products-card swiper-slide">
+                    <div class="products-card__availability">
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">На складе:</span>
+                        <span>500м</span>
+                      </div>
+                    </div>
+                    <div class="products-card__image">
+                      <img src="./assets/images/product-card-new-1.png" alt="">
+                    </div>
+                    <div class="products__card-specification">
+                      <div class="products__card-title">ВВГнг 5х95</div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Бренд:</span>
+                        <span class="products__card-text--orange">IEK</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Артикул: </span>
+                        <span>МКМ-15Е</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Код ЕА:</span>
+                        <span>9454519</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Категория: </span>
+                        <span class="products__card-text--orange">Кабель</span>
+                      </div>
+                    </div>
+                    <div class="products-card__price">
+                      765.00 руб/м
+                    </div>
+                    <div class="products__wrapper products__wrapper-card">
+                      <div class="products__card-counter products__card-counter--clearfix">
+                        <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                        <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                        <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                      </div>
+                      <div class="products__card-info">
+                      <div class="card__buttons">
+                        <div class=" button-buy button-buy--small">
+                          <span>
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart"></use>
+                            </svg>
+                          </span>
+                        </div>
+                        <div class=" button-cart button-cart--small hide">
+                          <a href="">
+                            <svg>
+                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="products-card swiper-slide">
+                    <div class="products-card__availability">
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">На складе:</span>
+                        <span>300м</span>
+                      </div>
+                    </div>
+                    <div class="products-card__image">
+                      <img src="./assets/images/product-card-new-1.png" alt="">
+                    </div>
+                    <div class="products__card-specification">
+                      <div class="products__card-title">ВВГнг 5х95</div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Бренд:</span>
+                        <span class="products__card-text--orange">IEK</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Артикул: </span>
+                        <span>МКМ-15Е</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Код ЕА:</span>
+                        <span>9454519</span>
+                      </div>
+                      <div class="products__card-text">
+                        <span class="products__card-text--grey">Категория: </span>
+                        <span class="products__card-text--orange">Кабель</span>
+                      </div>
+                    </div>
+                    <div class="products-card__price">
+                      765.00 руб/м
+                    </div>
+                    <div class="products__wrapper products__wrapper-card">
+                        <div class="products__card-counter products__card-counter--clearfix">
+                          <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                          <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                          <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                        </div>
+                        <div class="products__card-info">
+                            <div class="card__buttons">
+                                <div class=" button-buy button-buy--small">
+                                  <span>
+                                    <svg>
+                                      <use xlink:href="./assets/sprite.svg#cart"></use>
+                                    </svg>
+                                  </span>
                                 </div>
-                                <div class="watched-button watched-button-prev"></div>
-                                <div class="watched-button watched-button-next"></div>
+                                <div class=" button-cart button-cart--small hide">
+                                  <a href="">
+                                    <svg>
+                                      <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                                    </svg>
+                                  </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                  </div>
                 </div>
+                
+                <div class="watched-button watched-button-prev"></div>
+                <div class="watched-button watched-button-next"></div>
+              </div>
             </div>
+        </div>
+      </div>
         </main>
 
         <!--FOOTER-->

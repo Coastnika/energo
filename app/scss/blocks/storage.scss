@@ -84,6 +84,11 @@
         font-size: 16px;
         line-height: 110%;
         color: $black33;
+        &--sub{
+            font-size: 14px;
+            line-height: 120%;
+            color: $black33;
+        }
         &--bold{
             font-weight: 500;
         }
@@ -97,10 +102,10 @@
             width: 140px;
         }
         &-breakdown{
-            width: 334px;
+            width: 345px;
         }
         &-sum{
-            width: 145px;
+            width: 150px;
         }
     }
     &__item{
