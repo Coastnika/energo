@@ -57,30 +57,41 @@
   &__contacts{
     &-item{
       display: flex;
-      align-items: center;
+      transform: translateX(-20px);
+      @media(max-width:540px){
+        transform: translateX(0px);
+      }
       &:not(:last-child){
         margin-bottom: 15px;
-        @media(max-width:768px){
-          margin-bottom: 5px;
-        }
       }
     }
     &-icon{
       margin-right: 7px;
+      width: 14px;
+      display: flex;
+      justify-content: center;
+      align-self: start;
     }
-    &-icon--align{
-      align-self: flex-start;
+  
+    &-content{
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
     }
     &-text{
       color: $whiteF7;
       font-weight: 300;
       font-size: 15px;
       line-height: 100%;
+      @media(max-width:540px){
+        line-height: 110%;
+      }
     }
     &-subtext{
       color: $grey77;
       font-size: 12px;
       line-height: 100%;
+      padding-left: 3px;
       &:not(:last-child){
         margin-bottom: 5px;
       }
