@@ -61,17 +61,7 @@ if (footerToggle && footerList) {
   dropDown(footerToggle, footerList)
 }
 
-//dropdown sidebar
-let sidebarToggle = document.querySelectorAll('.sidebar__element-title')
-let sidebarList = document.querySelectorAll('.sidebar__element-wrapper')
 
-if (sidebarToggle && sidebarList) {
-  dropDown(sidebarToggle, sidebarList)
-}
-
-if (innerWidth < 540) {
-  sidebarList[0].classList.remove('show')
-}
 
 //counter cards
 let counterContainer = document.querySelectorAll('.products__card-counter')
@@ -411,4 +401,20 @@ if (buttonBuy) {
       cartCounter.textContent = counterValue
     })
   })
+}
+
+
+//dropdown sidebar
+let sidebarToggle = document.querySelectorAll('.sidebar__element-title')
+let sidebarList = document.querySelectorAll('.sidebar__element-wrapper')
+
+if (sidebarToggle && sidebarList) {
+  dropDown(sidebarToggle, sidebarList)
+}
+
+if (sidebarList) {
+  if (innerWidth < 540) {
+    sidebarList[0].classList.remove('show')
+  }
+
 }
