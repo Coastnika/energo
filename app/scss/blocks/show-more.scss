@@ -1,0 +1,29 @@
+.show-more{
+    width: 250px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    border-bottom: 1px dashed #fff;
+    &:hover{
+        border-bottom: 1px dashed $grey77;
+    }
+    &__more{
+        position: relative;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110%;
+        color: $black33;
+        cursor: pointer;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -35px;
+            transform: translateY(-50%) ;
+            width: 24px;
+            height: 24px;
+            background-image: url('../assets/icon/arrow-down-1.svg');
+            background-repeat: no-repeat ;
+        }
+    }
+}
