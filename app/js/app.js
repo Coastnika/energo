@@ -336,6 +336,7 @@ let errorText = document.querySelectorAll('.input-error-text')
 form.forEach(form => {
   let formInputs = form.querySelectorAll('.input-valid')
   let submit = form.querySelectorAll('.submit')
+  let customSelect = form.querySelectorAll('.custom__select')
 
   submit.forEach(submit => {
     submit.addEventListener('click', (e) => {
@@ -355,8 +356,22 @@ form.forEach(form => {
           //Асинхронная отправка формы
         }
       })
-    })
 
+      if(customSelect){
+        customSelect.forEach(select => {
+          if (select.querySelector('.custom__select-title').textContent == "Тип объекта") {
+            select.classList.add('input-error')
+          }
+        })
+      }
+    })
+  })
+})
+
+let customSelect = document.querySelectorAll('.custom__select')
+customSelect.forEach(select => {
+  select.addEventListener('click', () => {
+    select.classList.remove('input-error')
   })
 })
 
