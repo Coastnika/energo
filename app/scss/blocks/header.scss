@@ -1,4 +1,5 @@
 .header{
+  
   &__top{
     background: linear-gradient(to right, $white 50%, $whiteF7 50%);
     padding-top: 20px;
@@ -53,8 +54,12 @@
     &-wrapper{
       display: flex;
       align-items: center;
+      
       &:not(:last-child){
         margin-bottom: 5px;
+      }
+      @media(max-width:540px){
+        margin-bottom: 10px!important;
       }
     }
     &-num{
@@ -102,7 +107,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    
+    @media(max-width:540px){
+      margin-bottom: 15px;
+    }
     &-input{
       color: $grey77;
       font-size: 15px;
@@ -141,6 +148,10 @@
     }
     &-item{
       flex-grow: 1;
+      position: relative;
+      &:hover .dropdown-menu{
+        display: block;
+      }
     }
     &-link{
       display: flex;
@@ -159,11 +170,12 @@
       background-color: $whiteEC;
       position: relative;
       cursor: pointer;
+      
       &::before{
         content: '';
         position: absolute;
         top:58%;
-        right: 0px;
+        right: 6px;
         transform: translateY(-50%) ;
         width: 12px;
         height: 12px;
@@ -238,4 +250,89 @@
     }
   }
 
+}
+
+
+.mobile-menu{
+  height: 100vh;
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $whiteF7;
+  overflow: auto;
+  &__close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  &__nav{
+    background: $white;
+    &-list{
+      position: relative;
+    }
+    &-item{
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 0px 10px 15px;
+      position: relative;
+
+    }
+    &-subitem{
+      padding: 10px 0px 10px 10px;
+      position: relative;
+    }
+    &-link{
+      color: $black33;
+      font-weight: 500;
+      
+    }
+  }
+  &__footer{
+    padding-top: 15px;
+    background: $whiteF7; 
+  }
+  &__info{
+    
+    font-size: 15px;
+    .header__info-email{
+      line-height: 100%;
+      font-weight: 500;
+    }
+    .header__info-call{
+      margin-bottom: 10px;
+    }
+    .header__info-num{}
+    .header__info-city{}
+  }
+  &__dropdown{
+    position: absolute; 
+    right: 20px;
+    width: 13px;
+    height: 11px;
+    top: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%) ;
+      width: 14px;
+      height: 9px;
+      background-image: url('../assets/icon/dropdown-arrow.svg');
+      background-repeat: no-repeat ;
+      background-size: cover;
+    }
+  }
+  &__content{
+    display: none;
+  }
+  .arrow--active{
+    margin-right: -1px;
+  }
 }
