@@ -63,11 +63,14 @@
       margin-bottom: 10px;
       width: 202px;
       height: 43px;
+      margin-top: 10px;
       &--more{
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
-        padding-top: 13px;
+        padding-top: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
       }
     }
     &-text{
@@ -82,7 +85,7 @@
       }
     }
     &-buy{
-      width: 279px;
+      width: 280px;
       height: 180px;
       border: 1px solid $whiteF7;
       box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
@@ -95,9 +98,8 @@
     }
     &-buy-wrap{
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       @media(max-width:540px){
         justify-content: flex-start;
       }
@@ -156,9 +158,10 @@
       }
     }
     &-button{
-      margin-top: 5px;
-      &--more{
-        margin-top: 0;
+      margin-top: 6px;
+      &-more{
+        margin-bottom: 5px;
+        margin-left: 10px;
       }
     }
 
@@ -187,11 +190,14 @@
   margin-bottom: 30px;
   @media(max-width:540px){
     margin-bottom: 15px;
+    width: 290px;
+    margin: auto;
   }
   &--padding{
     @media(max-width:540px){
       padding-left: 0px;
       padding-right: 0px;
+      padding-bottom: 15px;
     }
   }
   
@@ -211,10 +217,10 @@
     right: 15px;
   }
   &__image{
-    width: 100%;
-    & img{
-      width: 100%;
-    }
+    // width: 100%;
+    // & img{
+    //   width: 100%;
+    // }
   }
   &__price{
     font-size: 18px;

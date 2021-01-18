@@ -28,6 +28,9 @@
         display: flex;
         align-items: center;
         width: 45%;
+        &-clients{
+            width: 47%;
+        }
         &-title{
             font-weight: 500;
             font-size: 16px;
@@ -84,6 +87,17 @@
         font-size: 16px;
         line-height: 110%;
         color: $black33;
+        &--sub{
+            font-size: 14px;
+            line-height: 120%;
+            color: $black33;
+            &-company{
+                font-size: 12px;
+                line-height: 100%;
+                color: $grey77;
+                padding-top: 5px;
+            }
+        }
         &--bold{
             font-weight: 500;
         }
@@ -97,10 +111,25 @@
             width: 140px;
         }
         &-breakdown{
-            width: 334px;
+            width: 345px;
         }
         &-sum{
-            width: 145px;
+            width: 150px;
+        }
+        &-name{
+            width: 244px;
+        }
+        &-type{
+            width: 160px;
+        }
+        &-company{
+            width: 266px;
+        }
+        &-inn{
+            width: 120px;
+        }
+        &-phone{
+            width: 160px;
         }
     }
     &__item{
@@ -113,6 +142,15 @@
         &:hover{
             border: 1px solid $orangeF1;
             border-radius: 6px;
+        }
+        &:hover .storage__text-name {
+            color: $orangeF1;
+        }
+        &:hover .storage__text-phone {
+            color: $orangeF1;
+        }
+        &:hover .storage__text-mail {
+            color: $orangeF1;
         }
       }
 }
@@ -130,5 +168,12 @@
     border-right:none;
     &:hover + .border-all{
         border-left:none;
+    }
+}
+.border-clients{
+    border-radius: 6px 0px 0px 6px;
+    border-right: none;
+    &:hover + .border-all{
+        border-left: none;
     }
 }

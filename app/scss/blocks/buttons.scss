@@ -80,6 +80,7 @@
 .button-buy{
   position: relative;
   display: inline-block;
+  cursor: pointer;
   & span{
     padding: 11px 60px 12px 30px;
     font-weight: 500;
@@ -100,7 +101,7 @@
   & svg{
     position: absolute;
     top: 50%;
-    right: 28%;
+    right: 22%;
     transform: translateY(-56%);
     width: 22px;
     height: 22px;

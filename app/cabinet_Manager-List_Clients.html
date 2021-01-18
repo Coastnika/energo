@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1170px, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page" id="to-top">
+        <!--FIXED-->
+        <div class="fixed">
+            <div class="fixed__login">
+                <a href="" class="fixed__login-link">
+                    <img src="./assets/icon/login.svg" class="fixed__login-icon" />
+                </a>
+            </div>
+            <div class="fixed__cart">
+                <a href="" class="fixed__cart-link">
+                    <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
+                    <div class="fixed__cart-counter hide">0</div>
+                </a>
+            </div>
+        </div>
+        <div class="to-top">
+            <span>
+              <img class=" opener"  id="to-top" src="./assets/icon/to-top.svg" alt="">
+            </span>
+          </div>
+        <!--HEADER-->
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a href="index.html"><img src="./assets/icon/logo.svg" alt=""></a>
+                        </div>
+                        <div class="header__phone">
+                            <div class="header__phone-wrapper">
+                                <div class="header__phone-num">8(987) 654-32-10</div>
+                                <div class="header__phone-city">Санкт-Петербург</div>
+                            </div>
+                            <div class="header__phone-wrapper">
+                                <div class="header__phone-num">8(800) 555-32-10</div>
+                                <div class="header__phone-city">Москва</div>
+                            </div>
+                        </div>
+                        <div class="header__info">
+                            <div class="header__info-email">info@rosenergy.ru</div>
+                            <span class="header__info-call" id="infoCall">Заказать звонок</span>
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__toggle">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./assets/sprite.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <input class="header__search-input" type="text" placeholder="Поиск...">
+                            <a href="" class="header__search-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="container">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <div href="" class="header__nav-link header__nav-menu">
+                                <img class="header__nav-icon" src="./assets/icon/burger.svg" alt="">
+                                Каталог
+                            </div>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="" class="header__nav-link">
+                                <img class="header__nav-icon" src="./assets/icon/sale.svg" alt="">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Спецпредложения</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Услуги</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">О компании</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Наши партнеры</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Новости</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header__breadcrumbs">
+                <div class="container">
+                    <ul class="header__breadcrumbs-list">
+                        <li class="header__breadcrumbs-item">
+                            <a href="" class="header__breadcrumbs-link">Главная</a>
+                        </li>
+                        <li class="header__breadcrumbs-item">
+                            <a href="" class="header__breadcrumbs-link">Кабинет менеджера</a>
+                        </li>
+                        <li class="header__breadcrumbs-item">
+                            <span href="" class="header__breadcrumbs-current">Список клиентов</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__title">
+                <div class="container">
+                    <h1>Список клиентов</h1>
+                </div>
+            </div>
+        </header>
+
+        <div class="storage">
+            <div class="container">
+                <div class="storage__content">
+                    <div class="storage__choose">
+                        <div class="storage__choose-wrap border-clients">
+                            <div class="storage__choose-title">Информация о клиентах</div>
+                        </div>
+                     <div class="storage__choose-wrap border-all">
+                         <div class="storage__choose-title">Заказы</div>
+                     </div>
+                    </div>
+        
+                    <div class="storage__search storage__search-clients">
+                        <div class="storage__search-title">Найти клиента</div>
+                        <div class="header__search">
+                            <div class="header__toggle">
+                                <svg width="24" height="24">
+                                    <use xlink:href="./assets/sprite.svg#burger"></use>
+                                </svg>
+                            </div>
+                            <input class="header__search-input" type="text" placeholder="Начните вводить фамилию или компанию">
+                            <a href="" class="header__search-link"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="storage__table">
+                    <div class="storage__headline">
+                        <div class="storage__text storage__text-name storage__text--bold">ФИО</div>
+                        <div class="storage__text storage__text-type storage__text--bold">Тип</div>
+                        <div class="storage__text storage__text-company storage__text--bold">Название компании</div>
+                        <div class="storage__text storage__text-inn storage__text--bold">ИНН</div>
+                        <div class="storage__text storage__text-phone storage__text--bold">Телефон</div>
+                        <div class="storage__text storage__text-mail storage__text--bold">Почта</div>
+                    </div>
+
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Константинопольский Константин Константинович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Одинцовская Кабельная Компания»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Физическое лицо</div>
+                        <div class="storage__text storage__text-company storage__text--sub">-</div>
+                        <div class="storage__text storage__text-inn storage__text--sub">-</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="storage__item">
+                        <div class="storage__text storage__text-name storage__text--sub">Иванов Иван Иванович</div>
+                        <div class="storage__text storage__text-type storage__text--sub">Компания</div>
+                        <div class="storage__text storage__text-company storage__text--sub">
+                            <div>ООО «Компания Новая сила»</div>
+                            <div class="storage__text--sub-company">Санкт-Петербург</div>
+                        </div>
+                        <div class="storage__text storage__text-inn storage__text--sub">4587878796</div>
+                        <div class="storage__text storage__text-phone storage__text--sub">+7 (987) 548-00-00</div>
+                        <div class="storage__text storage__text-mail storage__text--sub">79107776589@yandex.ru</div>
+                    </div>
+                    <div class="show-more">
+                        <div class="show-more__text" >
+                          <label class="show-more__more">
+                            <span>Показать ещё 30 записей</span> 
+                          </label>
+                        </div>
+                      </div>
+                    <div class="page-pagination">
+                        <div class="page-pagination__container">
+                          <ul class="page-pagination__list">
+                            <li class="page-pagination__item"><img src="./assets/icon/pagination-arrow-left.svg" alt=""></li>
+                            <li class="page-pagination__item page-pagination__item--current"><span>1</span></li>
+                            <li class="page-pagination__item page-pagination__item--hide"><span>2</span></li>
+                            <li class="page-pagination__item page-pagination__item--hide"><span>3</span></li>
+                            <li class="page-pagination__item"><span>...</span></li>
+                            <li class="page-pagination__item page-pagination__item--hide"><span>36</span></li>
+                            <li class="page-pagination__item"><img src="./assets/icon/pagination-arrow-right.svg" alt=""></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    
+                </div>
+            </div>
+        </div>
+
+ 
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Кампания</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика
+                                        конфиденциальности </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Каталог</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__nav">
+                            <div class="footer__title footer__dropdown">Услуги</div>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
+                                        доставки</a></li>
+                                <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="footer__contacts">
+                            <div class="footer__title">
+                                Наши контакты
+                            </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon">
+                                  <img src="./assets/icon/mobile.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-wrapper">
+                                  <div class="footer__contacts-content">
+                                    <div class="footer__contacts-text">+7(987) 654-32-10</div>
+                                    <div class="footer__contacts-subtext">Санкт-Петербург</div>
+                                  </div>
+                                  <div class="footer__contacts-content">
+                                    <div class="footer__contacts-text">8(800) 555-32-10</div>
+                                    <div class="footer__contacts-subtext">Москва</div>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon">
+                                    <img src="./assets/icon/mail.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-text">info@rosenergy.ru</div>
+                            </div>
+                            <div class="footer__contacts-item">
+                                <div class="footer__contacts-icon">
+                                    <img src="./assets/icon/periscope.svg" alt="">
+                                </div>
+                                <div class="footer__contacts-text">г. Санкт-Петербург, ул. Капитана Воронина, 25</div>
+                            </div>
+                            <div class="footer__contacts-map">
+                                <img src="./assets/images/map.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-text">© ЭнергоАльянс, 2020-2021</div>
+                    <div class="footer__copyright-text">Cookie</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <!--POP-UP'S-->
+  <!--callback-->
+  <div class="popup-callback hide">
+    <div class="popup-callback__content">
+      <div class="popup-callback__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="popup-callback__title">Заказать обратный звонок</div>
+      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время</div>
+      <form action="" class="popup-callback__form form">
+        <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
+        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

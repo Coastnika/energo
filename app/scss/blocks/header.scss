@@ -157,7 +157,19 @@
       color: $orangeF1;
       font-weight: 500;
       background-color: $whiteEC;
+      position: relative;
       cursor: pointer;
+      &::before{
+        content: '';
+        position: absolute;
+        top:58%;
+        right: 0px;
+        transform: translateY(-50%) ;
+        width: 12px;
+        height: 12px;
+        background-image: url('../assets/icon/arrow-bottom-orange.svg');
+        background-repeat: no-repeat ;
+      }
     }
     &-icon{
       margin-right: 7px;
@@ -214,7 +226,8 @@
   }
 
   &__title{
-    margin-bottom: 23px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     & h1{
       font-weight: bold;
       font-size: 36px;
