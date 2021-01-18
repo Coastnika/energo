@@ -1,6 +1,6 @@
 .products{
   margin-bottom: 30px;
-  cursor: pointer;
+  min-height: 800px;
   &__wrapper{
     display: flex;
     margin-left: auto;
@@ -248,4 +248,54 @@
   &:hover .products__card-title{
     color: $orangeF1;
   }
+}
+
+
+.products-shortcard{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: $white;
+  border: 1px solid $whiteF2;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid $orangeF1;
+  }
+  &:hover &__title{
+    color: $orangeF1;
+  }
+  &__image{
+    width: 115px;
+    margin-right: 20px;
+    & img{
+      width: 100%;
+    }
+  }
+  &__wrapper{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    width: 243px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  &__text{
+    margin-right: 20px;
+    padding-bottom: 0px;
+  }
+  &__price{
+    margin-right: 20px;
+  }
+  &__counter{
+    &-element{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+
 }

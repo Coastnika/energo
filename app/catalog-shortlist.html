@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <div class="page" id="to-top">
     <!--FIXED-->
     <div class="fixed">
       <div class="fixed__login">
         <a href="" class="fixed__login-link">
-          <img src="./assets/icon/login.svg" class="fixed__login-icon" />
+          <img src="./assets/icon/login.svg" class="fixed__login-icon"/>
         </a>
       </div>
       <div class="fixed__cart">
         <a href="" class="fixed__cart-link">
-          <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
+          <img src="./assets/icon/cart.svg" class="fixed__cart-icon"/>
           <div class="fixed__cart-counter hide">0</div>
         </a>
       </div>
     </div>
+    <!---->
     <div class="to-top">
       <span>
-        <img class=" opener" id="to-top" src="./assets/icon/to-top.svg" alt="">
+        <img class=" opener"  id="to-top" src="./assets/icon/to-top.svg" alt="">
       </span>
     </div>
+    <!--HEADER-->
     <!--HEADER-->
     <header class="header">
       <div class="header__top">
@@ -1684,625 +1684,538 @@
 
     <!--MAIN-->
     <main class="main">
-      <div class="container">
-        <div class="products__card--more">
-          <div class="products__card-image--more">
-            <img src="./assets/images/product_cart_others.jpg" alt="">
-          </div>
-          <div class="products__card-сharacterictics">
-            <div class="products__card-title products__card-title--more">Краткая характеристика</div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Артикул:</span>
-              <span>MVA21-3-050-C</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Бренд:</span>
-              <span class="products__card-text--orange">IEK</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Серия:</span>
-              <span class="products__card-text--orange">BA47-29M</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Количество полюсов:</span>
-              <span class="products__card-text--orange">3</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Номинальный ток:</span>
-              <span>50A</span>
-            </div>
-          </div>
-          <div class="products__card-buy">
-            <div class="products__card-price">
-              3580.10 руб/м
-            </div>
-            <div class="products__card-buy-wrap products__wrapper">
-              <div class="products__card-counter products__card-counter--more">
-                <div class="products__card-counter-minus products__card-counter-element">-</div>
-                <div class="products__card-counter-num products__card-counter-element">1</div>
-                <div class="products__card-counter-plus products__card-counter-element">+</div>
-              </div>
-              <div class="card__buttons">
-                <div class="products__card-button button-buy products__card-button-more">
-                  <span>
-                    Купить
-                    <svg>
-                      <use xlink:href="./assets/sprite.svg#cart"></use>
-                    </svg>
-                  </span>
+      <div class="container mb-5">
+        <div class="row">
+          <!--sidebar-->
+          <div class="col-12 col-sm-3">
+            <div class="sidebar">
+              <div class="sidebar__element sidebar__element--border">
+                <div class="sidebar__element-title sidebar__element-title--mobile">Фильтры</div>
+                <div class="sidebar__element-wrapper show">
+                    <div class="sidebar__element  sidebar__element--mobile">
+                      <div class="sidebar__element-title arrow--active">Материал жилы</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span"> Медь </span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span"> Алюминий </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Броня и экран</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Без брони и экрана</span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Бронированный</span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">Экранированный</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Тип кабеля</div>
+                      <div class="sidebar__element-wrapper show">
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">НГ <span class="sidebar__element-span--gray"> (негорючий)</span></span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">
+                            LS <span class="sidebar__element-span--gray">(с пониженным дымо- и газо-выделением)</span>
+                          </span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">FR <span class="sidebar__element-span--gray"> (огнестойкий)</span></span>
+                        </label>
+                        <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="sidebar__element-span">LTX <span class="sidebar__element-span--gray"> (низкотоксичный)</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Количество жил</div>
+                      <div class="sidebar__element-wrapper show">
+                        <div class="sidebar__element-container">
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">1</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">2</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">3</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">3+N</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">4</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">5</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sidebar__element">
+                      <div class="sidebar__element-title arrow--active">Сечение</div>
+                      <div class="sidebar__element-wrapper show">
+                        <div class="sidebar__element-container">
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">1,5</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">2,5</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">4</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">6</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">10</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">16</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">25</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">35</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">50</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">70</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">95</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">120</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">150</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">185</span>
+                          </label>
+                          <label class="sidebar__element-label sidebar__element-number">
+                            <input type="checkbox" class="sidebar__element-counter checkbox-number">
+                            <span class="checkbox-number__text">240</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="products__card-button button-cart products__card-button-more hide">
-                  <a href="">
-                    В корзину
-                    <svg>
-                      <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
-                    </svg>
-                  </a>
-                </div>
               </div>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">На складе:</span>
-              <span>122м</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Код ЕА:</span>
-              <span>9454519</span>
-            </div>
-            <div class="products__card-text">
-              <span class="products__card-text--grey">Категория:</span>
-              <span class="products__card-text--orange">Кабель</span>
+              
             </div>
           </div>
-        </div>
-      </div>
-      <!--card-info-->
-      <div class="card-info">
-        <div class="card-info__wrap">
-          <div class="container">
-            <div class="card-info__titles">
-              <div class="card-info__title card-info__title--active" tab-index="1">
-                Характеристики
-              </div>
-              <div class="card-info__title" tab-index="2">
-                Описание
-              </div>
-              <div class="card-info__title" tab-index="3">
-                Условия эксплуатации
-              </div>
+          <div class="col-12 col-sm-9">
+            <div class="sidebar-mobile">
             </div>
-          </div>
-        </div>
-        <div class="card-info__mobile-content">
-          <div class="container">
-            <div class="card-info__mobile-wrap">
-              <div class="card-info__mobile-content-title arrow--active" tab-index="1">Характеристики</div>
-              <div class=" card-info__text-wrap " tab-index="1">
-                <div class="card-info__text-content">
-                  <div class="card-info__text-wrap--others">
-                    <p class="card-info__text">
-                      Бренд: IEK
-                    </p>
-                    <p class="card-info__text">
-                      Артикул: MVA21-3-050-C
-                    </p>
-                    <p class="card-info__text">
-                      Серия: BA47-29M
-                    </p>
-                    <p class="card-info__text">
-                      Макс. момент затяжки зажимов главной цепи: трехполюсный Нм
-                    </p>
-                    <p class="card-info__text">
-                      Количество полюсов: 3
-                    </p>
-                    <p class="card-info__text">
-                      Номинальный ток: 50 А
-                    </p>
-                    <p class="card-info__text">
-                      Характеристика срабатывания - кривая тока: C
-                    </p>
-                    <p class="card-info__text">
-                      Номинальное рабочее напряжение: 400 В
-                    </p>
-                    <p class="card-info__text">
-                      Отключающая способность: 4,5 кА
-                    </p>
-                    <p class="card-info__text">
-                      Ширина по количеству модульных расстояний: 54 мм
-                    </p>
-                    <p class="card-info__text">
-                      Максимальное сечение входящего кабеля: 25 мм2
-                    </p>
-                    <p class="card-info__text">
-                      Номинальное напряжение постоянного тока: ≤ 48 В
-                    </p>
-                    <p class="card-info__text">
-                      Класс токоограничения: 3
-                    </p>
-                    <p class="card-info__text">
-                      Частота: 50 Гц
-                    </p>
-                    <p class="card-info__text">
-                      Степень защиты - IP: IP20
-                    </p>
-                    <p class="card-info__text">
-                      Тип монтажа: на DIN-рейку
-                    </p>
-                  </div>
-                  <div class="">
-                    <p class="card-info__text">
-                      Климатическое исполнение: УХЛ4
-                    </p>
-                    <p class="card-info__text">
-                      Тип расцепителя: Тепловой, электромагнитный
-                    </p>
-                    <p class="card-info__text">
-                      Сфера применения: Промышленное и бытовое
-                    </p>
-                    <p class="card-info__text">
-                      Общее количество полюсов: 3
-                    </p>
-                    <p class="card-info__text">
-                      Тип напряжения: Перемен./постоян. (AC/DC)
-                    </p>
-                    <p class="card-info__text">
-                      Монтажная глубина ниши: 75 мм
-                    </p>
-                    <p class="card-info__text">
-                      Тип подключения: Винтовое соединение
-                    </p>
-                    <p class="card-info__text">
-                      Количество силовых полюсов: 3
-                    </p>
-                    <p class="card-info__text">
-                      Наличие теплового расцепителя: Да
-                    </p>
-                    <p class="card-info__text">
-                      Наличие электромагнитного расцепителя: Да
-                    </p>
-                    <p class="card-info__text">
-                      Наличие электронного расцепителя: Нет
-                    </p>
-                    <p class="card-info__text">
-                      Наличие дифференциального расцепителя: Нет
-                    </p>
-                    <p class="card-info__text">
-                      Время срабатывания расцепителя в зоне КЗ: 0,1 с
-                    </p>
-                    <p class="card-info__text">
-                      Тип монтажной рейки: 35x7.5
-                    </p>
-                    <p class="card-info__text">
-                      Ток предохранителя (aM): трехфазный А
-                    </p>
+            <div class="sorting">
+              <div class="sorting__container">
+                <div class="sorting__price">
+                  <div class="sorting__price-text">Сортировка: </div>
+                  <div class="sorting__price-dropdown custom__select">
+                    <div class="custom__select-title ">по возрастанию цены</div>
+                    <div class="custom__select-content hide">
+                      <div class="custom__select-text">по возрастанию цены</div>
+                      <div class="custom__select-text">по убыванию цены</div>
+                      <div class="custom__select-text">по возрастанию цены</div>
+                      <div class="custom__select-text">по убыванию цены</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="container">
-            <div class="card-info__mobile-wrap">
-              <div class="card-info__mobile-content-title" tab-index="2">Описание</div>
-              <div class="card-info__text-wrap hide" tab-index="2">
-                <div class="card-info__text-title">Основные назначения автомата 3р 50А C BA47-29M IEK (MVA21-3-050-C)
+                <div class="sorting__wrapper">
+                  <div class="sorting__availability">
+                    <label class="sorting__availability-label">
+                      <input type="checkbox" class="checkbox sorting__availability-checkbox ">
+                      <span class="sorting__availability-span">В наличии</span>
+                    </label>
+                  </div>
+                  <div class="sorting__view">
+                    <div class="sorting__view-button sorting__view-button--mobile">
+                      <label class="sorting__view-label">
+                        <input type="radio" class="sorting__view-checkbox" name="view">
+                        <div class="sorting__view-icon">
+                          <svg>  
+                            <use xlink:href="./assets/sprite.svg#sorting_1"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="sorting__view-button">
+                      <label class="sorting__view-label">
+                        <input type="radio" class="sorting__view-checkbox" name="view">
+                        <div class="sorting__view-icon">
+                          <svg>  
+                            <use xlink:href="./assets/sprite.svg#sorting_2"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                    <div class="sorting__view-button">
+                      <label class="sorting__view-label">
+                        <input type="radio" class="sorting__view-checkbox" name="view" checked>
+                        <div class="sorting__view-icon">
+                          <svg>  
+                            <use xlink:href="./assets/sprite.svg#sorting_3"></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <p class="card-info__text">
-                  ⬝ Автомат трехфазный 3п ИЭК предназначен для защиты распределительных и групповых цепей, имеющих
-                  различную нагрузку.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Рекомендуется к применению в вводно-распределительных устройствах для жилых и общественных зданий и
-                  на производстве.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Выключатель награжден золотой медалью 15-й международной выставки "Электро-2006" в номинации "Лучшее
-                  электрооборудование" за решение, обеспечивающее электробезопасность в жилых домах и на производстве,
-                  высокие технические и эргономические характеристики.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Автоматический выключатель для защиты от сверхтоков предназначен для работы в однофазных или
-                  трехфазных электрических сетях переменного тока номинальным напряжением не более 400 В частотой 50 Гц.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Выключатель соответствуют ГОСТ Р 50345 (МЭК 60898-1), «Техническому регламенту о требованиях
-                  пожарной безопасности» ФЗ № 123-ФЗ.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Автоматический выключатель 3р 50А IEK выполняет функции автоматического отключения электроустановки
-                  при появлении сверхтоков (перегрузки или короткого замыкания) и оперативного управления участками
-                  электрических цепей.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Основная область применения выключателя: распределительные щиты, групповые щитки (квартирные и
-                  этажные), отдельные потребители электроэнергии.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Технические особенности авт. выкл. BA47-29M 3р 50А 4,5кА C ИЭК
-                </p>
-
-                <div class="card-info__text-title card-info__text-title--padding">Защита механизма теплового расцепителя
-                  плексигласовой вставкой от изменения заводских настроек.</div>
-                <p class="card-info__text">
-                  ⬝ Индикатор состояния главной цепи предоставляет точную информацию о состоянии контактов независимо от
-                  положения рукоятки.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Конструкция выключателя предусматривает два типа защиты от перегрузки и короткого замыкания, что
-                  существенно повышает защищённость распределительных и групповых цепей.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Наплавка из серебросодержащего композита повышает износостойкость контактной группы и снижает
-                  переходное сопротивление.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Насечки на контактных зажимах снижают тепловые потери и увеличивают механическую устойчивость
-                  соединения.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Подключение шины к автоматическому выключателю позволяет снизить переходное сопротивление и
-                  обеспечивает 2- или 3-проводное присоединение линии для равномерного распределения нагрузки шины.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Специальная конструкция корпуса с увеличенной теплоотдачей позволяет поднять нагрузочную способность
-                  на 10%.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Увеличенный размер головки винта с универсальным шлицом (+ , –) облегчает монтаж и предотвращает
-                  выпадение винтов при установке.
-                </p>
-                <p class="card-info__text">
-                  ⬝ Унифицированный корпус с возможностью подключения дополнительных устройств не требует разбора,
-                  возможность самостоятельного подключения.
-                </p>
               </div>
             </div>
-          </div>
-
-          <div class="container">
-            <div class="card-info__mobile-wrap">
-              <div class="card-info__mobile-content-title" tab-index="3">Расшифровка</div>
-              <div class="card-info__text-wrap hide" tab-index="3">
-                <div class="card-info__text-title ">Условия эксплуатации</div>
-                <p class="card-info__text">
-                  ⬝ диапазон рабочих температур - от минус 40 до 50 "С;
-                </p>
-                <p class="card-info__text">
-                  ⬝ высота над уровнем моря - не более 2000 м;
-                </p>
-                <p class="card-info__text">
-                  ⬝ относительная влажность - 80% при температуре 25'С;
-                </p>
-                <p class="card-info__text">
-                  ⬝ рабочее положение - вертикальное с возможным отклонением на 90";
-                </p>
-                <p class="card-info__text">
-                  ⬝ группа механического исполнения - М4 по ГОСТ 17516.1;
-                </p>
-                <p class="card-info__text">
-                  ⬝ автомат 3р 50А ИЭК не требуют специального обслуживания в процессе эксплуатации.
-                </p>
-
-
-                <div class="card-info__text-title card-info__text-title--padding">Правила монтажа</div>
-                <p class="card-info__text">
-                  1. ВНИМАНИЕ! Перед монтажом, обслуживанием или ремонтом убедитесь в отсутствии напряжения в сети.
-                </p>
-                <p class="card-info__text">
-                  2. Автоматический выключатель 3p BA47-29M IEK должен устанавливаться в распределительные щиты со
-                  степенью защиты от пыли и влаги не менее 1Р30 по ГОСТ 14254 (МЭК 529) и классом защиты от поражения
-                  электрическим током не ниже I по ГОСТ 12.2.007.0 (МЭК 536).
-                </p>
-                <p class="card-info__text">
-                  3. Коммутационное положение выключателя указано на рукоятке управления символами: «О» - отключенное
-                  положение; «I» - включенное положение.
-                </p>
-                <p class="card-info__text">
-                  4. РЕКОМЕНДУЕТСЯ один раз в шесть месяцев подтягивать контактные винтовые зажимы, давление которых со
-                  временем ослабевает из-за циклических изменений температуры окружающей среды и пластической деформации
-                  металла зажимаемых проводников.
-                </p>
-
-
-                <div class="card-info__text-title card-info__text-title--padding">Условия хранения автоматический
-                  выключатель трехполюсный 50А</div>
-                <p class="card-info__text">
-                  ⬝ В упаковке изготовителя;
-                </p>
-                <p class="card-info__text">
-                  ⬝ В помещениях с естественной вентиляцией при температуре окружающего воздуха от минус 45 до 50 "С и
-                  относительной влажности не более 70%;
-                </p>
-                <p class="card-info__text">
-                  ⬝ Допускается хранение при относительной влажности до 95% при 25 ‘С.
-                </p>
-
-
-                <div class="card-info__text-title card-info__text-title--padding">Условия транспортирования</div>
-                <p class="card-info__text">
-                  любым видом крытого транспорта в упаковке изготовителя, обеспечивающим предохранение упакованных
-                  выключателей от механических повреждений, загрязнения и попадания влаги.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--watched-->
-      <div class="container">
-        <div class="watched">
-          <div class="watched__content">
-            <div class="watched__title">Вы смотрели</div>
-            <div class="watched__container">
-              <div class="watched__wrapper swiper-wrapper">
-                <div class="products-card swiper-slide">
-                  <div class="products-card__availability">
-                    <div class="products__card-text">
+            <div class="products">
+              <div class="products__card-container">
+                <div class="products-shortcard">
+                  <div class="products-shortcard__image">
+                    <img src="./assets/images/shortcard-image.png" alt="">
+                  </div>
+                  <div class="products-shortcard__title">ВВГнг 5х50</div>
+                  <div class="products-shortcard__wrapper">
+                    <div class="products__card-text products-shortcard__text">
                       <span class="products__card-text--grey">На складе:</span>
                       <span>320м</span>
                     </div>
-                  </div>
-                  <div class="products-card__image">
-                    <img src="./assets/images/product-card-new-1.png" alt="">
-                  </div>
-                  <div class="products__card-specification">
-                    <div class="products__card-title">ВВГнг 5х95</div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Бренд:</span>
-                      <span class="products__card-text--orange">IEK</span>
+                    <div class="products-card__price products-shortcard__price">
+                      222765.00 руб/м
                     </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Артикул:</span>
-                      <span>МКМ-15Е</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Код ЕА:</span>
-                      <span>9454519</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Категория: </span>
-                      <span class="products__card-text--orange">Кабель</span>
-                    </div>
-                  </div>
-                  <div class="products-card__price">
-                    765.00 руб/м
-                  </div>
-
-                  <div class="products__wrapper products__wrapper-card">
-                    <div class="products__card-counter products__card-counter--clearfix">
-                      <div
-                        class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">
-                        -</div>
-                      <div
-                        class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">
-                        1</div>
-                      <div
-                        class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">
-                        +</div>
-                    </div>
-                    <div class="products__card-info">
-                      <div class="card__buttons">
-                        <div class=" button-buy button-buy--small">
-                          <span>
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class=" button-cart button-cart--small hide">
-                          <a href="">
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="products-card swiper-slide">
-                  <div class="products-card__availability">
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">На складе:</span>
-                      <span>700м</span>
-                    </div>
-                  </div>
-                  <div class="products-card__image">
-                    <img src="./assets/images/product-card-new-1.png" alt="">
-                  </div>
-                  <div class="products__card-specification">
-                    <div class="products__card-title">ВВГнг 5х95</div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Бренд:</span>
-                      <span class="products__card-text--orange">IEK</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Артикул:</span>
-                      <span>МКМ-15Е</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Код ЕА:</span>
-                      <span>9454519</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Категория: </span>
-                      <span class="products__card-text--orange">Кабель</span>
-                    </div>
-                  </div>
-                  <div class="products-card__price">
-                    765.00 руб/м
-                  </div>
-                  <div class="products__wrapper products__wrapper-card">
-                    <div class="products__card-counter products__card-counter--clearfix">
-                      <div
-                        class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">
-                        -</div>
-                      <div
-                        class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">
-                        1</div>
-                      <div
-                        class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">
-                        +</div>
-                    </div>
-                    <div class="products__card-info">
-                      <div class="card__buttons">
-                        <div class=" button-buy button-buy--small">
-                          <span>
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class=" button-cart button-cart--small hide">
-                          <a href="">
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
+                    <div class="products__card-counter  products__card-counter--clearfix products-shortcard__counter">
+                      <div class="products__card-counter-minus shortcard-minus  products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">-</div>
+                      <div class="products__card-counter-num  shortcard-value products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">0</div>
+                      <div class="products__card-counter-plus  shortcard-plus products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">+</div>
                     </div>
                   </div>
                 </div>
-                <div class="products-card swiper-slide">
-                  <div class="products-card__availability">
-                    <div class="products__card-text">
+                <div class="products-shortcard">
+                  <div class="products-shortcard__image">
+                    <img src="./assets/images/shortcard-image.png" alt="">
+                  </div>
+                  <div class="products-shortcard__title">ВВГнг 5х50</div>
+                  <div class="products-shortcard__wrapper">
+                    <div class="products__card-text products-shortcard__text">
                       <span class="products__card-text--grey">На складе:</span>
-                      <span>500м</span>
+                      <span>320м</span>
                     </div>
-                  </div>
-                  <div class="products-card__image">
-                    <img src="./assets/images/product-card-new-1.png" alt="">
-                  </div>
-                  <div class="products__card-specification">
-                    <div class="products__card-title">ВВГнг 5х95</div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Бренд:</span>
-                      <span class="products__card-text--orange">IEK</span>
+                    <div class="products-card__price products-shortcard__price">
+                      222765.00 руб/м
                     </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Артикул: </span>
-                      <span>МКМ-15Е</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Код ЕА:</span>
-                      <span>9454519</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Категория: </span>
-                      <span class="products__card-text--orange">Кабель</span>
-                    </div>
-                  </div>
-                  <div class="products-card__price">
-                    765.00 руб/м
-                  </div>
-                  <div class="products__wrapper products__wrapper-card">
-                    <div class="products__card-counter products__card-counter--clearfix">
-                      <div
-                        class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">
-                        -</div>
-                      <div
-                        class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">
-                        1</div>
-                      <div
-                        class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">
-                        +</div>
-                    </div>
-                    <div class="products__card-info">
-                      <div class="card__buttons">
-                        <div class=" button-buy button-buy--small">
-                          <span>
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class=" button-cart button-cart--small hide">
-                          <a href="">
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="products-card swiper-slide">
-                  <div class="products-card__availability">
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">На складе:</span>
-                      <span>300м</span>
-                    </div>
-                  </div>
-                  <div class="products-card__image">
-                    <img src="./assets/images/product-card-new-1.png" alt="">
-                  </div>
-                  <div class="products__card-specification">
-                    <div class="products__card-title">ВВГнг 5х95</div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Бренд:</span>
-                      <span class="products__card-text--orange">IEK</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Артикул: </span>
-                      <span>МКМ-15Е</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Код ЕА:</span>
-                      <span>9454519</span>
-                    </div>
-                    <div class="products__card-text">
-                      <span class="products__card-text--grey">Категория: </span>
-                      <span class="products__card-text--orange">Кабель</span>
-                    </div>
-                  </div>
-                  <div class="products-card__price">
-                    765.00 руб/м
-                  </div>
-                  <div class="products__wrapper products__wrapper-card">
-                    <div class="products__card-counter products__card-counter--clearfix">
-                      <div
-                        class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">
-                        -</div>
-                      <div
-                        class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">
-                        1</div>
-                      <div
-                        class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">
-                        +</div>
-                    </div>
-                    <div class="products__card-info">
-                      <div class="card__buttons">
-                        <div class=" button-buy button-buy--small">
-                          <span>
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart"></use>
-                            </svg>
-                          </span>
-                        </div>
-                        <div class=" button-cart button-cart--small hide">
-                          <a href="">
-                            <svg>
-                              <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
+                    <div class="products__card-counter  products__card-counter--clearfix products-shortcard__counter">
+                      <div class="products__card-counter-minus shortcard-minus  products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">-</div>
+                      <div class="products__card-counter-num  shortcard-value products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">0</div>
+                      <div class="products__card-counter-plus  shortcard-plus products__card-counter-element products-shortcard__counter-element products__card-counter-element--vika">+</div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="watched-button watched-button-prev"></div>
-              <div class="watched-button watched-button-next"></div>
+            </div>
+            <div class="page-pagination">
+              <div class="page-pagination__container">
+                <ul class="page-pagination__list">
+                  <li class="page-pagination__item"><a href=""><img src="./assets/icon/pagination-arrow-left.svg" alt=""></a></li>
+                  <li class="page-pagination__item page-pagination__item--current"><span>1</span></li>
+                  <li class="page-pagination__item"><a href="">2</a></li>
+                  <li class="page-pagination__item"><a href="">3</a></li>
+                  <li class="page-pagination__item"><a href="">...</a></li>
+                  <li class="page-pagination__item"><a href="">36</a></li>
+                  <li class="page-pagination__item"><a href=""><img src="./assets/icon/pagination-arrow-right.svg" alt=""></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
+        <!--watched-->
+        <div class="container">
+          <div class="watched">
+              <div class="watched__content">
+                <div class="watched__title">Вы смотрели</div>
+                <div class="watched__container">
+                  <div class="watched__wrapper swiper-wrapper">
+                    <div class="products-card swiper-slide">
+                      <div class="products-card__availability">
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">На складе:</span>
+                          <span>320м</span>
+                        </div>
+                      </div>
+                      <div class="products-card__image">
+                        <img src="./assets/images/product-card-new-1.png" alt="">
+                      </div>
+                      <div class="products__card-specification">
+                        <div class="products__card-title">ВВГнг 5х95</div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Бренд:</span>
+                          <span class="products__card-text--orange">IEK</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Артикул:</span>
+                          <span>МКМ-15Е</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Код ЕА:</span>
+                          <span>9454519</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Категория: </span>
+                          <span class="products__card-text--orange">Кабель</span>
+                        </div>
+                      </div>
+                      <div class="products-card__price">
+                        765.00 руб/м
+                      </div>
+  
+                      <div class="products__wrapper products__wrapper-card">
+                        <div class="products__card-counter products__card-counter--clearfix">
+                          <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                          <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                          <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                        </div>
+                        <div class="products__card-info">
+                        <div class="card__buttons">
+                          <div class=" button-buy button-buy--small">
+                            <span>
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class=" button-cart button-cart--small hide">
+                            <a href="">
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+  
+                    </div>
+                    <div class="products-card swiper-slide">
+                      <div class="products-card__availability">
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">На складе:</span>
+                          <span>700м</span>
+                        </div>
+                      </div>
+                      <div class="products-card__image">
+                        <img src="./assets/images/product-card-new-1.png" alt="">
+                      </div>
+                      <div class="products__card-specification">
+                        <div class="products__card-title">ВВГнг 5х95</div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Бренд:</span>
+                          <span class="products__card-text--orange">IEK</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Артикул:</span>
+                          <span>МКМ-15Е</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Код ЕА:</span>
+                          <span>9454519</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Категория: </span>
+                          <span class="products__card-text--orange">Кабель</span>
+                        </div>
+                      </div>
+                      <div class="products-card__price">
+                        765.00 руб/м
+                      </div>
+                      <div class="products__wrapper products__wrapper-card">
+                        <div class="products__card-counter products__card-counter--clearfix">
+                          <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                          <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                          <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                        </div>
+                        <div class="products__card-info">
+                        <div class="card__buttons">
+                          <div class=" button-buy button-buy--small">
+                            <span>
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class=" button-cart button-cart--small hide">
+                            <a href="">
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                      <div class="products-card__availability">
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">На складе:</span>
+                          <span>500м</span>
+                        </div>
+                      </div>
+                      <div class="products-card__image">
+                        <img src="./assets/images/product-card-new-1.png" alt="">
+                      </div>
+                      <div class="products__card-specification">
+                        <div class="products__card-title">ВВГнг 5х95</div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Бренд:</span>
+                          <span class="products__card-text--orange">IEK</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Артикул: </span>
+                          <span>МКМ-15Е</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Код ЕА:</span>
+                          <span>9454519</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Категория: </span>
+                          <span class="products__card-text--orange">Кабель</span>
+                        </div>
+                      </div>
+                      <div class="products-card__price">
+                        765.00 руб/м
+                      </div>
+                      <div class="products__wrapper products__wrapper-card">
+                        <div class="products__card-counter products__card-counter--clearfix">
+                          <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                          <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                          <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                        </div>
+                        <div class="products__card-info">
+                        <div class="card__buttons">
+                          <div class=" button-buy button-buy--small">
+                            <span>
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class=" button-cart button-cart--small hide">
+                            <a href="">
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="products-card swiper-slide">
+                      <div class="products-card__availability">
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">На складе:</span>
+                          <span>300м</span>
+                        </div>
+                      </div>
+                      <div class="products-card__image">
+                        <img src="./assets/images/product-card-new-1.png" alt="">
+                      </div>
+                      <div class="products__card-specification">
+                        <div class="products__card-title">ВВГнг 5х95</div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Бренд:</span>
+                          <span class="products__card-text--orange">IEK</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Артикул: </span>
+                          <span>МКМ-15Е</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Код ЕА:</span>
+                          <span>9454519</span>
+                        </div>
+                        <div class="products__card-text">
+                          <span class="products__card-text--grey">Категория: </span>
+                          <span class="products__card-text--orange">Кабель</span>
+                        </div>
+                      </div>
+                      <div class="products-card__price">
+                        765.00 руб/м
+                      </div>
+                      <div class="products__wrapper products__wrapper-card">
+                        <div class="products__card-counter products__card-counter--clearfix">
+                          <div class="products__card-counter-minus products__card-counter-element products__card-counter-element--vika">-</div>
+                          <div class="products__card-counter-num products__card-counter-element products__card-counter-element--vika">1</div>
+                          <div class="products__card-counter-plus products__card-counter-element products__card-counter-element--vika">+</div>
+                        </div>
+                        <div class="products__card-info">
+                        <div class="card__buttons">
+                          <div class=" button-buy button-buy--small">
+                            <span>
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart"></use>
+                              </svg>
+                            </span>
+                          </div>
+                          <div class=" button-cart button-cart--small hide">
+                            <a href="">
+                              <svg>
+                                <use xlink:href="./assets/sprite.svg#cart-arrow"></use>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  
+                  <div class="watched-button watched-button-prev"></div>
+                  <div class="watched-button watched-button-next"></div>
+                </div>
+              </div>
+          </div>
+        </div>
     </main>
 
     <!--FOOTER-->
@@ -2314,14 +2227,12 @@
               <div class="footer__title footer__dropdown">Кампания</div>
               <ul class="footer__nav-list">
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
-                    доставки</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и доставки</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Новости</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика
-                    конфиденциальности </a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Политика конфиденциальности </a></li>
               </ul>
             </div>
           </div>
@@ -2330,8 +2241,7 @@
               <div class="footer__title footer__dropdown">Каталог</div>
               <ul class="footer__nav-list">
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
-                    доставки</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и доставки</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши партнеры</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Акции</a></li>
@@ -2347,8 +2257,7 @@
               <div class="footer__title footer__dropdown">Услуги</div>
               <ul class="footer__nav-list">
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">О компании</a></li>
-                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и
-                    доставки</a></li>
+                <li class="footer__nav-item"><a href="" class="footer__nav-link">Условия оплаты и доставки</a></li>
                 <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
               </ul>
             </div>
@@ -2398,7 +2307,6 @@
       </div>
     </footer>
   </div>
-  <!--POP-UP'S-->
   <!--callback-->
   <div class="popup-callback hide">
     <div class="popup-callback__content">
@@ -2406,16 +2314,14 @@
         <img src="./assets/icon/close.svg" alt="">
       </div>
       <div class="popup-callback__title">Заказать обратный звонок</div>
-      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время
-      </div>
-      <form action="" class="popup-callback__form form">
+      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время</div>
+      <form action="" class="popup-callback__form">
         <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
-        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
+        <button type="submit" class="popup-callback__form-button button-default">Отправить</button>
       </form>
     </div>
   </div>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>

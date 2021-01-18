@@ -72,30 +72,81 @@ if (footerToggle && footerList) {
 
 
 //counter cards
+
 let counterContainer = document.querySelectorAll('.products__card-counter')
+if(counterContainer){
+  counters(counterContainer, 1)
+}
 
-counterContainer.forEach(container => {
-  let counterPlus = container.querySelector('.products__card-counter-plus')
-  let counterMinus = container.querySelector('.products__card-counter-minus')
-  let counterNum = container.querySelector('.products__card-counter-num')
-  let counter = 1
 
-  counterPlus.addEventListener('click', plus)
-  counterMinus.addEventListener('click', minus)
+//counter shortcard
+let counterShortContainer = document.querySelectorAll('.products-shortcard')
+if(counterShortContainer){
+  counters(counterShortContainer, 0)
+}
 
-  function plus() {
-    counter++
-    counterNum.textContent = counter
-  }
-
-  function minus() {
-    counter--
-    if (counter <= 0) {
-      counter = 0
+function counters(container, count){
+  container.forEach(container => {
+    let counterPlus = container.querySelector('.products__card-counter-plus')
+    let counterMinus = container.querySelector('.products__card-counter-minus')
+    let counterNum = container.querySelector('.products__card-counter-num')
+    let counter = count
+  
+    counterPlus.addEventListener('click', plus)
+    counterMinus.addEventListener('click', minus)
+  
+    function plus() {
+      counter++
+      counterNum.textContent = counter
     }
-    counterNum.textContent = counter
-  }
-})
+  
+    function minus() {
+      counter--
+      if (counter <= 0) {
+        counter = 0
+      }
+      counterNum.textContent = counter
+    }
+  })
+}
+
+
+//shortcard logic
+let valueshort = 0;
+
+if(counterShortContainer){
+  counterShortContainer.forEach(container => {
+    let shortCardMinus = container.querySelector('.shortcard-minus')
+    let shortCardPlus = container.querySelector('.shortcard-plus')
+    let shortCardValue = container.querySelector('.shortcard-value')
+
+    shortCardPlus.addEventListener('click', () => {
+      showCount(shortCardValue)
+      valueshort++
+      console.log(valueshort)
+
+    })
+
+    shortCardMinus.addEventListener('click', () => {
+      showCount(shortCardValue)
+      valueshort--
+      console.log(valueshort)
+      if(valueshort >= 0){
+        valueshort = 0
+      }
+    })
+  })
+}
+
+function showCount(value){
+  cartCounter.classList.remove('hide')
+  valueshort += +value.textContent
+  cartCounter.textContent = valueshort
+  console.log(valueshort)
+}
+
+
+
 /// card-info
 let infoTitle = document.querySelectorAll('.card-info__title')
 let infoWrap = document.querySelectorAll('.card-info__text-wrap')
@@ -125,8 +176,6 @@ if (infoTitle) {
     })
   }
 }
-
-
 
 function highlights(select) {
   if (selected) {
@@ -402,8 +451,6 @@ $(document).ready(function () {
 
 
 // card-buttons-logic 
-
-
 let buttonBuy = document.querySelectorAll('.button-buy')
 let cartCounter = document.querySelector('.fixed__cart-counter')
 
@@ -433,6 +480,7 @@ if (buttonBuy) {
     })
   })
 }
+
 
 
 //dropdown sidebar
