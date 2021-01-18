@@ -68,6 +68,13 @@
             font-size: 14px;
             line-height: 150%;
         } 
+        &-bold{
+            font-weight: 600;
+        }
+        &-orange{
+            color: $orangeF1;
+            font-weight: 600;
+        }
     }
     &__mobile-content{
         @media(max-width:540px){
