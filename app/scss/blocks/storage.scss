@@ -98,6 +98,18 @@
                 padding-top: 5px;
             }
         }
+        &--orange{
+            color: $orangeF1;
+        }
+        &--grey{
+            color:$grey77;
+        }
+        &--time{
+            display: flex;
+        }
+        &--date{
+            padding-right: 20px;
+        }
         &--bold{
             font-weight: 500;
         }
@@ -130,6 +142,21 @@
         }
         &-phone{
             width: 160px;
+        }
+        &-number{
+            width: 290px;
+        }
+        &-time{
+            width: 290px;
+        }
+        &-status{
+            width: 510px;
+        }
+        &-total{
+            width: 93px;
+            &-end{
+                text-align: end;
+            }
         }
     }
     &__item{
