@@ -1,5 +1,4 @@
 .header{
-  
   &__top{
     background: linear-gradient(to right, $white 50%, $whiteF7 50%);
     padding-top: 20px;
@@ -163,19 +162,23 @@
       &:hover{
         background-color: $whiteEC;;
       }
+      &--orange{
+        color: $orangeF1;
+        margin-right: 20px;
+      }
     }
     &-menu{
+      width: 159px;
       color: $orangeF1;
       font-weight: 500;
       background-color: $whiteEC;
       position: relative;
       cursor: pointer;
-      
       &::before{
         content: '';
         position: absolute;
         top:58%;
-        right: 6px;
+        right: 35px;
         transform: translateY(-50%) ;
         width: 12px;
         height: 12px;
