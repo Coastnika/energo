@@ -201,12 +201,26 @@ if (calculatorDeliveryTrigger) {
   showModal(calculatorDeliveryTrigger, calculatorDeliveryContent, calculatorDeliveryClose, '.calculator-delivery__content')
 }
 
-let callbackTrigger = document.querySelector('#infoCall')
+let callbackTrigger = document.querySelectorAll('.infoCall')
 let callbackContent = document.querySelector('.popup-callback')
 let callbackClose = document.querySelector('.popup-callback__close')
 
 if (callbackTrigger) {
-  showModal(callbackTrigger, callbackContent, callbackClose, '.popup-callback__content')
+  // showModal(callbackTrigger, callbackContent, callbackClose, '.popup-callback__content')
+  callbackTrigger.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      callbackContent.classList.remove('hide')
+    })
+  })
+  callbackClose.addEventListener('click', () => {
+    callbackContent.classList.add('hide')
+  })
+
+  callbackContent.addEventListener('click', (e) => {
+    if (!e.target.closest('.popup-callback__content')) {
+      callbackContent.classList.add('hide')
+    }
+  })
 }
 
 //custom select
