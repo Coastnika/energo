@@ -259,15 +259,24 @@
   border: 1px solid $whiteF2;
   border-radius: 6px;
   cursor: pointer;
+  
   &:hover{
     border: 1px solid $orangeF1;
   }
   &:hover &__title{
     color: $orangeF1;
   }
+  &__mobile{
+    display: flex;
+    align-items: center;
+    @media(max-width: 540px){
+      display: block
+    }
+  }
   &__image{
     width: 115px;
     margin-right: 20px;
+    order: 1;
     & img{
       width: 100%;
     }
@@ -276,16 +285,27 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    order: 3;
+    @media(max-width: 540px){
+      display: block
+    }
   }
   &__title{
     width: 243px;
     font-weight: 600;
     font-size: 18px;
     line-height: 120%;
+    order: 2;
+    @media(max-width:540px){
+      display: none;
+    }
   }
   &__text{
     margin-right: 20px;
     padding-bottom: 0px;
+    @media(max-width:540px){
+      display: none;
+    }
   }
   &__price{
     margin-right: 20px;
