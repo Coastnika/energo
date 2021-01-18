@@ -53,6 +53,14 @@ function dropDown(toggle, list) {
   })
 }
 
+//dropdown mobile-menu
+let mobileSubmenuToggle = document.querySelectorAll('.mobile-menu__dropdown')
+let mobileSubmenuContent = document.querySelectorAll('.mobile-menu__content')
+
+if (mobileSubmenuToggle && mobileSubmenuContent) {
+  dropDown(mobileSubmenuToggle, mobileSubmenuContent)
+}
+
 // dropdown footer
 let footerToggle = document.querySelectorAll('.footer__dropdown')
 let footerList = document.querySelectorAll('.footer__nav-list')
@@ -183,6 +191,14 @@ function showModal(trigger, content, close, closestParent) {
       content.classList.add('hide')
     }
   })
+}
+
+let mobileMenuTrigger = document.querySelector('.header__toggle')
+let mobileMenuContent = document.querySelector('.mobile-menu')
+let mobileMenuClose = document.querySelector('.mobile-menu__close')
+
+if (mobileMenuTrigger) {
+  showModal(mobileMenuTrigger, mobileMenuContent, mobileMenuClose, '.mobile-menu')
 }
 
 let calculatorWeightTrigger = document.querySelector('#calculatorWeight')
