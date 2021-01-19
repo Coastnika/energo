@@ -32,7 +32,7 @@ function html(){
 
 function js(){
   return src("app/js/app.js")
-      .pipe(babel())
+      // .pipe(babel())
       .pipe(rename('script.js'))
       .pipe(dest("app/js/"))
 }
@@ -44,7 +44,7 @@ function concatJs() {
       'app/js/script.js' // Всегда в конце
   ])
       .pipe(concat('script.js'))
-      .pipe(uglify()) // Минимизировать весь js (на выбор)
+      // .pipe(uglify()) // Минимизировать весь js (на выбор)
       .pipe(dest('dist/js'))
       .pipe(browsersync.stream());
 }
@@ -52,7 +52,7 @@ function concatJs() {
 function css(){
   return src('app/scss/*.scss')
       .pipe(sass())
-      .pipe(cleanCSS())
+      // .pipe(cleanCSS())
       .pipe(autoprefixer())
       .pipe(dest('app/css/'))
       .pipe(dest('dist/css'))
