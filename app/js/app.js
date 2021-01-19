@@ -454,11 +454,12 @@ if (buttonBuy) {
         buttonCart.classList.remove('hide')
       }
 
-      let cardNum = buttonsContainer.querySelector('.products__card-counter-num')
+      // var cardNum = buttonsContainer.querySelector('.products__card-counter-num');
+      // counterValue += +cardNum.textContent;
 
-      cartCounter.classList.remove('hide')
-      counterValue += +cardNum.textContent
-      cartCounter.textContent = counterValue
+      cartCounter.classList.remove('hide');
+      counterValue++
+      cartCounter.textContent = counterValue;
     })
   })
 }

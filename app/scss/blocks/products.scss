@@ -205,6 +205,9 @@
   
   &:hover{
     border: 1px solid $orangeF1;
+    @media(max-width:540px){
+      border: 1px solid $whiteF2;
+    }
   }
   &__container{
 
@@ -249,6 +252,9 @@
   }
   &:hover .products__card-title{
     color: $orangeF1;
+    @media(max-width:540px){
+      color: $black33;
+    }
   }
 }
 
