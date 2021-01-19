@@ -437,14 +437,11 @@ let buttonBuy = document.querySelectorAll('.button-buy')
 let cartCounter = document.querySelector('.fixed__cart-counter')
 
 let counterValue = 0;
-// let value = 0;
 
 if (buttonBuy) {
   buttonBuy.forEach(button => {
     button.addEventListener('click', function () {
-      // value++
-      // localStorage.counter = value;
-      // console.log(localStorage.counter)
+      let value = 0;
       let buttonsContainer = this.closest('.products__wrapper')
 
       if (buttonsContainer) {
@@ -454,37 +451,42 @@ if (buttonBuy) {
         buttonCart.classList.remove('hide')
       }
 
-      // var cardNum = buttonsContainer.querySelector('.products__card-counter-num');
-      // counterValue += +cardNum.textContent;
-
       cartCounter.classList.remove('hide');
-      counterValue++
+      value++
+      counterValue += value
       cartCounter.textContent = counterValue;
     })
   })
 }
 
 //shortcard logic
-
 if(counterShortContainer){
   counterShortContainer.forEach(container => {
     let shortCardMinus = container.querySelector('.shortcard-minus')
     let shortCardPlus = container.querySelector('.shortcard-plus')
-    let shortCardValue = container.querySelector('.shortcard-value')
     let value = 0;
 
     shortCardPlus.addEventListener('click', () => {
-      
+      value++
+      if(value >= 0 && value < 2){
+        cartCounter.classList.remove('hide');
+        counterValue++
+        cartCounter.textContent = counterValue
+      }
     })
 
     shortCardMinus.addEventListener('click', () => {
-     
+      value -- 
+      if(value == 0){
+        counterValue--
+        cartCounter.textContent = counterValue
+      }
+      if(counterValue == 0) {
+        cartCounter.classList.add('hide');
+      }
     })
   })
 }
-
-
-
 
 //dropdown sidebar
 let sidebarToggle = document.querySelectorAll('.sidebar__element-title')
