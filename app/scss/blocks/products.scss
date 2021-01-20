@@ -89,11 +89,14 @@
     }
     &-buy{
       width: 280px;
-      height: 180px;
+      height: 195px;
       border: 1px solid $whiteF7;
       box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
       border-radius: 6px;
-      padding: 12px 15px;
+      padding-top: 12px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
       @media(max-width:540px){
         width: 100%;
         order: 1;
@@ -110,7 +113,7 @@
     &-counter{
       display: flex;
       margin-left: auto;
-      padding-top: 61px;
+      padding-top: 64px;
       &--clearfix{
         padding: 0;
         margin: 0;
@@ -163,7 +166,7 @@
     &-button{
       margin-top: 6px;
       &-more{
-        margin-bottom: 5px;
+        margin-bottom: 6px;
         margin-left: 10px;
       }
     }
@@ -343,6 +346,7 @@
     margin-right: 20px;
     @media(max-width:540px){
       margin: 0;
+      margin-bottom: 10px;
     }
   }
   &__counter{
