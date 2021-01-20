@@ -410,22 +410,27 @@ function counters(container, count){
     let counterPlus = container.querySelector('.products__card-counter-plus')
     let counterMinus = container.querySelector('.products__card-counter-minus')
     let counterNum = container.querySelector('.products__card-counter-num')
-    let counter = count
-  
+    let inputValue = 1;
+
+    counterNum.addEventListener('input', () => {
+      inputValue = +counterNum.value
+    })
+
     counterPlus.addEventListener('click', plus)
     counterMinus.addEventListener('click', minus)
   
     function plus() {
-      counter++
-      counterNum.textContent = counter
+      inputValue++
+      counterNum.value = inputValue
     }
   
     function minus() {
-      counter--
-      if (counter <= 0) {
-        counter = 0
+      inputValue--
+      
+      if (inputValue <= 0) {
+        inputValue = 0
       }
-      counterNum.textContent = counter
+      counterNum.value = inputValue
     }
   })
 }
@@ -464,27 +469,8 @@ if(counterShortContainer){
   counterShortContainer.forEach(container => {
     let shortCardMinus = container.querySelector('.shortcard-minus')
     let shortCardPlus = container.querySelector('.shortcard-plus')
-    let value = 0;
-
-    shortCardPlus.addEventListener('click', () => {
-      value++
-      if(value >= 0 && value < 2){
-        cartCounter.classList.remove('hide');
-        counterValue++
-        cartCounter.textContent = counterValue
-      }
-    })
-
-    shortCardMinus.addEventListener('click', () => {
-      value -- 
-      if(value == 0){
-        counterValue--
-        cartCounter.textContent = counterValue
-      }
-      if(counterValue == 0) {
-        cartCounter.classList.add('hide');
-      }
-    })
+    let shortCardNum = container.querySelector('.shortcard-value')
+    
   })
 }
 
