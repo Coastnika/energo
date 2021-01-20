@@ -87,16 +87,26 @@
         font-size: 16px;
         line-height: 110%;
         color: $black33;
+        &--title{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 120%;
+            color: $black33;
+        }
         &--sub{
             font-size: 14px;
             line-height: 120%;
             color: $black33;
+            padding-top: 3px;
             &-company{
                 font-size: 12px;
                 line-height: 100%;
                 color: $grey77;
                 padding-top: 5px;
             }
+        }
+        &--red{
+            color: $redEB;
         }
         &--orange{
             color: $orangeF1;
@@ -117,16 +127,19 @@
             width: 160px;
         }
         &-size{
-            width: 140px;
+            width: 120px;
         }
         &-amount{
-            width: 140px;
+            width: 120px;
         }
         &-breakdown{
-            width: 345px;
+            width: 249px;
         }
         &-sum{
-            width: 150px;
+            width: 120px;
+        }
+        &-year{
+            width: 240px;
         }
         &-name{
             width: 244px;
@@ -169,6 +182,9 @@
         &:hover{
             border: 1px solid $orangeF1;
             border-radius: 6px;
+        }
+        &:hover .storage__text--title{
+            color: $orangeF1;
         }
         &:hover .storage__text-name {
             color: $orangeF1;
