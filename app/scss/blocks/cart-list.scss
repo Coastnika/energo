@@ -1,0 +1,111 @@
+.cart-list{
+  margin-bottom: 50px;
+  &__items{}
+  &__headline{
+    border: none!important;
+    background-color: $whiteF7!important;
+    cursor: auto!important;
+    @media(max-width: 540px){
+      display: none!important;
+    }
+  }
+  &__item{
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0);
+    border-left: 1px solid rgba(0,0,0,0);
+    border-right: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid $whiteF2;
+    cursor: pointer;
+    position: relative;
+    @media(max-width: 540px){
+      display: block;
+    }
+    &:hover{
+      border: 1px solid $orangeF1;
+      border-radius: 6px;
+    }
+    &:hover &-name a{
+      color: $orangeF1;
+    }
+    &-name{
+      width: 541px;
+      margin-right: 40px;
+      font-weight: 600;
+      font-size: 18px;
+      a{
+        color: $black33;
+        font-weight: 600;
+      }
+      @media(max-width: 540px){
+        margin-bottom: 7px;
+        width: 100%;
+      }
+    }
+    &-price{
+      width: 145px;
+      margin-right: 40px;
+      &--mobile{
+        color: $grey77;
+        @media(min-width: 541px){
+          display: none;
+        }
+      }
+      @media(max-width: 540px){
+        margin-bottom: 7px;
+        width: 100%;
+      }
+    }
+    &-count{
+      width: 131px;
+      margin-right: 40px;
+      .products__card-counter-element{
+        width: 40px;
+        height: 40px;
+      }
+      .products__card-counter-num{
+        width: 50px;
+      }
+      @media(max-width: 540px){
+        margin-bottom: 7px;
+        width: 100%;
+      }
+    }
+   
+    &-summ{
+      width: 145px;
+      text-align: right;
+      @media(max-width: 540px){
+        width: 100%;
+      }
+    }
+    &-delete{
+      margin-left: auto;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+    }
+    &-text{
+      font-weight: 500;
+    }
+  }
+  &__total{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &-text{
+      margin-right: 20px;
+    }
+    &-price{
+      font-weight: 600;
+      font-size: 18px;
+      color: $orangeF1;
+    }
+    @media(max-width: 540px){
+      display: none;
+    }
+  }
+}
