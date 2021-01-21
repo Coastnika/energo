@@ -149,6 +149,9 @@
         }
         &-company{
             width: 266px;
+            &--order{
+                width: 370px;
+            }
         }
         &-inn{
             width: 120px;
@@ -158,9 +161,15 @@
         }
         &-number{
             width: 290px;
+            &--order{
+                width: 370px;
+            }
         }
         &-time{
             width: 290px;
+            &--order{
+                width: 210px;
+            }
         }
         &-status{
             width: 510px;
