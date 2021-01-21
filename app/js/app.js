@@ -330,19 +330,16 @@ form.forEach(form => {
 
   submit.forEach(submit => {
     submit.addEventListener('click', (e) => {
-      e.preventDefault()
-      formInputs.forEach((input, inputIndex) => {
+      
+      formInputs.forEach(input => {
         //Проверяем на наличие пустой строки
         if (input.value.trim() == '') {
+          e.preventDefault()
           input.classList.add('input-error')
-          errorText.forEach((text, textIndex) => {
-            if (inputIndex == textIndex) {
-              text.classList.add('input-error-text--active')
-            }
-          })
+          
         }
         else {
-          return false
+          e.preventDefault()
           //Асинхронная отправка формы
         }
       })

@@ -9,3 +9,15 @@
     border: 1px solid $orangeF1;
   }
 }
+
+
+.input-error{
+  border: 1px solid $redEB!important;
+  &::placeholder{
+      color: $redEB!important;
+  }
+}
+
+.input-error-text{
+  color: #D02D42!important;
+}
