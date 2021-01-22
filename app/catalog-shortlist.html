@@ -4046,6 +4046,93 @@
       </form>
     </div>
   </div>
+  <!--register-->
+  <div class="register hide">
+    <div class="register__container">
+      <form class="register__form form">
+        <div class="register__form-content">
+          <div class="register__form-title">Регистрация</div>
+          <div class="register__form-close">
+            <img src="./assets/icon/close.svg" alt="">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="ФИО">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+          </div>
+          <div class="register__form-button">
+            <button class="button-default submit">Зарегистрироваться</button>
+          </div>
+          <div class="register__mobile">
+            <div class="register__mobile-text">Есть аккаунт? - </div>
+            <div class="register__mobile-trigger">Войти</div>
+          </div>
+        </div>
+        <div class="register__form-footer">
+          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+        </div>
+      </form>
+      <div class="register__content">
+        <div class="register__content-title">У вас есть аккаунт на нашем сайте?</div>
+        <div class="register__content-text">Авторизуйтесь, чтобы отследить ваш заказ, посмотреть состояние текущего заказа, подписки, и другое</div>
+        <div class="register__content-button">
+          <button class="button-default login-trigger">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--login-->
+   <div class="register login hide">
+    <div class="register__container register__container-login">
+      <form class="register__form register__form-login form">
+        <div class="register__form-content">
+          <div class="register__form-title">Личный кабинет</div>
+          <div class="register__form-close register__form-close-login">
+            <img src="./assets/icon/close.svg" alt="">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+          </div>
+
+          <div class="register__form-wrapper">
+            <label class="register__form-label">
+              <input type="checkbox" class="checkbox register__form-checkbox">
+              <span class="register__form-text">Запомнить меня</span>
+            </label>
+            <a href="#" class="register__form-link">
+              Забыли пароль?
+            </a>
+          </div>
+          <div class="register__form-button">
+            <button class="button-default submit">Войти</button>
+          </div>
+          <div class="register__mobile">
+            <div class="register__mobile-text">Нет аккаунта? - </div>
+            <div class="register__mobile-trigger register__mobile-trigger-login">Зарегистрироваться</div>
+          </div>
+        </div>
+        
+        <div class="register__form-footer">
+          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+        </div>
+      </form>
+      <div class="register__content register__content-login">
+        <div class="register__content-title">У вас нет аккаунта на нашем сайте?</div>
+        <div class="register__content-text">Зарегистрируйтесь, чтобы использовать все возможности личного кабинета: отслеживание заказов, настройку подписки, и другие</div>
+        <div class="register__content-button">
+          <button class="button-default register-trigger">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>

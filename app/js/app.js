@@ -391,7 +391,7 @@ form.forEach(form => {
           
         }
         else {
-          e.preventDefault()
+          // e.preventDefault()
           //Асинхронная отправка формы
         }
       })
