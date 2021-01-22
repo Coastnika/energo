@@ -1,42 +1,47 @@
 //init main swiper
-var swiper = new Swiper('.intro__container', {
-  speed: 500,
-  loop: true,
+if(document.querySelector('.intro__container')){
+  var swiper = new Swiper('.intro__container', {
+    speed: 500,
+    loop: true,
+  
+  
+    navigation: {
+      nextEl: '.intro-button-next',
+      prevEl: '.intro-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    },
+  });
+}
+  //init watched swiper
+if(document.querySelector('.watched__container')){
 
+  var swiper = new Swiper('.watched__container', {
 
-  navigation: {
-    nextEl: '.intro-button-next',
-    prevEl: '.intro-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-});
+    breakpoints: {
+      480: {
+        slidesPerView: 4,
+      }
+    },
+    slidesPerView: 1,
+    spaceBetween: 24,
+    speed: 500,
+    loop: true,
+    navigation: {
+      nextEl: '.watched-button-next',
+      prevEl: '.watched-button-prev',
+    },
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   type: 'bullets',
+    //   clickable: true,
+    // },
+  });
 
-//init watched swiper
-var swiper = new Swiper('.watched__container', {
-
-  breakpoints: {
-    480: {
-      slidesPerView: 4,
-    }
-  },
-  slidesPerView: 1,
-  spaceBetween: 24,
-  speed: 500,
-  loop: true,
-  navigation: {
-    nextEl: '.watched-button-next',
-    prevEl: '.watched-button-prev',
-  },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'bullets',
-  //   clickable: true,
-  // },
-});
+}
 
 
 //dropdown function
@@ -449,7 +454,7 @@ if(counterContainer){
 
 
 //counter shortcard
-let counterShortContainer = document.querySelectorAll('.products-shortcard')
+let counterShortContainer = document.querySelectorAll('.products-shortcard__counter')
 if(counterShortContainer){
   counters(counterShortContainer, 0)
 }
@@ -557,6 +562,10 @@ if(counterShortContainer){
       
       if(counter <=0 ){
         counter = 0
+      }
+
+      if(value <=0 ){
+        value = 0
       }
 
       if(+shortCardNum.value == 0){
