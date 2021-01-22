@@ -1,13 +1,22 @@
 .input{
-  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
   background-color: $whiteF7;
   border: 1px solid $whiteF2;
   border-radius: 3px;
- 
+  font-size: 15px;
+  @media (max-width:540px){
+    font-size: 14px;
+  }
   &:focus{
     border: 1px solid $orangeF1;
+    padding-top: 17px;
+    padding-bottom: 3px;
   }
+  // &:focus + .headline-elem{
+  //   display: block;
+  // }
 }
 
 
@@ -20,4 +29,24 @@
 
 .input-error-text{
   color: #D02D42!important;
+}
+
+.headline-elem{
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  left: 11px;
+  z-index: 10;
+  display: none;
+}
+
+.input-headline{
+  &--active{
+    padding-top: 17px;
+    padding-bottom: 3px;
+  }
+}
+
+.form-input{
+  position: relative;
 }

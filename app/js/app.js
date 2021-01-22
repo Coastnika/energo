@@ -201,12 +201,64 @@ if (calculatorDeliveryTrigger) {
   showModal(calculatorDeliveryTrigger, calculatorDeliveryContent, calculatorDeliveryClose, '.calculator-delivery__content')
 }
 
+//popup login-register
+document.querySelector('.fixed__login-link').onclick = e => {
+  e.preventDefault()
+}
+
+let registerTrigger = document.querySelector('.fixed__login-link')
+let registerContent = document.querySelector('.register')
+let registerClose = document.querySelector('.register__form-close')
+
+if (registerTrigger) {
+  showModal(registerTrigger, registerContent, registerClose, '.register__container')
+}
+
+let loginTrigger = document.querySelector('.login-trigger')
+let loginContent = document.querySelector('.login')
+let loginClose = document.querySelector('.register__form-close-login')
+
+if(loginTrigger){
+  loginTrigger.onclick = () =>{
+    registerContent.classList.add('hide')
+  }
+  showModal(loginTrigger, loginContent, loginClose, '.register__container')
+}
+
+let register2 = document.querySelector('.register-trigger')
+if(register2){
+  register2.onclick = () =>{
+    loginContent.classList.add('hide')
+  }
+  if (registerTrigger) {
+    showModal(register2, registerContent, registerClose, '.register__container')
+  }
+}
+
+let registerMobileTrigger = document.querySelector('.register__mobile-trigger')
+
+if(registerMobileTrigger){
+  registerMobileTrigger.onclick = () =>{
+    registerContent.classList.add('hide')
+  }
+  showModal(registerMobileTrigger, loginContent, loginClose, '.register__container')
+}
+
+let loginMobileTrigger = document.querySelector('.register__mobile-trigger-login')
+
+if(registerMobileTrigger){
+  loginMobileTrigger.onclick = () =>{
+    loginContent.classList.add('hide')
+  }
+  showModal(loginMobileTrigger, registerContent, registerClose, '.register__container')
+}
+
+
 let callbackTrigger = document.querySelectorAll('.infoCall')
 let callbackContent = document.querySelector('.popup-callback')
 let callbackClose = document.querySelector('.popup-callback__close')
 
 if (callbackTrigger) {
-  // showModal(callbackTrigger, callbackContent, callbackClose, '.popup-callback__content')
   callbackTrigger.forEach(trigger => {
     trigger.addEventListener('click', () => {
       callbackContent.classList.remove('hide')
@@ -485,3 +537,30 @@ if (sidebarList) {
   }
 
 }
+
+// inputs headline
+let inputsContainer = document.querySelectorAll('.form-input')
+
+inputsContainer.forEach(container => {
+  let inputHeadline = container.querySelector('.input-headline')
+
+  headlineText = inputHeadline.placeholder
+
+  let headlineElem = document.createElement('div')
+
+  headlineElem.textContent = headlineText
+  headlineElem.classList.add('headline-elem')
+  container.appendChild(headlineElem)
+
+  inputHeadline.addEventListener('click', function(e) {
+    headlineElem.style.display = "block"
+    this.classList.add('input-headline--active')
+  })
+
+  window.addEventListener('click', function(e){
+    if(inputHeadline.value == '' && e.target != inputHeadline){
+      inputHeadline.classList.remove('input-headline--active')
+      headlineElem.style.display = "none"
+    }
+  })
+})

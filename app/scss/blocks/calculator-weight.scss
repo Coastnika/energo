@@ -120,13 +120,13 @@
       &-input{
         width: 96px;
         @media(max-width: 540px){
-          width: 30%;
+          width: 100%;
           font-size: 14px;
         }
         &--width{
           width: 106px;
           @media(max-width: 540px){
-            width: 30%;
+            width: 100%;
           }
         }
         &--weight{
