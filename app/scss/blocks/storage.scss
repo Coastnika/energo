@@ -8,6 +8,9 @@
         display: flex;
         &-wrap{
             border: 1px solid $black33;
+            &--active{
+                border: 1px solid $orangeF1;
+            }
             &:hover{
                 border: 1px solid $orangeF1;
             }
@@ -19,6 +22,9 @@
             color:$black33;
             padding: 11px 15px;
             cursor: pointer;
+            &--active{
+                color:$orangeF1;
+            }
             &:hover{
                 color:$orangeF1;
             }
@@ -207,16 +213,20 @@
       }
 }
 .border-city{
-    border-radius: 6px 0px 0px 6px;
     border-right: none;
+    border-radius: 6px 0px 0px 6px;
     &:hover + .border-city-second{
         border-left: none;
     }
 }
 .border-all{
     border-radius: 0px 6px 6px 0px;
+    &--clients{
+        border-left: 1px solid $orangeF1;
+    }
 }
 .border-city-second{
+    border-left: 1px solid $orangeF1;
     border-right:none;
     &:hover + .border-all{
         border-left:none;
