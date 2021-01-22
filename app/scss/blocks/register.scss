@@ -182,6 +182,9 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
+    @media(min-width:541px){
+      display: none;
+    }
     &-text{
       margin-right: 3px;
     }
