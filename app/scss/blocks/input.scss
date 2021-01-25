@@ -49,4 +49,10 @@
 
 .form-input{
   position: relative;
+  flex-grow: 1;
+}
+
+textarea:focus{
+  padding-top: 10px!important;
+    padding-bottom: 0px!important;
 }

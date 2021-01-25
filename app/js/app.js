@@ -219,6 +219,14 @@ if (registerTrigger) {
   showModal(registerTrigger, registerContent, registerClose, '.register__container')
 }
 
+let profileTrigger = document.querySelector('.client__download-link')
+let profileContent = document.querySelector('.profile')
+let profileClose = document.querySelector('.profile__close')
+
+if (profileTrigger) {
+  showModal(profileTrigger, profileContent, profileClose, '.profile__content')
+}
+
 let loginTrigger = document.querySelector('.login-trigger')
 let loginContent = document.querySelector('.login')
 let loginClose = document.querySelector('.register__form-close-login')
@@ -454,7 +462,7 @@ if(counterContainer){
 
 
 //counter shortcard
-let counterShortContainer = document.querySelectorAll('.products-shortcard__counter')
+let counterShortContainer = document.querySelectorAll('.products-shortcard__counterп')
 if(counterShortContainer){
   counters(counterShortContainer, 0)
 }
