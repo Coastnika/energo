@@ -1,0 +1,53 @@
+.details{
+    margin-bottom: 136px;
+    &__info{
+        font-size: 15px;
+        line-height: 110%;
+        color: $greyAA;
+        padding-bottom: 20px;
+        &--note{
+            padding-top: 10px;
+        }
+        &-download{
+            font-size: 15px;
+            line-height: 110%;
+            color: $orangeF1;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 55%;
+                right: -30px;
+                transform: translateY(-50%) ;
+                width: 24px;
+                height: 24px;
+                background-image: url('../assets/icon/download.svg');
+                background-repeat: no-repeat ;
+            }
+        }
+        &-text{
+            font-size: 15px;
+            line-height: 110%;
+            color: $black33;
+            &--time{
+                padding-left: 45px;
+            }
+            &--orange{
+                color: $orangeF1;
+            }
+        }
+    }
+    &__textarea{
+        width: 70%;
+        height: 100px;
+        border: none;
+        background-color: $whiteF7;
+        padding: 10px;
+        font-size: 15px;
+        line-height: 110%;
+        color: $black33;
+        outline: none;
+        border-radius: 3px;
+        border: 1px solid  $whiteF2;
+    }
+}

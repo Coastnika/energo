@@ -34,6 +34,14 @@
         font-size: 24px;
         line-height: 110%;
         color: $black33;
+        &--top{
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        &--order{
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
         &--pad{
             padding-bottom: 23px;
         }

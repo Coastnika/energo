@@ -81,6 +81,9 @@
     }
     &__table{
         margin-bottom: 106px;
+        &--order{
+            margin-bottom: 20px;
+        }
     }
     &__headline{
         display: flex;

@@ -1,5 +1,8 @@
 .cart-list{
   margin-bottom: 50px;
+  &--order{
+    margin-bottom: 5px;
+  }
   &__items{}
   &__headline{
     border: none!important;
@@ -60,6 +63,9 @@
     &-count{
       width: 131px;
       margin-right: 40px;
+      &--order{
+        width: 185px;
+      }
       .products__card-counter-element{
         width: 40px;
         height: 40px;
@@ -76,6 +82,10 @@
     &-summ{
       width: 145px;
       text-align: right;
+      &--order{
+        width: 185px;
+        text-align: right;
+      }
       @media(max-width: 540px){
         width: 100%;
       }
