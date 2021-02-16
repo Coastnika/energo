@@ -3,37 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1170px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="page" id="to-top">
-        <!--FIXED-->
-        <div class="fixed">
-          <div class="fixed__user hide">
-            <a href="" class="fixed__user-link">
-              <img src="./assets/icon/login-user.svg" class="fixed__user-icon" />
-            </a>
-          </div>
-            <div class="fixed__login">
-                <a href="" class="fixed__login-link">
-                    <img src="./assets/icon/login.svg" class="fixed__login-icon" />
-                </a>
-            </div>
-            <div class="fixed__cart">
-                <a href="" class="fixed__cart-link">
-                    <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
-                    <div class="fixed__cart-counter hide">0</div>
-                </a>
-            </div>
+       <!--FIXED-->
+      <div class="fixed">
+        <div class="fixed__login">
+          <a href="" class="fixed__login-link">
+            <img src="./assets/icon/login.svg" class="fixed__login-icon" />
+          </a>
         </div>
-        <div class="to-top">
-            <span>
-              <img class=" opener"  id="to-top" src="./assets/icon/to-top.svg" alt="">
-            </span>
-          </div>
+        <div class="fixed__cart">
+          <a href="" class="fixed__cart-link">
+            <img src="./assets/icon/cart.svg" class="fixed__cart-icon" />
+            <div class="fixed__cart-counter hide">0</div>
+          </a>
+        </div>
+      </div>
+      <div class="to-top">
+        <span>
+          <img class=" opener" id="to-top" src="./assets/icon/to-top.svg" alt="">
+        </span>
+      </div>
      <!--HEADER-->
      <header class="header">
       <div class="header__top">
@@ -3190,112 +3185,168 @@
               <a href="" class="header__breadcrumbs-link">Главная</a>
             </li>
             <li class="header__breadcrumbs-item">
-              <a href="" class="header__breadcrumbs-link">Кабинет менеджера</a>
-            </li>
-            <li class="header__breadcrumbs-item">
-              <span href="" class="header__breadcrumbs-current">Иванов Иван Иванович</span>
+              <span href="" class="header__breadcrumbs-current">Услуги</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="header__title">
         <div class="container">
-          <h1>Заказ № 115</h1>
+          <h1>Услуги</h1>
         </div>
       </div>
     </header>
-
-      <main class="main">
-        <div class="client">
+    
+    <main class="main">
+        <div class="services">
             <div class="container">
-                <div class="client__download">
-                    <div class="client__title client__title--pad">Информация о заказе</div>
-                </div>
-                <div class="storage__table storage__table--order">
-                    <div class="storage__headline">
-                        <div class="storage__text storage__text-number--order storage__text--bold">Номер заказа</div>
-                        <div class="storage__text storage__text-time--order storage__text--bold">Дата и время</div>
-                        <div class="storage__text storage__text-company--order storage__text--bold">Название компании</div>
-                        <div class="storage__text storage__text--bold">Статус</div>
+                <div class="services__card">
+                    <div class="services__text">
+                        <div class="services__text-title">Электромонтажные <br> и пуско-наладочные работы</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
                     </div>
-
-                    <div class="client__item">
-                        <div class="storage__text-number--order storage__text--sub">№ 115</div>
-                        <div class="storage__text-time--order storage__text--sub storage__text--time">
-                            <div class="storage__text--date">12.05.2019</div>
-                            <div>23:59</div>
-                        </div>
-                        <div class="storage__text storage__text-company--order storage__text--sub">
-                            <div>ООО «Компания Новая сила»</div>
-                            <div class="storage__text--sub-company">Санкт-Петербург</div>
-                        </div>
-                        <div class="storage__text--sub storage__text--orange">Новый</div>
-                    </div>
+                    <div class="services__image"><img src="./assets/images/workers.jpg" alt=""></div>
                 </div>
 
-                <div class="client__title client__title--order">Состав заказа</div>
-                <div class="cart-list cart-list--order">
-                    <div class="container">
-                      <ul class="cart-list__items">
-                        <li class="cart-list__item cart-list__headline">
-                          <div class="cart-list__item-name cart-list__item-text"> Наименование</div>
-                          <div class="cart-list__item-price cart-list__item-text">Цена</div>
-                          <div class="cart-list__item-count--order cart-list__item-text">Количество</div>
-                          <div class="cart-list__item-summ--order cart-list__item-text" >Сумма</div>
-                        </li>
-                        <li class="cart-list__item">
-                          <div class="cart-list__item-name"><a href="">ВВГнг 5х50</a></div>
-                          <div class="cart-list__item-price"><span class="cart-list__item-price--mobile">Цeна: </span>10.00 руб./м</div>
-                          <div class="cart-list__item-count--order">1</div>
-                          <div class="cart-list__item-summ--order"><span class="cart-list__item-price--mobile">Сумма: </span>1 500.00 руб.</div>
-                        </li>
-                        <li class="cart-list__item">
-                          <div class="cart-list__item-name"><a href="">ВВГнг 1х1,5</a></div>
-                          <div class="cart-list__item-price"><span class="cart-list__item-price--mobile">Цeна: </span>11 510.00 руб./м</div>
-                          <div class="cart-list__item-count--order">14</div>
-                          <div class="cart-list__item-summ--order"><span class="cart-list__item-price--mobile">Сумма: </span>254 546 руб.</div>
-                        </li>
-                        <li class="cart-list__item">
-                          <div class="cart-list__item-name"><a href="">ВВГнг 1х1,5</a></div>
-                          <div class="cart-list__item-price"><span class="cart-list__item-price--mobile">Цeна: </span>110.00 руб./м</div>
-                          <div class="cart-list__item-count--order">21</div>
-                          <div class="cart-list__item-summ--order"><span class="cart-list__item-price--mobile">Сумма: </span>990.00 руб.</div>
-                        </li>
-                      </ul>
-                      <div class="cart-list__total">
-                        <span class="cart-list__total-text">Общая стоимость без учета доставки: </span>
-                        <span class=cart-list__total-price>765.00 руб </span>
-                      </div>
+                <div class="services__card services__card-pad">
+                    <div class="services__image"><img src="./assets/images/project.jpg" alt=""></div>
+                    <div class="services__text services__text-pad">
+                        <div class="services__text-title">Проектирование и оптимизация проектов</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
                     </div>
                 </div>
 
-                <div class="details">
-                    <div class="details__info">Вложенные файлы: <span class="details__info-download">заявка.xlsx</span></div>
-                    <div class="details__info">Комментарий к заказу: <span class="details__info-text">нужно целыми кусками, и не звоните после 23 ночи</span></div>
-                    <div class="buttons-details">
-                      <div class="button-details">
-                        <label for="file_btn">Отправить счет
-                          <svg>
-                            <use xlink:href="./assets/sprite.svg#folder"></use>
-                          </svg>
-                        </label>
-                        <input type="file" id="file_btn">
-                      </div>
-                      <div class="button-manager">Счет отправлен</div>
-
+                <div class="services__card">
+                    <div class="services__text">
+                        <div class="services__text-title">Светотехнический расчёт</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
                     </div>
-                    <div class="client__title client__title--top">Контактные данные</div>
-                    <div class="details__info">ФИО: <span class="details__info-text">Константинопольский Константин Константинович</span></div>
-                    <div class="details__info">Компания: <span class="details__info-text">ООО «Компания Новая сила», Санкт-Петербург</span></div>
-                    <div class="details__info">ИНН: <span class="details__info-text">1234567890</span></div>
-                    <div class="details__info">Телефон: <span class="details__info-text--orange">+7 (987) 548-00-00</span></div>
-                    <div class="details__info">Почта: <span class="details__info-text--orange">79107776589@yandex.ru</span></div>
-                    <div class="details__info details__info--note">Вы можете оставить заметку к этому заказу, она сохранится автоматически.</div>
-                    <textarea class="details__textarea" type="text" placeholder="79107776589@yandex.ru"></textarea>
+                    <div class="services__image"><img src="./assets/images/lights.jpg" alt=""></div>
+                </div>
+
+                <div class="services__card services__card-pad">
+                    <div class="services__image services__image-width"><img src="./assets/images/contract.jpg" alt=""></div>
+                    <div class="services__text services__text-pad">
+                        <div class="services__text-title">Повышение энергоэффективности предприятий (Энергосервисный контракт)</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__text">
+                        <div class="services__text-title">Организация транспортной логистики</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                    <div class="services__image"><img src="./assets/images/logic.jpg" alt=""></div>
+                </div>
+
+                <div class="services__card services__card-pad">
+                    <div class="services__image"><img src="./assets/images/storage.jpg" alt=""></div>
+                    <div class="services__text services__text-pad">
+                        <div class="services__text-title">Хранение и предпродажная <br> подготовка продукции</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__text">
+                        <div class="services__text-title">Автономная газификация</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                    <div class="services__image"><img src="./assets/images/gas.jpg" alt=""></div>
+                </div>
+
+                <div class="services__card services__card-pad">
+                    <div class="services__image"><img src="./assets/images/patrol.jpg" alt=""></div>
+                    <div class="services__text services__text-pad">
+                        <div class="services__text-title">Заправка сжиженным газом</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="services__text">
+                        <div class="services__text-title">Монтаж системы отопления</div>
+                        <p class="services__text-subtitle">Проложено 300 м силового кабеля.</p>
+                        <p class="services__text-subtitle">50 м слаботочного провода в гофре по потолку.</p>
+                        <p class="services__text-subtitle">Утробление стен (гипсоблок) — 35 м.</p>
+                        <p class="services__text-subtitle">Установлено 47 розеток и выключателей.</p>
+                        <p class="services__text-subtitle">10 встраиваемых потолочных светильников.</p>
+                        <p class="services__text-subtitle">3 реечных светильника.</p>
+                        <p class="services__text-subtitle">3 подвесных светильника и 1 люстра.</p>
+                        <p class="services__text-subtitle">Монтаж и сборка встраимового силового щита.</p>
+                        <p class="services__text-subtitle">Установка устройства защиты от протечек «Аквасторож»</p>
+                    </div>
+                    <div class="services__image"><img src="./assets/images/warm.jpg" alt=""></div>
                 </div>
             </div>
         </div>
-      </main>
+       
+    </main>
 
  
 

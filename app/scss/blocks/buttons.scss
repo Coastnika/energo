@@ -301,11 +301,21 @@
   }
   
 }
+.buttons-details{
+  display: flex;
+  align-items: center;
+  width: 420px;
+  justify-content: space-between;
+}
 .button-details{
   position: relative;
   display: inline-block;
   cursor: pointer;
-  & span{
+  & input{
+      visibility: hidden;
+      position: absolute;
+  }
+  & label{
     padding: 16px 63px 16px 32px;
     font-weight: 500;
     font-size: 18px;
@@ -334,7 +344,7 @@
       
     }
   }
-  &:hover span{
+  &:hover label{
     border: none;
     padding: 17px 64px 17px 33px;
     background: $orangeGradient;
@@ -345,5 +355,16 @@
   }
   &:hover svg{
     fill: $white;
+  }
+}
+.button-manager{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $orangeF1;
+  cursor: pointer;
+  border-bottom: 1px dotted $orangeF1;
+  &:hover{
+    border-bottom: 1px dotted #FFFFFF;
   }
 }
