@@ -1,0 +1,31 @@
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-menu{
+    border: 1px solid $whiteF7;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.03), 0px 2px 6px rgba(0, 0, 0, 0.02), 0px 0px 1px rgba(0, 0, 0, 0.01);
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 378px;
+    width: 270px;
+    &__nav{
+        &-item{
+            border-bottom: 1px solid $whiteF2;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &-link{
+            font-size: 16px;
+            line-height: 150%;
+            color: $black33;
+            &:hover{
+                color: $orangeF1;
+            }
+            &--active{
+                color: $orangeF1;
+            }
+        }
+    }
+}
