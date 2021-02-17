@@ -1,0 +1,79 @@
+.callback{
+  padding: 50px;
+  background-color: $white;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05), 0px 2px 6px rgba(0, 0, 0, 0.03), 0px 0px 1px rgba(0, 0, 0, 0.02);
+  border-radius: 6px;
+  max-width: 570px;
+  z-index: 1;
+  position: relative;
+  @media(max-width:540px){
+    padding: 0;
+    box-shadow: none;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 15px;
+    @media(max-width:540px){
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  &__content{
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+  }
+  &__wrapper{
+    display: flex;
+    @media(max-width:540px){
+      display: block;
+    }
+  }
+  &__element{
+    flex-grow: 1;
+    @media(max-width:540px){
+      margin-bottom: 20px;
+    }
+  }
+  &__text{
+    font-size: 15px;
+    @media(max-width:540px){
+      font-size: 14px;
+    }
+    &:not(:last-child){
+      margin-bottom: 15px;
+      @media(max-width:540px){
+        margin-bottom: 20px;
+      }
+    }
+    &--grey{
+      color: $grey77;
+      line-height: 110%;
+      margin-bottom: 5px;
+    }
+    &--black{
+      color: $black33;
+      line-height: 110%;
+      margin-bottom: 5px;
+    }
+    &--orange{
+      color: $orangeF1;
+      line-height: 110%;
+      margin-bottom: 5px;
+    }
+    &--placeholder{
+      position: relative;
+      padding-left: 20px;
+      &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url('../assets/icon/map-pin.svg');
+      }
+    }
+  }
+}
