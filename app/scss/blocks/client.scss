@@ -1,4 +1,7 @@
 .client{
+    &--sent{
+        width: 870px;
+    }
     &__download{
         display: flex;
         justify-content: space-between;

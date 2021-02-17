@@ -35,7 +35,7 @@
         align-items: center;
         width: 45%;
         &-clients{
-            width: 47%;
+            width: 55%;
         }
         &-title{
             font-weight: 500;
@@ -158,8 +158,11 @@
         }
         &-company{
             width: 266px;
+            &--sent{
+                width: 280px;
+            }
             &--order{
-                width: 370px;
+                width: 360px;
             }
         }
         &-inn{
@@ -169,22 +172,34 @@
             width: 160px;
         }
         &-number{
-            width: 290px;
+            width: 259px;
+            &--sent{
+                width: 190px;
+            }
             &--order{
-                width: 370px;
+                width: 140px;
             }
         }
         &-time{
-            width: 290px;
+            width: 180px;
+            &--sent{
+                width: 180px;
+            }
             &--order{
-                width: 210px;
+                width: 150px;
             }
         }
         &-status{
-            width: 510px;
+            width: 250px;
+            &--sent{
+                width: 200px;
+            }
+            &--order{
+                width: 190px;
+            }
         }
         &-total{
-            width: 93px;
+            width: 150px;
             &-end{
                 text-align: end;
             }
