@@ -49,11 +49,12 @@
       }
     }
     &--grey{
-      color: $grey77;
+      color: $greyAA;
       line-height: 110%;
       margin-bottom: 5px;
     }
     &--black{
+      font-weight: 400;
       color: $black33;
       line-height: 110%;
       margin-bottom: 5px;

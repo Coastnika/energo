@@ -1,10 +1,10 @@
 //init main swiper
-if(document.querySelector('.intro__container')){
+if (document.querySelector('.intro__container')) {
   var swiper = new Swiper('.intro__container', {
     speed: 500,
     loop: true,
-  
-  
+
+
     navigation: {
       nextEl: '.intro-button-next',
       prevEl: '.intro-button-prev',
@@ -16,8 +16,8 @@ if(document.querySelector('.intro__container')){
     },
   });
 }
-  //init watched swiper
-if(document.querySelector('.watched__container')){
+//init watched swiper
+if (document.querySelector('.watched__container')) {
 
   var swiper = new Swiper('.watched__container', {
 
@@ -231,16 +231,16 @@ let loginTrigger = document.querySelector('.login-trigger')
 let loginContent = document.querySelector('.login')
 let loginClose = document.querySelector('.register__form-close-login')
 
-if(loginTrigger){
-  loginTrigger.onclick = () =>{
+if (loginTrigger) {
+  loginTrigger.onclick = () => {
     registerContent.classList.add('hide')
   }
   showModal(loginTrigger, loginContent, loginClose, '.register__container')
 }
 
 let register2 = document.querySelector('.register-trigger')
-if(register2){
-  register2.onclick = () =>{
+if (register2) {
+  register2.onclick = () => {
     loginContent.classList.add('hide')
   }
   if (registerTrigger) {
@@ -250,8 +250,8 @@ if(register2){
 
 let registerMobileTrigger = document.querySelector('.register__mobile-trigger')
 
-if(registerMobileTrigger){
-  registerMobileTrigger.onclick = () =>{
+if (registerMobileTrigger) {
+  registerMobileTrigger.onclick = () => {
     registerContent.classList.add('hide')
   }
   showModal(registerMobileTrigger, loginContent, loginClose, '.register__container')
@@ -259,8 +259,8 @@ if(registerMobileTrigger){
 
 let loginMobileTrigger = document.querySelector('.register__mobile-trigger-login')
 
-if(registerMobileTrigger){
-  loginMobileTrigger.onclick = () =>{
+if (registerMobileTrigger) {
+  loginMobileTrigger.onclick = () => {
     loginContent.classList.add('hide')
   }
   showModal(loginMobileTrigger, registerContent, registerClose, '.register__container')
@@ -395,13 +395,13 @@ form.forEach(form => {
 
   submit.forEach(submit => {
     submit.addEventListener('click', (e) => {
-      
+
       formInputs.forEach(input => {
         //Проверяем на наличие пустой строки
         if (input.value.trim() == '') {
           e.preventDefault()
           input.classList.add('input-error')
-          
+
         }
         else {
           // e.preventDefault()
@@ -409,7 +409,7 @@ form.forEach(form => {
         }
       })
 
-      if(customSelect){
+      if (customSelect) {
         customSelect.forEach(select => {
           if (select.querySelector('.custom__select-title').textContent == "Тип объекта") {
             select.classList.add('input-error')
@@ -456,18 +456,18 @@ $(document).ready(function () {
 //counter cards
 
 let counterContainer = document.querySelectorAll('.products__card-counter')
-if(counterContainer){
+if (counterContainer) {
   counters(counterContainer, 1)
 }
 
 
 //counter shortcard
 let counterShortContainer = document.querySelectorAll('.products-shortcard__counterп')
-if(counterShortContainer){
+if (counterShortContainer) {
   counters(counterShortContainer, 0)
 }
 
-function counters(container, count){
+function counters(container, count) {
   container.forEach(container => {
     let counterPlus = container.querySelector('.products__card-counter-plus')
     let counterMinus = container.querySelector('.products__card-counter-minus')
@@ -480,15 +480,15 @@ function counters(container, count){
 
     counterPlus.addEventListener('click', plus)
     counterMinus.addEventListener('click', minus)
-  
+
     function plus() {
       inputValue++
       counterNum.value = inputValue
     }
-  
+
     function minus() {
       inputValue--
-      
+
       if (inputValue <= 0) {
         inputValue = 0
       }
@@ -527,7 +527,7 @@ if (buttonBuy) {
 }
 
 //shortcard logic
-if(counterShortContainer){
+if (counterShortContainer) {
   counterShortContainer.forEach(container => {
     let shortCardMinus = container.querySelector('.shortcard-minus')
     let shortCardPlus = container.querySelector('.shortcard-plus')
@@ -538,26 +538,26 @@ if(counterShortContainer){
     shortCardNum.addEventListener('input', () => {
       value = +shortCardNum.value;
       counter++
-      
-      if(counter <=1 ){
+
+      if (counter <= 1) {
         counter = +shortCardNum.value
         counterValue++
         cartCounter.textContent = counterValue;
         cartCounter.classList.remove('hide');
       }
-      
-      if(shortCardNum.value == ''){
+
+      if (shortCardNum.value == '') {
         counterValue--
         cartCounter.textContent = counterValue;
         counter = 0
       }
-      
+
     })
 
     shortCardPlus.addEventListener('click', () => {
       value++
       counter++
-      if(value > 0 && value < 2){
+      if (value > 0 && value < 2) {
         counterValue++
         cartCounter.textContent = counterValue;
         cartCounter.classList.remove('hide');
@@ -567,24 +567,24 @@ if(counterShortContainer){
     shortCardMinus.addEventListener('click', () => {
       value--
       counter--
-      
-      if(counter <=0 ){
+
+      if (counter <= 0) {
         counter = 0
       }
 
-      if(value <=0 ){
+      if (value <= 0) {
         value = 0
       }
 
-      if(+shortCardNum.value == 0){
+      if (+shortCardNum.value == 0) {
         counterValue--
-        if(counterValue <=0){
+        if (counterValue <= 0) {
           counterValue = 0
         }
         cartCounter.textContent = counterValue;
       }
     })
-    
+
   })
 }
 
@@ -617,15 +617,29 @@ inputsContainer.forEach(container => {
   headlineElem.classList.add('headline-elem')
   container.appendChild(headlineElem)
 
-  inputHeadline.addEventListener('click', function(e) {
+  inputHeadline.addEventListener('click', function (e) {
     headlineElem.style.display = "block"
     this.classList.add('input-headline--active')
   })
 
-  window.addEventListener('click', function(e){
-    if(inputHeadline.value == '' && e.target != inputHeadline){
+  window.addEventListener('click', function (e) {
+    if (inputHeadline.value == '' && e.target != inputHeadline) {
       inputHeadline.classList.remove('input-headline--active')
       headlineElem.style.display = "none"
     }
   })
 })
+
+// buttons-sent
+
+let buttonsDetail = document.querySelector('.buttons-details');
+let buttonFile = document.querySelector('.button-details');
+let buttonManager = document.querySelector('.button-manager');
+let buttonInfo = document.querySelector('.details__info-hide');
+let buttonInfoManager = document.querySelector('.details__info-manager');
+
+
+buttonManager.onclick = () => {
+  buttonsDetail.hidden = true;
+  buttonInfoManager.classList.remove('hide')
+}
