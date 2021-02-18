@@ -5,6 +5,12 @@
         line-height: 110%;
         color: $greyAA;
         padding-bottom: 20px;
+        &-manager{
+            font-size: 15px;
+            line-height: 110%;
+            color: $greyAA;
+            padding-bottom: 20px;
+        }
         &--note{
             padding-top: 10px;
         }
