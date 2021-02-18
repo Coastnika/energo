@@ -17,6 +17,16 @@
     margin-bottom: 30px;
     margin-top: 30px;
   }
+  &__mobile{
+    @media(min-width: 541px){
+      display: none;
+    }
+  }
+  &__desctop{
+    @media(max-width:540px){
+      display: none;
+    }
+  }
 }
 
 
