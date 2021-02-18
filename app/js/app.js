@@ -634,12 +634,26 @@ inputsContainer.forEach(container => {
 
 let buttonsDetail = document.querySelector('.buttons-details');
 let buttonFile = document.querySelector('.button-details');
-let buttonManager = document.querySelector('.button-manager');
+
 let buttonInfo = document.querySelector('.details__info-hide');
 let buttonInfoManager = document.querySelector('.details__info-manager');
 
-
-buttonManager.onclick = () => {
+$('.button-manager').on('click', () => {
   buttonsDetail.hidden = true;
   buttonInfoManager.classList.remove('hide')
+})
+
+
+
+
+function uploadFile() {
+  let file = document.querySelector('#file_btn')
+
+  if(file.files.length > 0) {
+    document.querySelector('.buttons-details').classList.add('hide')
+    document.querySelector('.details__check').classList.remove('hide')
+  }
+
 }
+
+$('#file_btn').on('input', uploadFile)
