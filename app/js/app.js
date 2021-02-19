@@ -620,12 +620,14 @@ inputsContainer.forEach(container => {
   inputHeadline.addEventListener('click', function (e) {
     headlineElem.style.display = "block"
     this.classList.add('input-headline--active')
+
   })
 
   window.addEventListener('click', function (e) {
     if (inputHeadline.value == '' && e.target != inputHeadline) {
       inputHeadline.classList.remove('input-headline--active')
       headlineElem.style.display = "none"
+      console.log(123);
     }
   })
 })
@@ -649,7 +651,7 @@ $('.button-manager').on('click', () => {
 function uploadFile() {
   let file = document.querySelector('#file_btn')
 
-  if(file.files.length > 0) {
+  if (file.files.length > 0) {
     document.querySelector('.buttons-details').classList.add('hide')
     document.querySelector('.details__check').classList.remove('hide')
   }

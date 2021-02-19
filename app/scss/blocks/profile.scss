@@ -45,6 +45,10 @@
     flex-grow: 1;
     & input{
       width: 100%;
+      &:focus{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
   }
   &__submit{
