@@ -18,7 +18,12 @@
   //   display: block;
   // }
 }
-
+.order__form-input{
+  &:focus{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
 .input-error{
   border: 1px solid $redEB!important;
