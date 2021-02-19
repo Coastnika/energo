@@ -64,6 +64,26 @@
     }
     &-input{
       width: 100%;
+      &--width{
+        width: 250px;
+      }
+      &--width2{
+        width: 350px;
+      }
+      &--width3{
+        width: 300px;
+      }
+      &--width4{
+        width: 400px;
+      }
+      &--width5{
+        width: 265px;
+      }
+      &--placeholder{
+        &::placeholder{
+          color: $grey77;
+        }
+      }
       @media(max-width:540px){
         width: 100%;
       }

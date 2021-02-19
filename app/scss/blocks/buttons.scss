@@ -310,7 +310,6 @@
 .button-details{
   position: relative;
   display: inline-block;
-  cursor: pointer;
   & input{
       visibility: hidden;
       position: absolute;
@@ -325,6 +324,7 @@
     border-radius: 6px;
     position: relative;
     display: inline-block;  
+    cursor: pointer;
     // @media(max-width:540px){
     //   font-size: 14px;
     //   padding: 6px 41px 6px 18px;
@@ -355,6 +355,37 @@
   }
   &:hover svg{
     fill: $white;
+  }
+  &-download{
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $orangeF1;
+    border: 1px solid $orangeF1;
+    border-radius: 6px;
+    position: relative;
+    display: inline-block;  
+    cursor: pointer;
+    width: 406px;
+    &:hover{
+      border: none;
+      padding: 17px 33px;
+      background: $orangeGradient;
+      color: $white;
+      &:hover svg{
+        fill: $white;
+      }
+    }
+    & svg {
+      position: absolute;
+      top: 54%;
+      right: 8%;
+      transform: translateY(-56%);
+      width: 22px;
+      height: 22px;
+      fill: $orangeF1;
+    }
   }
 }
 .button-manager{
