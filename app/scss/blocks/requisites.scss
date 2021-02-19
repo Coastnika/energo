@@ -1,0 +1,83 @@
+.requisites{
+    width: 870px;
+    &__content{
+        margin-bottom: 50px;
+    }
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black33;
+        padding-bottom: 20px;
+    }
+    &__form-wrapper{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__form-name{
+        font-size: 15px;
+        line-height: 110%;
+        color: $black33;
+        width: 300px;
+        margin-right: 20px;
+        &--width{
+            width: 125px;
+        }
+    }
+    &__upload-file{
+        display: flex;
+        align-items: center;
+        & input{
+            visibility: hidden;
+            position: absolute;
+        }
+        & label{
+            border: 1px solid $black33;
+            border-radius: 6px;
+            background: none;
+            cursor: pointer;
+            font-size: 15px;
+            line-height: 18px;
+            color: $black33;
+            padding: 11px 10px;
+            position: relative;
+            width: 114px;
+            margin-right: 20px;
+            &:hover{
+                border: 1px solid $orangeF1;
+                color: $orangeF1;
+                &:hover svg{
+                    fill: $orangeF1; 
+                }
+            }
+            &:active{
+                border: 1px solid $orangeF1;
+                color: $orangeF1;
+                box-shadow: inset 0px 2px 15px rgba(218, 125, 0, 0.2);
+                &:active svg{
+                    fill: $orangeF1; 
+                }
+            }
+        }
+
+        & svg{
+            position: absolute;
+            top: 50%;
+            right: 9%;
+            transform: translateY(-56%);
+            width: 15px;
+            height: 16px;
+            fill:  $black33;
+        }
+    }
+    &__upload-text{
+        font-size: 15px;
+        line-height: 18px;
+        color: $black33;
+    }
+}
