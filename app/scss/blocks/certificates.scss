@@ -1,0 +1,65 @@
+.certificates{
+  position: relative;
+  margin-bottom: 66px;
+  &__container{
+    overflow: hidden;
+  }
+  &__title{
+    color: $black33;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  &__item{
+    padding: 20px;
+    border: 1px solid $whiteF2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 270px; 
+    height: 382px;
+    & img{
+      width: 100%;
+    }
+  }
+  .certificates-button{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: $white;
+    border: 1px solid $whiteF2;
+    bottom: 45%;
+    z-index: 2;
+    outline: none;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+    }
+    &:hover{
+      background: $whiteF2;
+    }
+  }
+  .certificates-button-prev{
+    border-radius: 6px 0px 0px 6px;
+    left: 145px;
+    transform: translateX(-100%);
+    &::before{
+      background-image: url('../assets/icon/slider-arrow-left.svg');
+    }
+  }
+  .certificates-button-next{
+    border-radius: 0px 6px 6px 0px;
+    right: 145px;
+    transform: translateX(100%);
+    &::before{
+      background-image: url('../assets/icon/slider-arrow-right.svg');
+    }
+  }
+}
