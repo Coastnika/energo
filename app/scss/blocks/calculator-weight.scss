@@ -131,9 +131,11 @@
         }
         &--weight{
           width: 73px;
-          margin-left: 20px;
+        }
+        &--height{
+          margin-right: 20px;
           @media (max-width:540px){
-            margin-left: 0px;
+            margin-right: 0px;
           }
         }
         &--mobile{

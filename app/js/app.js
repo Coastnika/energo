@@ -43,6 +43,20 @@ if (document.querySelector('.watched__container')) {
 
 }
 
+//init about swiper
+if (document.querySelector('.certificates__container')) {
+  var swiper = new Swiper('.certificates__container', {
+    spaceBetween: 20,
+    speed: 500,
+    loop: true,
+    slidesPerView: 4,
+    navigation: {
+      nextEl: '.certificates-button-next',
+      prevEl: '.certificates-button-prev',
+    },
+  });
+}
+
 
 //dropdown function
 function dropDown(toggle, list) {
