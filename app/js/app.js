@@ -641,7 +641,6 @@ inputsContainer.forEach(container => {
     if (inputHeadline.value == '' && e.target != inputHeadline) {
       inputHeadline.classList.remove('input-headline--active')
       headlineElem.style.display = "none"
-      console.log(123);
     }
   })
 })
@@ -659,9 +658,6 @@ $('.button-manager').on('click', () => {
   buttonInfoManager.classList.remove('hide')
 })
 
-
-
-
 function uploadFile() {
   let file = document.querySelector('#file_btn')
 
@@ -675,15 +671,24 @@ function uploadFile() {
 $('#file_btn').on('input', uploadFile)
 
 
-$(document).ready(function() {
+//show slider-modal
+let boxModal = document.querySelector('.box-modal')
 
+$('.certificates__wrapper').on('click', e => {
+  let {type} = e.target.dataset
 
-	$("a.grouped_elements").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600, 
-		'speedOut'		:	200, 
-		'overlayShow'	:	false
-	});
-	
-});
+  if(type == 'image') {
+    let src = e.target.getAttribute('src')
+    $('.box-modal').removeClass('hide')
+    $('.box-modal__image').attr('src', src)
+  }
+})
+
+//close slider-modal
+$('.box-modal').on('click', e => {
+  let {type} = e.target.dataset
+
+  if(type == 'backdrop'){
+    $('.box-modal').addClass('hide')
+  }
+})
