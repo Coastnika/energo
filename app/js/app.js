@@ -673,3 +673,5 @@ function uploadFile() {
 }
 
 $('#file_btn').on('input', uploadFile)
+
+
