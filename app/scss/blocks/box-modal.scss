@@ -24,9 +24,13 @@
     cursor: pointer;
   }
   &__content{
+    width: 35%;
     position: relative;
     padding: 40px;
     background-color: $white;
     border-radius: 6px;
+    & img{
+      width: 100%;
+    }
   }
 }

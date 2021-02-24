@@ -161,7 +161,11 @@
       padding-top: 16px;
       padding-bottom: 16px;
       &:hover{
-        background-color: $whiteEC;;
+        background-color: $whiteEC;
+        color: $orangeF1;
+      }
+      &--active{
+        color: $orangeF1;
       }
       &--orange{
         color: $orangeF1;
@@ -298,6 +302,9 @@
     &-link{
       color: $black33;
       font-weight: 500;
+      &--active{
+        color: $orangeF1;
+      }
       
     }
   }
