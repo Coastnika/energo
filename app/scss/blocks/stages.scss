@@ -18,6 +18,8 @@
   &__content{
     margin-top: 33px;
     &-text{
+      display: flex;
+      align-items: center;
       font-weight: 500;
       font-size: 18px;
       line-height: 21,6px;
