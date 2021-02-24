@@ -641,7 +641,6 @@ inputsContainer.forEach(container => {
     if (inputHeadline.value == '' && e.target != inputHeadline) {
       inputHeadline.classList.remove('input-headline--active')
       headlineElem.style.display = "none"
-      console.log(123);
     }
   })
 })
@@ -659,9 +658,6 @@ $('.button-manager').on('click', () => {
   buttonInfoManager.classList.remove('hide')
 })
 
-
-
-
 function uploadFile() {
   let file = document.querySelector('#file_btn')
 
@@ -673,3 +669,64 @@ function uploadFile() {
 }
 
 $('#file_btn').on('input', uploadFile)
+
+
+//show slider-modal
+let boxModal = document.querySelector('.box-modal')
+let boxImage = document.querySelectorAll('.certificates__item-image')
+
+if(boxImage){
+  boxImage.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+    console.log(item)
+  })
+}
+
+let counter = 0
+
+$('.certificates__container').on('click', e => {
+  let {type, index} = e.target.dataset
+  
+  if(type == 'image') {
+    let src = e.target.getAttribute('src')
+    $('.box-modal').removeClass('hide')
+    $('.box-modal__image').attr('src', src)
+    $('.certificates-button').css('position', 'fixed')
+    $('.certificates-button-prev').css('left', '500px')
+    $('.certificates-button-next').css('right', '500px')
+    
+    counter = index
+  }
+
+  else if(type == 'next') {
+    if(counter >= boxImage.length - 1){
+      counter = 0
+    }
+    counter++
+    let src = boxImage[counter].getAttribute('src')
+    $('.box-modal__image').attr('src', src)
+  }
+
+  else if(type == 'prev') {
+    if(counter <= 0){
+      counter = boxImage.length
+    }
+    counter--
+    let src = boxImage[counter].getAttribute('src')
+    $('.box-modal__image').attr('src', src)
+  }
+
+})
+
+//close slider-modal
+$('.box-modal').on('click', e => {
+  let {type} = e.target.dataset
+
+  
+  if(type == 'close') {
+    $('.box-modal').addClass('hide')
+    $('.certificates-button').css('position', 'absolute')
+    $('.certificates-button-prev').css('left', '135px')
+    $('.certificates-button-next').css('right', '135px')
+  }
+})
