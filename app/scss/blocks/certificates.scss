@@ -21,6 +21,7 @@
     height: 382px;
     & img{
       width: 100%;
+      cursor: pointer;
     }
   }
   .certificates-button{
@@ -30,7 +31,7 @@
     background: $white;
     border: 1px solid $whiteF2;
     bottom: 45%;
-    z-index: 2;
+    z-index: 102;
     outline: none;
     &::before{
       content: '';

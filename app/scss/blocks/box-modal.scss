@@ -1,0 +1,32 @@
+
+.box-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  &__backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .7);
+  }
+  &__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  &__content{
+    position: relative;
+    padding: 40px;
+    background-color: $white;
+    border-radius: 6px;
+  }
+}
