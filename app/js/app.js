@@ -674,7 +674,7 @@ $('#file_btn').on('input', uploadFile)
 let boxModal = document.querySelector('.box-modal')
 let boxImage = document.querySelectorAll('.certificates__item-image')
 
-if(boxImage){
+if (boxImage) {
   boxImage.forEach((item, index) => {
     item.setAttribute('data-index', index)
     console.log(item)
@@ -684,21 +684,21 @@ if(boxImage){
 let counter = 0
 
 $('.certificates__container').on('click', e => {
-  let {type, index} = e.target.dataset
-  
-  if(type == 'image') {
+  let { type, index } = e.target.dataset
+
+  if (type == 'image') {
     let src = e.target.getAttribute('src')
     $('.box-modal').removeClass('hide')
     $('.box-modal__image').attr('src', src)
     $('.certificates-button').css('position', 'fixed')
-    $('.certificates-button-prev').css('left', '500px')
-    $('.certificates-button-next').css('right', '500px')
-    
+    $('.certificates-button-prev').css('left', '450px')
+    $('.certificates-button-next').css('right', '450px')
+
     counter = index
   }
 
-  else if(type == 'next') {
-    if(counter >= boxImage.length - 1){
+  else if (type == 'next') {
+    if (counter >= boxImage.length - 1) {
       counter = 0
     }
     counter++
@@ -706,8 +706,8 @@ $('.certificates__container').on('click', e => {
     $('.box-modal__image').attr('src', src)
   }
 
-  else if(type == 'prev') {
-    if(counter <= 0){
+  else if (type == 'prev') {
+    if (counter <= 0) {
       counter = boxImage.length
     }
     counter--
@@ -719,10 +719,10 @@ $('.certificates__container').on('click', e => {
 
 //close slider-modal
 $('.box-modal').on('click', e => {
-  let {type} = e.target.dataset
+  let { type } = e.target.dataset
 
-  
-  if(type == 'close') {
+
+  if (type == 'close') {
     $('.box-modal').addClass('hide')
     $('.certificates-button').css('position', 'absolute')
     $('.certificates-button-prev').css('left', '135px')
