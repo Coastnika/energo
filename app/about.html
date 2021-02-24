@@ -3310,29 +3310,29 @@
           <div class="certificates__container">
             <div class="certificates__wrapper swiper-wrapper">
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_1.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_1.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_2.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_2.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_3.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_3.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_4.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_4.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_5.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_5.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_6.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_6.png" alt="">
               </div>
               <div class="certificates__item swiper-slide">
-                <img data-type="image" src="./assets/images/certificate_7.png" alt="">
+                <img data-type="image" class="certificates__item-image" src="./assets/images/certificate_7.png" alt="">
               </div>
             </div>
-            <div class="certificates-button certificates-button-next"></div>
-            <div class="certificates-button certificates-button-prev"></div>
+            <div class="certificates-button certificates-button-next" data-type="next"></div>
+            <div class="certificates-button certificates-button-prev" data-type="prev"></div>
           </div>
         </div>
       </div>
@@ -3530,8 +3530,11 @@
   </div>
 
   <div class="box-modal hide">
-    <div class="box-modal__backdrop" data-type="backdrop"></div>
+    <div class="box-modal__backdrop" data-type="close"></div>
     <div class="box-modal__content">
+      <div class="box-modal__close" >
+        <img data-type="close" src="./assets/icon/close.svg" alt="">
+      </div>
       <img class="box-modal__image" src="" alt="">
     </div>
   </div>
