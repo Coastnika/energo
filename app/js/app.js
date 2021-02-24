@@ -670,7 +670,6 @@ function uploadFile() {
 
 $('#file_btn').on('input', uploadFile)
 
-
 //show slider-modal
 let boxModal = document.querySelector('.box-modal')
 let boxImage = document.querySelectorAll('.certificates__item-image')
