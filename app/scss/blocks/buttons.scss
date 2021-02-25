@@ -399,3 +399,21 @@
     border-bottom: 1px dotted #FFFFFF;
   }
 }
+.button-save{
+  padding: 16px 32px 16px 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $orangeF1;
+  border: 1px solid $orangeF1;
+  border-radius: 6px;
+  display: inline-block;  
+  cursor: pointer;
+  margin-bottom: 98px;
+  &:hover{
+    border: none;
+    padding: 17px 33px 17px 33px;
+    background: $orangeGradient;
+    color: $white;
+  }
+}
