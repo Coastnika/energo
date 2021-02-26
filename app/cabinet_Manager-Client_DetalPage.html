@@ -3480,7 +3480,7 @@
       <form class="profile__form form">
         <div class="profile__wrapper">
           <div class="profile__name">ФИО</div>
-          <div class="form-input profile__input">
+          <div class="profile__input">
             <input class="input input-valid" type="text" placeholder="Иванов Иван Иванович">
           </div>
         </div>
@@ -3489,42 +3489,57 @@
           <div class="custom__select sorting__price-dropdown">
             <div class="custom__select-title ">Физическое лицо</div>
             <div class="custom__select-content hide">
-              <div class="custom__select-text">Физическое лицо</div>
-              <div class="custom__select-text">Юридическое лицо</div>
+              <div class="custom__select-text" data-type="option">Физическое лицо</div>
+              <div class="custom__select-text" data-type="option">Юридическое лицо</div>
             </div>
           </div>
         </div>
         
-        <div class="profile__wrapper">
+        <div class="profile__wrapper  hide" id="profile-company">
           <div class="profile__name">Компания</div>
-          <div class="form-input profile__input">
-            <input class="input input-valid" type="text" placeholder="ООО «Компания Новая сила»">
+          <div class="profile__input">
+            <input class="input input-valid " name="company" type="text" placeholder="ООО «Компания Новая сила»">
           </div>
         </div>
-        <div class="profile__wrapper">
+        <div class="profile__wrapper hide" id="profile-city">
           <div class="profile__name">Город</div>
-          <div class="form-input profile__input">
-            <input class="input input-valid" type="text" placeholder="Санкт-Петербург">
+          <div class="profile__input">
+            <input class="input input-valid "  name="city" type="text" placeholder="Санкт-Петербург">
           </div>
         </div>
-        <div class="profile__wrapper">
+        <div class="profile__wrapper hide" id="profile-inn">
           <div class="profile__name">ИНН</div>
-          <div class="form-input profile__input">
-            <input class="input input-valid" type="number" placeholder="4587878796">
+          <div class="profile__input">
+            <input class="input input-valid " name="inn" type="number" placeholder="4587878796">
           </div>
         </div>
-        <div class="profile__wrapper">
+        <div class="profile__wrapper" id="profile-phone">
           <div class="profile__name">Телефон</div>
-          <div class="form-input profile__input">
-            <input class="input input-valid" type="phone" placeholder="+7 (987) 548-00-00">
+          <div class="profile__input">
+            <input class="input input-valid  input-phone" name="phone" type="phone" placeholder="+7 (987) 548-00-00">
           </div>
         </div>
-        <div class="profile__wrapper">
+        <div class="profile__wrapper" id="profile-mail">
           <div class="profile__name">Почта</div>
-          <div class="form-input profile__input">
-            <input class="input input-valid" type="text" placeholder="79107776589@yandex.ru">
+          <div class="profile__input">
+            <input class="input input-valid " name="mail" type="text" placeholder="79107776589@yandex.ru">
           </div>
         </div>
+        <div class="profile__subtitle">
+          Изменить пароль
+        </div>
+        <div class="profile__wrapper" id="profile-phone">
+          <div class="profile__name--password">Изменить пароль</div>
+          <div class="profile__input">
+            <input class="input input-valid " name="phone" type="password" placeholder="">
+          </div>
+        </div>
+        <div class="profile__wrapper" id="profile-mail">
+          <div class="profile__name--password-repeat">Повторите новый пароль</div>
+          <div class="profile__input">
+            <input class="input input-valid " name="mail" type="password" placeholder="">
+          </div>
+        </div>  
         <div class="profile__submit">
           <button class="button-default submit" type="submit">Сохранить</button>
         </div>
