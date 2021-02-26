@@ -31,6 +31,27 @@
               background-image: url('../assets/icon/download.svg');
               background-repeat: no-repeat ;
             }
+              &--user a{
+                font-size: 16px;
+                line-height: 110%;
+                color: $orangeF1;
+                border-bottom: 1px solid #fff;
+                position: relative;
+                &:hover{
+                    border-bottom: 1px solid $orangeF1;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 55%;
+                    right: 145px;
+                    transform: translateY(-50%) ;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('../assets/icon/arrow-left-1.svg');
+                    background-repeat: no-repeat ;
+                }
+            }
         }
     }
     &__title{

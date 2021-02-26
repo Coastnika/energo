@@ -158,6 +158,9 @@
         }
         &-company{
             width: 266px;
+            &--user{
+                width: 310px;
+            }
             &--sent{
                 width: 280px;
             }
@@ -173,6 +176,9 @@
         }
         &-number{
             width: 259px;
+            &--user{
+                width: 220px;
+            }
             &--sent{
                 width: 190px;
             }
@@ -182,6 +188,9 @@
         }
         &-time{
             width: 180px;
+            &--user{
+                width: 200px;
+            }
             &--sent{
                 width: 180px;
             }
