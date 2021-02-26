@@ -623,7 +623,7 @@ let inputsContainer = document.querySelectorAll('.form-input')
 inputsContainer.forEach(container => {
   let inputHeadline = container.querySelector('.input-headline')
 
-  headlineText = inputHeadline.placeholder
+  let headlineText = inputHeadline.placeholder
 
   let headlineElem = document.createElement('div')
 
@@ -727,5 +727,24 @@ $('.box-modal').on('click', e => {
     $('.certificates-button').css('position', 'absolute')
     $('.certificates-button-prev').css('left', '135px')
     $('.certificates-button-next').css('right', '135px')
+  }
+})
+
+
+// profile-popup type person  // *** cabinet_USER-Client_DetalPage.html ***
+
+$('.profile__content').on('click', e => {
+  const {type} = e.target.dataset
+  const text = e.target.textContent.toLocaleLowerCase()
+  
+  if(type == 'option' && text == 'юридическое лицо') {
+    $('#profile-company').removeClass('hide')
+    $('#profile-inn').removeClass('hide')
+    $('#profile-city').removeClass('hide')
+  }
+  else if(type == 'option' && text == 'физическое лицо') {
+    $('#profile-company').addClass('hide')
+    $('#profile-inn').addClass('hide')
+    $('#profile-city').addClass('hide')
   }
 })
