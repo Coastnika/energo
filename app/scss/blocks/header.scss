@@ -201,7 +201,8 @@
     &-list{
       display: flex;
       align-items: center;
-      height: 44px;
+      flex-wrap: wrap;
+      min-height: 44px;
       @media(max-width:540px){
         height: 60px;
         flex-wrap: wrap;
