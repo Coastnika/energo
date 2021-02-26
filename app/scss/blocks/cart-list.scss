@@ -37,6 +37,10 @@
       margin-right: 40px;
       font-weight: 600;
       font-size: 18px;
+      &--user{
+        width: 220px;
+        margin-right: 0px;
+      }
       &--order{
         width: 190px;
       }
@@ -52,6 +56,10 @@
     &-price{
       width: 145px;
       margin-right: 40px;
+      &--user{
+        width: 200px;
+        margin-right: 0px;
+      }
       &--order{
         width: 170px;
       }
@@ -69,6 +77,10 @@
     &-count{
       width: 131px;
       margin-right: 40px;
+      &--user{
+        width: 310px;
+        margin-right: 0px;
+      }
       &--order{
         width: 280px;
       }
@@ -88,6 +100,7 @@
     &-summ{
       width: 145px;
       text-align: right;
+   
       &--order{
         width: 200px;
         text-align: right;
