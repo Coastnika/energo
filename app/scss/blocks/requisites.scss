@@ -64,7 +64,6 @@
                 }
             }
         }
-
         & svg{
             position: absolute;
             top: 50%;
@@ -73,6 +72,14 @@
             width: 15px;
             height: 16px;
             fill:  $black33;
+        }
+        &--price{
+            & label{
+                width: 158px;
+            }
+            & svg {
+                right: 7%;
+            }
         }
     }
     &__upload-text{

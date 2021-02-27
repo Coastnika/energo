@@ -734,17 +734,33 @@ $('.box-modal').on('click', e => {
 // profile-popup type person  // *** cabinet_USER-Client_DetalPage.html ***
 
 $('.profile__content').on('click', e => {
-  const {type} = e.target.dataset
+  const { type } = e.target.dataset
   const text = e.target.textContent.toLocaleLowerCase()
-  
-  if(type == 'option' && text == 'юридическое лицо') {
+
+  if (type == 'option' && text == 'юридическое лицо') {
     $('#profile-company').removeClass('hide')
     $('#profile-inn').removeClass('hide')
     $('#profile-city').removeClass('hide')
   }
-  else if(type == 'option' && text == 'физическое лицо') {
+  else if (type == 'option' && text == 'физическое лицо') {
     $('#profile-company').addClass('hide')
     $('#profile-inn').addClass('hide')
     $('#profile-city').addClass('hide')
   }
+})
+
+// price
+
+
+$('.price__download-btn').on('click', () => {
+  $('.price__sub').addClass('hide');
+  $('.price__content').css('display', 'block');
+})
+
+
+$('.price__reload-btn').on('click', () => {
+  $('.price__checkbox').addClass('hide');
+  $('.price__reload-btn').addClass('hide');
+  $('.price__download-error').css('display', 'block');
+  $('.requisites__upload-text').css('color', '#EB5757');
 })
