@@ -92,6 +92,9 @@
                 z-index: 10;
                 border-radius: 6px;
             }
+            &--active{
+            
+            }
         }
         &-buttons{
             display: flex;
@@ -168,4 +171,37 @@
             border-bottom: 1px solid $whiteF2;
         }
     }
+}
+
+//поведение элемента
+.pricelist__toggle{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.price__pricelist__item--active{
+
+    .price__pricelist-text span::before{
+        transform: translateY(-55%) rotate(-180deg);
+    }
+
+    .price__pricelist-btn-green{
+        background-color: $green21;
+        color: $white;
+    }
+
+    .price__pricelist-btn-red{
+        background-color: $redEB;
+        color: $white;
+    }
+}
+
+.table__toggle--active{
+
+    .price__pricelist-text span::before{
+        transform: translateY(-55%) rotate(-180deg);
+    }
+
 }
