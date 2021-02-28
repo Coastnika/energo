@@ -1,0 +1,118 @@
+.price{
+    margin-left: 30px;
+    &__download-btn{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $orangeF1;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px dashed $orangeF1;
+        &:hover{
+            border-bottom: 1px dashed #fff;
+        }
+        & svg{
+            position: absolute;
+            top: 56%;
+            right: -15%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 16px;
+            fill:  $orangeF1;
+        }
+    }
+    &__reload-btn{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $orangeF1;
+        cursor: pointer;
+        position: relative;
+        border-bottom: 1px dashed $orangeF1;
+        &:hover{
+            border-bottom: 1px dashed #fff;
+        }
+        & svg{
+            position: absolute;
+            top: 56%;
+            right: -15%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 16px;
+            fill:  $orangeF1;
+        }
+    }
+    &__sub{
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 160%;
+        color: $black33;
+        padding-top: 20px;
+    }
+    &__content{
+        padding-top: 31px;
+        padding-bottom: 100px;
+        display: none;
+        position: relative;
+        &-wrap{
+            display: flex;
+            margin-bottom: 30px;
+        }
+        &-number{   
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black33;
+            border: 1px solid $black33;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        &-wrapper{
+            width: 90%;
+            margin-left: 19px;
+            &--download{
+                display: flex;
+                align-items: center;
+            }
+        }
+        &-text{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 160%;
+            color: $black33;
+            &--margin{
+                margin-right: 20px;
+            }
+            &-bold{
+                font-weight: bold;
+            }
+            &--pad{
+                padding-top: 20px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    &__checkbox{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__line{
+        position: absolute;
+        top: 105px;
+        left: 23.5px;
+    }
+    &__download-error{
+        font-size: 15px;
+        line-height: 110%;
+        color: $redEB;
+        padding-top: 15px;
+        display: none;
+    }
+}
