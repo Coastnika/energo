@@ -732,7 +732,6 @@ $('.box-modal').on('click', e => {
 
 
 // profile-popup type person  // *** cabinet_USER-Client_DetalPage.html ***
-
 $('.profile__content').on('click', e => {
   const { type } = e.target.dataset
   const text = e.target.textContent.toLocaleLowerCase()
@@ -749,18 +748,71 @@ $('.profile__content').on('click', e => {
   }
 })
 
-// price
-
-
+// price list dropdown
 $('.price__download-btn').on('click', () => {
   $('.price__sub').addClass('hide');
   $('.price__content').css('display', 'block');
 })
-
 
 $('.price__reload-btn').on('click', () => {
   $('.price__checkbox').addClass('hide');
   $('.price__reload-btn').addClass('hide');
   $('.price__download-error').css('display', 'block');
   $('.requisites__upload-text').css('color', '#EB5757');
+})
+
+let priceToggle = document.querySelectorAll('.pricelist__toggle')
+let priceItem = document.querySelectorAll('.price__pricelist__item')
+let pricePosition = document.querySelectorAll('.price__pricelist-position')
+
+if(priceItem && pricePosition && priceToggle) {
+  priceToggle.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+
+  priceItem.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+
+  pricePosition.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+}
+
+$('.pricelist__toggle').on('click', function(e) {
+  let indexItem = +this.dataset.index
+
+  priceItem[indexItem].classList.toggle('price__pricelist__item--active')
+
+  $('.price__pricelist-position').each(function(index) {
+    if(indexItem == index) {
+      $(this).toggleClass('hide')
+    }
+  })
+})
+
+//price list table dropdown
+let tableToggle = document.querySelectorAll('.table__toggle')
+let tableContent = document.querySelectorAll('.price__pricelist__subs')
+
+if(tableToggle && tableContent) {
+  tableToggle.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+
+  tableContent.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+}
+
+$('.table__toggle').on('click', function(e) {
+  let indexItem = +this.dataset.index
+
+  $(this).toggleClass('table__toggle--active')
+
+  $('.price__pricelist__subs').each(function(index) {
+    if(indexItem == index) {
+      $(this).toggleClass('hide')
+    }
+  })
 })
