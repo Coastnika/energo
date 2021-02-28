@@ -1,0 +1,171 @@
+.price{
+    &__pricelist{
+        padding-bottom: 110px;
+        &-title{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            color: $black33;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        &-table{
+
+        }
+        &-headline{
+            background-color: $whiteF7;
+            border: none;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            height: 51px;
+        }
+        &-text{
+            font-size: 14px;
+            line-height: 120%;
+            &--size{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 110%;
+                color: $black33;
+            }
+            &--bold{
+                font-weight: 500;
+                & span{
+                    display: inline-block;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 60%;
+                        right:-15px;
+                        transform: translateY(-50%) ;
+                        width: 9px;
+                        height: 6px;
+                        background-image: url('../assets/icon/dropdown-arrow.svg');
+                        background-repeat: no-repeat ;
+                      }
+                }
+            }
+            &--pad{
+                padding-left: 20px;
+            }
+            &--section{
+                width: 291px;
+            }
+            &--date{
+                width: 244px;
+            }
+            &--amount{
+                width: 190px;
+            }
+            &--name{
+                width: 220px;
+            }
+            &--sum{
+                width: 110px;
+            }
+            &--storage{
+                width: 140px;
+            }
+        }
+        &__item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            background: #fff;
+            border: 1px solid rgba(255,255,255,0);
+            border-bottom: 1px solid $whiteF2;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid $orangeF1;
+                border-radius: 6px;
+            }
+            &--disable{
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255,255,255,0.6);
+                z-index: 10;
+                border-radius: 6px;
+            }
+        }
+        &-buttons{
+            display: flex;
+        }
+        &-btn-green{
+            border: 1px solid $green21;
+            border-radius: 6px;
+            color: $green21;
+            font-size: 14px;
+            line-height: 120%;
+            width: 80px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        &-btn-red{
+            border: 1px solid $redEB;
+            border-radius: 6px;
+            color: $redEB;
+            font-size: 14px;
+            line-height: 120%;
+            width: 50px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-download{
+            margin-right: 20px;
+        }
+        &-position{
+            &-title{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 160%;
+                padding-left: 38px;
+                padding-bottom: 7px;
+                &--green{
+                    color: $green21;
+                    padding-top: 12px;
+                }
+                &--red{
+                    color: $redEB;
+                }
+            }
+            &-table{
+                margin-left: 34px;
+                margin-bottom: 12px;
+            }
+            &-headline{
+                background: rgba(33, 150, 83, 0.05);
+                border: none;
+                display: flex;
+                align-items: center;
+                padding: 12px 15px;
+                height: 42px;
+                &--red{
+                    background: rgba(235, 87, 87, 0.05);
+                }
+            }
+            &-item{
+                display: flex;
+                align-items: center;
+                padding: 7px 15px;
+                border-bottom: 1px solid $whiteF2;
+            }
+        }
+        &__subitem{
+            display: flex;
+            align-items: center;
+            padding: 7px 15px;
+            border-bottom: 1px solid $whiteF2;
+        }
+    }
+}
