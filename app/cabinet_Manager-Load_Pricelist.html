@@ -5181,113 +5181,408 @@
         </footer>
     </div>
     <!--POP-UP'S-->
-    <!--callback-->
-    <div class="popup-callback hide">
-        <div class="popup-callback__content">
-            <div class="popup-callback__close">
-                <img src="./assets/icon/close.svg" alt="">
-            </div>
-            <div class="popup-callback__title">Заказать обратный звонок</div>
-            <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее
-                время
-            </div>
-            <form action="" class="popup-callback__form form">
-                <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
-                <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
-            </form>
-        </div>
+  <!--callback-->
+  <div class="popup-callback hide">
+    <div class="popup-callback__content">
+      <div class="popup-callback__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="popup-callback__title">Заказать обратный звонок</div>
+      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время
+      </div>
+      <form action="" class="popup-callback__form form">
+        <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
+        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
+      </form>
     </div>
-    <!--register-->
-    <div class="register hide">
-        <div class="register__container">
-            <form class="register__form form">
-                <div class="register__form-content">
-                    <div class="register__form-title">Регистрация</div>
-                    <div class="register__form-close">
-                        <img src="./assets/icon/close.svg" alt="">
-                    </div>
-                    <div class="register__form-input form-input">
-                        <input type="text" class="input input-headline input-valid" placeholder="ФИО">
-                    </div>
-                    <div class="register__form-input form-input">
-                        <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
-                    </div>
-                    <div class="register__form-input form-input">
-                        <input type="text" class="input input-headline input-valid" placeholder="Пароль">
-                    </div>
-                    <div class="register__form-button">
-                        <button class="button-default submit">Зарегистрироваться</button>
-                    </div>
-                    <div class="register__mobile">
-                        <div class="register__mobile-text">Есть аккаунт? - </div>
-                        <div class="register__mobile-trigger">Войти</div>
-                    </div>
-                </div>
-                <div class="register__form-footer">
-                    Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
-                </div>
-            </form>
-            <div class="register__content">
-                <div class="register__content-title">У вас есть аккаунт на нашем сайте?</div>
-                <div class="register__content-text">Авторизуйтесь, чтобы отследить ваш заказ, посмотреть состояние
-                    текущего
-                    заказа, подписки, и другое</div>
-                <div class="register__content-button">
-                    <button class="button-default login-trigger">Войти</button>
-                </div>
+  </div>
+
+  <!--calculator-light-->
+  <div class="calculator-light  hide">
+    <div class="calculator-light__content">
+      <div class="calculator-light__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="calculator-light__title">Подобрать светильники по освещенности</div>
+      <form class="calculator-light__form form">
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Габариты помещения (м):<sup
+              class="input-error-text">*</sup></div>
+          <div class="calculator-light__form-size">
+            <div class="form-input">
+              <input class="input calculator-light__form-size-input input-valid input-headline" type="number"
+                placeholder="Длина, м">
             </div>
-        </div>
-    </div>
-
-    <!--login-->
-    <div class="register login hide">
-        <div class="register__container register__container-login">
-            <form class="register__form register__form-login form">
-                <div class="register__form-content">
-                    <div class="register__form-title">Личный кабинет</div>
-                    <div class="register__form-close register__form-close-login">
-                        <img src="./assets/icon/close.svg" alt="">
-                    </div>
-                    <div class="register__form-input form-input">
-                        <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
-                    </div>
-                    <div class="register__form-input form-input">
-                        <input type="text" class="input input-headline input-valid" placeholder="Пароль">
-                    </div>
-
-                    <div class="register__form-wrapper">
-                        <label class="register__form-label">
-                            <input type="checkbox" class="checkbox register__form-checkbox">
-                            <span class="register__form-text">Запомнить меня</span>
-                        </label>
-                        <a href="#" class="register__form-link">
-                            Забыли пароль?
-                        </a>
-                    </div>
-                    <div class="register__form-button">
-                        <button class="button-default submit">Войти</button>
-                    </div>
-                    <div class="register__mobile">
-                        <div class="register__mobile-text">Нет аккаунта? - </div>
-                        <div class="register__mobile-trigger register__mobile-trigger-login">Зарегистрироваться</div>
-                    </div>
-                </div>
-
-                <div class="register__form-footer">
-                    Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
-                </div>
-            </form>
-            <div class="register__content register__content-login">
-                <div class="register__content-title">У вас нет аккаунта на нашем сайте?</div>
-                <div class="register__content-text">Зарегистрируйтесь, чтобы использовать все возможности личного
-                    кабинета:
-                    отслеживание заказов, настройку подписки, и другие</div>
-                <div class="register__content-button">
-                    <button class="button-default register-trigger">Зарегистрироваться</button>
-                </div>
+            <img src="./assets/icon/X.svg" alt="">
+            <div class="form-input">
+              <input class="input calculator-light__form-size-input input-valid input-headline" type="number"
+                placeholder="Ширина">
             </div>
+            <img src="./assets/icon/X.svg" alt="">
+            <div class="form-input">
+              <input class="input calculator-light__form-size-input input-valid input-headline" type="number"
+                placeholder="Высота">
+            </div>
+          </div>
         </div>
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Объект для освещения:<sup
+              class="input-error-text">*</sup></div>
+          <div class="calculator-light__form-type">
+            <div class="calculator-light__form-dropdown sorting__price-dropdown custom__select">
+              <div class="custom__select-title ">Тип объекта</div>
+              <div class="custom__select-content hide">
+                <div class="custom__select-text">по возрастанию цены</div>
+                <div class="custom__select-text">по убыванию цены</div>
+                <div class="custom__select-text">по возрастанию цены</div>
+                <div class="custom__select-text">по убыванию цены</div>
+              </div>
+            </div>
+            <div class="calculator-light__form-dropdown sorting__price-dropdown custom__select">
+              <div class="custom__select-title ">Тип объекта</div>
+              <div class="custom__select-content hide">
+                <div class="custom__select-text">по возрастанию цены</div>
+                <div class="custom__select-text">по убыванию цены</div>
+                <div class="custom__select-text">по возрастанию цены</div>
+                <div class="custom__select-text">по убыванию цены</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator-light__form-container">
+          <div class="calculator-light__form-name calculator-light__form-name--padding">Требуемая освещенность:<sup
+              class="input-error-text">*</sup></div>
+          <div class="form-input">
+            <input class="calculator-light__form-input input-valid input-headline" type="number"
+              placeholder="Тип помещения">
+          </div>
+        </div>
+        <div class="calculator-light__form-container calculator-light__form-container--radio">
+          <div class="calculator-light__form-name">Тип источника света:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-light__form-radio">
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type" checked>
+              <span class="calculator-light__form-span">Светодиод</span>
+            </label>
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type">
+              <span>Люминесцентная лампа</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator-light__form-container calculator-light__form-container--radio">
+          <div class="calculator-light__form-name">Тип светильников:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-light__form-radio">
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type_2" checked>
+              <span>Встраиваемый</span>
+            </label>
+            <label class="calculator-light__form-label">
+              <input class="radio" type="radio" class="radio" name="light-type_2">
+              <span>Накладной</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator-light__form-submit">
+          <button type="submit" class="button-default submit">Подобрать</button>
+        </div>
+      </form>
     </div>
+  </div>
+
+  <!--calculator-weight-->
+  <div class="calculator-weight hide">
+    <div class="calculator-weight__content">
+      <div class="calculator-weight__close"><img src="./assets/icon/close.svg" alt=""></div>
+      <div class="calculator-weight__title">Расчет веса кабеля</div>
+      <form class="calculator-weight__form form">
+        <!--1-->
+        <div class="calculator-weight__form-wrapper">
+          <div class="calculator-weight__form-title">
+            <p>ВВГнг-LS 5х50</p>
+            <p>Барабан № 14</p>
+          </div>
+          <div class="calculator-weight__form-size">
+            <div class="calculator-weight__form-size-wrapper">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile input-headline input-valid"
+                  type="number" placeholder="Кол-во, м">
+              </div>
+              <img class="calculator-weight__form-size-input--mobile" src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input class="input calculator-weight__form-size-input input-valid input-headline" type="number"
+                  placeholder="Длина, м">
+              </div>
+              <img src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--width input-headline input-valid"
+                  type="number" placeholder="Ширина, м">
+              </div>
+              <img src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input  calculator-weight__form-size-input--height input-valid input-headline"
+                  type="number" placeholder="Высота, м">
+              </div>
+            </div>
+            <div class="calculator-weight__form-mobile-wrapper">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight input-valid input-headline"
+                  type="number" placeholder="Вес, кг">
+              </div>
+              <div class="calculator-weight__form-size-del">
+                <img src="./assets/icon/delete.svg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!--2-->
+        <div class="calculator-weight__form-wrapper">
+          <div class="calculator-weight__form-title">
+            <p>ВВГнг-LS 5х50</p>
+            <p>Барабан № 14</p>
+          </div>
+          <div class="calculator-weight__form-size">
+            <div class="calculator-weight__form-size-wrapper">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--mobile input-valid input-headline"
+                  type="number" placeholder="Кол-во, м">
+              </div>
+              <img class="calculator-weight__form-size-input--mobile" src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input class="input calculator-weight__form-size-input input-valid input-headline" type="number"
+                  placeholder="Длина, м">
+              </div>
+              <img src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--width input-headline input-valid"
+                  type="number" placeholder="Ширина, м">
+              </div>
+              <img src="./assets/icon/X.svg" alt="">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--height input-valid input-headline"
+                  type="number" placeholder="Высота, м">
+              </div>
+            </div>
+            <div class="calculator-weight__form-mobile-wrapper">
+              <div class="form-input">
+                <input
+                  class="input calculator-weight__form-size-input calculator-weight__form-size-input--weight input-valid input-headline"
+                  type="number" placeholder="Вес, кг">
+              </div>
+              <div class="calculator-weight__form-size-del">
+                <img src="./assets/icon/delete.svg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="calculator-weight__add">
+          <div class="calculator-weight__add-text">Добавить ещё кабель</div>
+          <div class="calculator-weight__add-icon">
+            <img src="./assets/icon/plus-2.svg" alt="">
+          </div>
+        </div>
+        <div class="calculator-weight__submit">
+          <button type="submit" class="button-default submit">Рассчитать</button>
+        </div>
+      </form>
+      <div class="calculator-weight__footer">
+        <div class="calculator-weight__footer-text">
+          Общий вес:
+          <span>0 кг</span>
+        </div>
+        <div class="calculator-weight__footer-text">
+          Общий объем
+          <span>0 м3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--calculator-delivery-->
+  <div class="calculator-delivery hide">
+    <div class="calculator-delivery__content">
+      <div class="calculator-delivery__close">
+        <img src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="calculator-delivery__title">Расчет стоимости доставки</div>
+      <form class="calculator-delivery__form form">
+        <div class="calculator-delivery__container">
+          <div class="calculator-delivery__form-name">Данные о грузе:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-delivery__form-wrapper calculator-delivery__form-wrapper-input">
+            <div class="form-input">
+              <input class="calculator-delivery__form-input input input-valid input-headline" type="text"
+                placeholder="Вес, кг ">
+            </div>
+            <div class="form-input">
+              <input class="calculator-delivery__form-input input input-valid input-headline" type="text"
+                placeholder="Объем, м3">
+            </div>
+          </div>
+        </div>
+        <div class="calculator-delivery__container">
+          <div class="calculator-delivery__form-name">Точка отпраления:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-delivery__form-container">
+            <div class="calculator-delivery__form-wrapper">
+              <label class="calculator-delivery__form-label">
+                <input class="calculator-delivery__form-radio radio" type="radio" name="radio_1" Checked>
+                <span class="calculator-delivery__form-span">Пункт приема/выдачи</span>
+              </label>
+              <label class="calculator-delivery__form-label">
+                <input class="calculator-delivery__form-radio radio" type="radio" name="radio_1">
+                <span class="calculator-delivery__form-span">Забрать по адресу</span>
+              </label>
+            </div>
+            <div class="calculator-delivery__map">Выбрать пункт на карте</div>
+          </div>
+        </div>
+        <div class="calculator-delivery__container">
+          <div class="calculator-delivery__form-name">Данные о грузе:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-delivery__form-container">
+            <div class="calculator-delivery__form-wrapper">
+              <label class="calculator-delivery__form-label">
+                <input class="calculator-delivery__form-radio radio" type="radio" name="radio_2" checked>
+                <span class="calculator-delivery__form-span">Пункт приема/выдачи</span>
+              </label>
+              <label class="calculator-delivery__form-label">
+                <input class="calculator-delivery__form-radio radio" type="radio" name="radio_2">
+                <span class="calculator-delivery__form-span">Забрать по адресу</span>
+              </label>
+            </div>
+            <div class="calculator-delivery__map">Показать адрес на карте</div>
+          </div>
+        </div>
+        <div class="calculator-delivery__container">
+          <div class="calculator-delivery__form-name">Дополнительные услуги:<sup class="input-error-text">*</sup></div>
+          <div class="calculator-delivery__form-container">
+            <label class="calculator-delivery__form-label">
+              <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+              <span class="calculator-delivery__form-span">Защитная транспортировочная упаковка</span>
+            </label>
+            <label class="calculator-delivery__form-label">
+              <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+              <span class="calculator-delivery__form-span">Пломбировка груза</span>
+            </label>
+            <label class="calculator-delivery__form-label">
+              <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+              <span class="calculator-delivery__form-span">Перевозка сопроводительных документов</span>
+            </label>
+          </div>
+        </div>
+        <div class="calculator-delivery__submit">
+          <button type="submit" class="button-default submit">Рассчитать</button>
+        </div>
+      </form>
+      <div class="calculator-delivery__footer">
+        <div class="calculator-delivery__footer-wrapper">
+          <div class="calculator-delivery__footer-text">
+            <span>Предварительная цена доставки из</span> г. Санкт-петербург, 8 линия ВО, 56, отделение №123132123 в г.
+            Москва, пр-т Просвещения, 2 груза весом 0кг, объемом 0,001м3
+          </div>
+          <div class="calculator-delivery__footer-price">0 рублей</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--register-->
+  <div class="register hide">
+    <div class="register__container">
+      <form class="register__form form">
+        <div class="register__form-content">
+          <div class="register__form-title">Регистрация</div>
+          <div class="register__form-close">
+            <img src="./assets/icon/close.svg" alt="">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="ФИО">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+          </div>
+          <div class="register__form-button">
+            <button class="button-default submit">Зарегистрироваться</button>
+          </div>
+          <div class="register__mobile">
+            <div class="register__mobile-text">Есть аккаунт? - </div>
+            <div class="register__mobile-trigger">Войти</div>
+          </div>
+        </div>
+        <div class="register__form-footer">
+          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+        </div>
+      </form>
+      <div class="register__content">
+        <div class="register__content-title">У вас есть аккаунт на нашем сайте?</div>
+        <div class="register__content-text">Авторизуйтесь, чтобы отследить ваш заказ, посмотреть состояние текущего
+          заказа, подписки, и другое</div>
+        <div class="register__content-button">
+          <button class="button-default login-trigger">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--login-->
+  <div class="register login hide">
+    <div class="register__container register__container-login">
+      <form class="register__form register__form-login form">
+        <div class="register__form-content">
+          <div class="register__form-title">Личный кабинет</div>
+          <div class="register__form-close register__form-close-login">
+            <img src="./assets/icon/close.svg" alt="">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+          </div>
+          <div class="register__form-input form-input">
+            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+          </div>
+
+          <div class="register__form-wrapper">
+            <label class="register__form-label">
+              <input type="checkbox" class="checkbox register__form-checkbox">
+              <span class="register__form-text">Запомнить меня</span>
+            </label>
+            <a href="#" class="register__form-link">
+              Забыли пароль?
+            </a>
+          </div>
+          <div class="register__form-button">
+            <button class="button-default submit">Войти</button>
+          </div>
+          <div class="register__mobile">
+            <div class="register__mobile-text">Нет аккаунта? - </div>
+            <div class="register__mobile-trigger register__mobile-trigger-login">Зарегистрироваться</div>
+          </div>
+        </div>
+
+        <div class="register__form-footer">
+          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+        </div>
+      </form>
+      <div class="register__content register__content-login">
+        <div class="register__content-title">У вас нет аккаунта на нашем сайте?</div>
+        <div class="register__content-text">Зарегистрируйтесь, чтобы использовать все возможности личного кабинета:
+          отслеживание заказов, настройку подписки, и другие</div>
+        <div class="register__content-button">
+          <button class="button-default register-trigger">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
