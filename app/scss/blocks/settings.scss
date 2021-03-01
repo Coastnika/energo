@@ -1,0 +1,80 @@
+.settings{
+    margin-left: 30px;
+    &__content{
+        &-title{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 120%;
+            color: $black33;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &-text{
+            font-size: 15px;
+            line-height: 110%;
+            color: $black33;
+            &--name{
+                width: 350px;
+            }
+            &--mail{
+                width: 225px;
+            }
+            &--person{
+                width: 165px;
+            }
+            &--active{
+                width: 106px;
+            }
+            &--green{
+                display: inline-block;
+                border-bottom: 1px dashed $green21;
+                color: $green21;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 1px dashed $white;
+                }
+            }
+        }
+        &-delete{
+            cursor: pointer;
+        }
+    }
+    &-password{
+        cursor: pointer;
+        border-bottom: 1px dashed $black33;
+        &:hover{
+            border-bottom: 1px dashed $white;
+        }
+    }
+    &__btn-add{
+        font-size: 15px;
+        line-height: 110%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../assets/icon/plus-2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 24px;
+            height: 24px;
+            right: -32px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__input-name{
+        width: 431px;
+    }
+    &__input-mail{
+        width: 298px;
+    }
+    &__input-password{
+        width: 169px;
+    }
+}
