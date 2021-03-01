@@ -620,25 +620,25 @@ if (sidebarList) {
 // inputs headline
 let inputsContainer = document.querySelectorAll('.form-input')
 
-if(inputsContainer) {
+if (inputsContainer) {
   inputsContainer.forEach(container => {
     let inputHeadline = container.querySelector('.input-headline')
-    
-    if(inputHeadline) {
+
+    if (inputHeadline) {
       let headlineText = inputHeadline.placeholder
-  
+
       let headlineElem = document.createElement('div')
-    
+
       headlineElem.textContent = headlineText
       headlineElem.classList.add('headline-elem')
       container.appendChild(headlineElem)
-    
+
       inputHeadline.addEventListener('click', function (e) {
         headlineElem.style.display = "block"
         this.classList.add('input-headline--active')
-    
+
       })
-  
+
       window.addEventListener('click', function (e) {
         if (inputHeadline.value == '' && e.target != inputHeadline) {
           inputHeadline.classList.remove('input-headline--active')
@@ -770,7 +770,7 @@ let priceToggle = document.querySelectorAll('.pricelist__toggle')
 let priceItem = document.querySelectorAll('.price__pricelist__item')
 let pricePosition = document.querySelectorAll('.price__pricelist-position')
 
-if(priceItem && pricePosition && priceToggle) {
+if (priceItem && pricePosition && priceToggle) {
   priceToggle.forEach((item, index) => {
     item.setAttribute('data-index', index)
   })
@@ -784,13 +784,13 @@ if(priceItem && pricePosition && priceToggle) {
   })
 }
 
-$('.pricelist__toggle').on('click', function(e) {
+$('.pricelist__toggle').on('click', function (e) {
   let indexItem = +this.dataset.index
 
   priceItem[indexItem].classList.toggle('price__pricelist__item--active')
 
-  $('.price__pricelist-position').each(function(index) {
-    if(indexItem == index) {
+  $('.price__pricelist-position').each(function (index) {
+    if (indexItem == index) {
       $(this).toggleClass('hide')
     }
   })
@@ -800,7 +800,7 @@ $('.pricelist__toggle').on('click', function(e) {
 let tableToggle = document.querySelectorAll('.table__toggle')
 let tableContent = document.querySelectorAll('.price__pricelist__subs')
 
-if(tableToggle && tableContent) {
+if (tableToggle && tableContent) {
   tableToggle.forEach((item, index) => {
     item.setAttribute('data-index', index)
   })
@@ -810,13 +810,13 @@ if(tableToggle && tableContent) {
   })
 }
 
-$('.table__toggle').on('click', function(e) {
+$('.table__toggle').on('click', function (e) {
   let indexItem = +this.dataset.index
 
   $(this).toggleClass('table__toggle--active')
 
-  $('.price__pricelist__subs').each(function(index) {
-    if(indexItem == index) {
+  $('.price__pricelist__subs').each(function (index) {
+    if (indexItem == index) {
       $(this).toggleClass('hide')
     }
   })
@@ -829,4 +829,9 @@ $('.settings__btn-add').on('click', () => {
   $('.settings__new').removeClass('hide');
   $('.settings__btn-add').addClass('hide');
 })
+
+
+
+
+
 
