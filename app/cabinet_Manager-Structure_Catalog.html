@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=1170px, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/lk.css">
 </head>
 
 <body>
@@ -3193,485 +3193,100 @@
               <a href="" class="header__breadcrumbs-link">Кабинет менеджера</a>
             </li>
             <li class="header__breadcrumbs-item">
-              <span href="" class="header__breadcrumbs-current">Контакты компании</span>
+              <span href="" class="header__breadcrumbs-current">Настройки аккаунта</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="header__title">
         <div class="container">
-          <h1>Контакты компании</h1>
+          <h1>Настройки аккаунта</h1>
         </div>
       </div>
     </header>
 
     <main class="main">
       <div class="container">
-        <div class="content-wrapper">
+        <div class="content-wrapper content-wrapper--price">
           <div class="sidebar-menu">
             <ul class="sidebar-menu__nav">
-              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Заказы</a></li>
+              <li class="sidebar-menu__nav-item"><a href=""
+                  class="sidebar-menu__nav-link">Заказы</a></li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Клиенты</a></li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Загрузка прайса и склада</a>
               </li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Редактирование контента</a>
               </li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Структура каталога</a></li>
-              <li class="sidebar-menu__nav-item"><a href=""
-                  class="sidebar-menu__nav-link sidebar-menu__nav-link--active">Контакты компании</a></li>
-              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Настройки</a></li>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Контакты компании</a></li>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link sidebar-menu__nav-link--active">Настройки аккаунта</a></li>
             </ul>
           </div>
-          <form action="" class="form">
-            <div class="requisites">
-              <div class="requisites__title">Реквизиты</div>
-              <div class="requisites__content">
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Загрузить файл (pdf, doc/docx)<sup class="input-error-text">*</sup>
-                  </div>
-                  <div class="requisites__upload-file">
-                    <input type="file" id="file_btn">
-                    <label for="file_btn">Выбрать
-                      <svg>
-                        <use xlink:href="./assets/sprite.svg#file"></use>
-                      </svg>
-                    </label>
-                    <span class="requisites__upload-text">upload.xlxs</span>
-                  </div>
+          <div class="settings">
+            <div class="details__info">Имя пользователя: <span class="details__info-text">Константинопольский Константин Константинович</span></div>
+            <div class="details__info">Логин/e-mail: <span class="details__info-text">79107776589@yandex.ru</span></div>
+            <div class="details__info">Пароль: <span class="details__info-text settings-password">Изменен 19.12.2020</span></div>
+            <div class="settings__content">
+                <div class="settings__content-title">Список менеджеров</div>
+                <div class="settings__content-table">
+                    <div class="settings__content-item">
+                        <div class="settings__content-text settings__content-text--name">Константинопольский Константин Константинович</div>
+                        <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
+                        <div class="settings__content-text settings__content-text--person">Администратор</div>
+                        <div class="settings__content-text settings__content-text--active">Активен</div>
+                        <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
+                    </div>
+                    <div class="settings__content-item">
+                        <div class="settings__content-text settings__content-text--name">Семенов Игорь Игоревич</div>
+                        <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
+                        <div class="settings__content-text settings__content-text--person">Менеджер</div>
+                        <div class="settings__content-text settings__content-text--active"><span class=" settings__content-text--green">Активен</span></div>
+                        <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
+                    </div>
                 </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Полное наименование организации<sup
-                      class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text" class="order__form-input input input-valid"
-                      placeholder='Общество с ограниченной ответственностью "Техноком"'>
-                  </div>
+                <div class="settings__btn-add settings__content-text--green">Добавить сотрудника</div>
+                <div class="settings__new hide">
+                    <div class="settings__content-title">Новый пользователь</div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Имя пользователя:</div>
+                        <div class="form-input">
+                          <input type="text"
+                            class="order__form-input settings__input-name input input-valid"
+                            placeholder='Константинопольский Константин Константинович'>
+                        </div>
+                    </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Логин/e-mail:</div>
+                        <div class="form-input">
+                          <input type="text"
+                            class="order__form-input settings__input-mail input input-valid"
+                            placeholder='79107776589@yandex.ru'>
+                        </div>
+                    </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Пароль:</div>
+                        <div class="form-input">
+                          <input type="password"
+                            class="order__form-input settings__input-password input input-valid"
+                            placeholder='********'>
+                        </div>
+                    </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Повторите пароль:</div>
+                        <div class="form-input">
+                          <input type="password"
+                            class="order__form-input settings__input-password input input-valid"
+                            placeholder='********'>
+                        </div>
+                    </div>
+                    <div class="button-save submit">Сохранить аккаунт сотрудника</div>
                 </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Полное наименование организации<sup
-                      class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text"
-                      class="order__form-input order__form-input--width input input-valid"
-                      placeholder='ООО "Техноком"'>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Фактический адрес<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text" class="order__form-input input input-valid"
-                      placeholder='г. Санкт-Петербург, ул. Цветочная, д. 19'>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Юридический адрес<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text" class="order__form-input input input-valid"
-                      placeholder='196084, г. Санкт-Петербург, ул. Коли Томчака, д. 28, лит.Л, офис 12'>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Руководитель организации<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder='Генеральный директор Косых Д.В.'>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">ИНН<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">КПП<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">ОГРН<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">ОКПО<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Р/СЧ<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Банк<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">БИК<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">К/СЧ<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="number"
-                      class="order__form-input order__form-input--width2 input input-valid"
-                      placeholder=''>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">Телефон<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="phone"
-                      class="order__form-input order__form-input--placeholder order__form-input--width3 input input-phone input-valid"
-                      placeholder='+7(987) 654-32-10'>
-                  </div>
-                </div>
-                <div class="requisites__form-wrapper">
-                  <div class="requisites__form-name">E-mail<sup class="input-error-text">*</sup></div>
-                  <div class="form-input">
-                    <input type="text"
-                      class="order__form-input order__form-input--placeholder order__form-input--width4 input input-valid"
-                      placeholder='email@email.ru'>
-                  </div>
-                </div>
-              </div>
-
-              <div class="requisites__wrap">
-                <div class="requisites__content">
-                  <div class="requisites__title">Офис 1</div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Город:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='Наименование города'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Адрес:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='ул. Улица, д.1, кв.1.'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Координаты<sup
-                      class="input-error-text">*</sup> <br> на карте</div>
-                    <div class="form-input">
-                      <input type="number"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='53.720976, 91.442423'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Режим работы:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='пн-пт с 9:00 до 18:00'>
-                    </div>
-                  </div>
-                </div>
-                <div class="requisites__content">
-                  <div class="requisites__title">Офис 2</div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Город:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='Наименование города'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Адрес:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='ул. Улица, д.1, кв.1.'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Координаты <sup
-                      class="input-error-text">*</sup> <br> на карте</div>
-                    <div class="form-input">
-                      <input type="number"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='53.720976, 91.442423'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Режим работы:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='пн-пт с 9:00 до 18:00'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="requisites__wrap">
-                <div class="requisites__content">
-                  <div class="requisites__title">Склад 1</div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Город:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='Наименование города'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Адрес:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='ул. Улица, д.1, кв.1.'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Координаты<sup
-                        class="input-error-text">*</sup> <br> на карте</div>
-                    <div class="form-input">
-                      <input type="number"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='53.720976, 91.442423'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Режим работы:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='пн-пт с 9:00 до 18:00'>
-                    </div>
-                  </div>
-                </div>
-                <div class="requisites__content">
-                  <div class="requisites__title">Склад 2</div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Город:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='Наименование города'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Адрес:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='ул. Улица, д.1, кв.1.'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Координаты<sup
-                      class="input-error-text">*</sup> <br> на карте</div>
-                    <div class="form-input">
-                      <input type="number"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='53.720976, 91.442423'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Телефон-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="phone"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-phone input-valid"
-                        placeholder='+7(987) 654-32-10'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-1:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">E-mail-2:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='email@email.ru'>
-                    </div>
-                  </div>
-                  <div class="requisites__form-wrapper">
-                    <div class="requisites__form-name requisites__form-name--width">Режим работы:<sup
-                        class="input-error-text">*</sup></div>
-                    <div class="form-input">
-                      <input type="text"
-                        class="order__form-input order__form-input--placeholder order__form-input--width5 input input-valid"
-                        placeholder='пн-пт с 9:00 до 18:00'>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="button-save submit">Сохранить аккаунт сотрудника</div>
-
+                
             </div>
-          </form>
-
-
-
-
+          </div>
+ 
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -3876,6 +3491,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
