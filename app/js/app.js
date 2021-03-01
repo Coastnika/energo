@@ -817,10 +817,3 @@ $('.table__toggle').on('click', function (e) {
   })
 })
 
-// new-person
-
-$('.settings__btn-add').on('click', () => {
-  $('.settings__new').removeClass('hide');
-  $('.settings__btn-add').addClass('hide');
-})
-
