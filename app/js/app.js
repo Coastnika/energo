@@ -822,9 +822,11 @@ $('.table__toggle').on('click', function(e) {
   })
 })
 
+
 // new-person ** cabinet_Manager-Structure_Catalog.html **
 
 $('.settings__btn-add').on('click', () => {
   $('.settings__new').removeClass('hide');
   $('.settings__btn-add').addClass('hide');
 })
+
