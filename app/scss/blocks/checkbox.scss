@@ -31,11 +31,60 @@
     border: 1px solid $whiteF2;
     border-radius: 3px;
     text-align: center;
+    &--green{
+      background: $white;
+      border: 1px solid $green21;
+      border-radius: 6px;
+      color: $green21;
+      font-size: 14px;
+      line-height: 120%;
+      width: 80px;
+      height: 27px;
+      margin-right: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--disable{
+        border: 1px solid $greyAA;
+        color: $greyAA;
+      }
+      
+    }
+    &--red{
+      background: $white;
+      border: 1px solid $redEB;
+      border-radius: 6px;
+      color: $redEB;
+      font-size: 14px;
+      line-height: 120%;
+      width: 50px;
+      height: 27px;
+      text-align: center;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--disable{
+        border: 1px solid $greyAA;
+        color: $greyAA;
+      }
+    }
   }
 
   &:checked + &__text{
     border: 1px solid $orangeF1;
     color: $orangeF1;
+  }
+  &:checked + &__text--green{
+    border: none;
+    background:$green21;
+    color: $white;
+  }
+  &:checked + &__text--red{
+    border: none;
+    background:$redEB;
+    color: $white;
   }
 }
 
