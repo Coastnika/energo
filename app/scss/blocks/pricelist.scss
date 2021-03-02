@@ -1,6 +1,9 @@
 .price{
     &__pricelist{
         padding-bottom: 110px;
+        &-checkbox{
+            display: flex;
+        }
         &-title{
             font-weight: bold;
             font-size: 24px;
@@ -45,7 +48,7 @@
                         height: 6px;
                         background-image: url('../assets/icon/dropdown-arrow.svg');
                         background-repeat: no-repeat ;
-                      }
+                    }
                 }
             }
             &--pad{
@@ -70,6 +73,12 @@
             &--storage{
                 width: 140px;
             }
+            &--delete{
+                font-size: 14px;
+                line-height: 120%;
+                color: $greyAA;
+                margin-left: 20px;
+            }
         }
         &__item{
             position: relative;
@@ -84,47 +93,18 @@
                 border: 1px solid $orangeF1;
                 border-radius: 6px;
             }
-            &--disable{
+            &--block{
                 position: absolute;
-                bottom: 0;
                 top: 0;
+                bottom: 0;
                 left: 0;
                 right: 0;
-                background-color: rgba(255,255,255,0.6);
+                background: rgba(255, 255, 255, 0.0);
                 z-index: 10;
-                border-radius: 6px;
-            }
-            &--active{
-            
             }
         }
         &-buttons{
             display: flex;
-        }
-        &-btn-green{
-            border: 1px solid $green21;
-            border-radius: 6px;
-            color: $green21;
-            font-size: 14px;
-            line-height: 120%;
-            width: 80px;
-            height: 27px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 20px;
-        }
-        &-btn-red{
-            border: 1px solid $redEB;
-            border-radius: 6px;
-            color: $redEB;
-            font-size: 14px;
-            line-height: 120%;
-            width: 50px;
-            height: 27px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         &-download{
             margin-right: 20px;
@@ -172,6 +152,30 @@
             padding: 7px 15px;
             border-bottom: 1px solid $whiteF2;
         }
+        &-download{
+            position: relative;
+            & svg{
+                position: absolute;
+                top: 50%;
+                right: -25px;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+                fill: $orangeF1;
+            }
+        }
+        &-delete{
+            position: relative;
+            & svg{
+                position: absolute;
+                top: 50%;
+                right: -43px;
+                transform: translateY(-50%);
+                width: 18px;
+                height: 18px;
+                fill: $redEB;
+            }
+        }
     }
 }
 
@@ -189,12 +193,12 @@
         transform: translateY(-55%) rotate(-180deg);
     }
 
-    .price__pricelist-btn-green{
+    .checkbox-number__text--green{
         background-color: $green21;
         color: $white;
     }
 
-    .price__pricelist-btn-red{
+    .checkbox-number__text--red{
         background-color: $redEB;
         color: $white;
     }
@@ -206,4 +210,42 @@
         transform: translateY(-55%) rotate(-180deg);
     }
 
+}
+
+.price__pricelist__item--disable{
+    .price__pricelist-text--bold{
+        color: $greyAA;
+        & span{
+            display: inline-block;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 60%;
+                right:-15px;
+                transform: translateY(-50%) ;
+                width: 9px;
+                height: 6px;
+                background-image: url('../assets/icon/dropdown-arrow-breadcrumbs.svg');
+                background-repeat: no-repeat ;
+            }
+        }
+    }
+    .price__pricelist-text{
+        color: $greyAA;
+    }
+    .checkbox-number__text--green{
+        border: 1px solid $greyAA;
+        color: $greyAA;
+    }
+    .checkbox-number__text--red{
+        border: 1px solid $greyAA;
+        color: $greyAA;
+    }
+    .price__pricelist-download{
+        & svg{
+            fill: $greyAA;
+        }
+
+    }
 }
