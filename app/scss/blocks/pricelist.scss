@@ -193,19 +193,18 @@
         transform: translateY(-55%) rotate(-180deg);
     }
 
-    .checkbox-number__text--green{
-        background-color: $green21;
-        color: $white;
-    }
+    // .checkbox-number__text--green{
+    //     background-color: $green21;
+    //     color: $white;
+    // }
 
-    .checkbox-number__text--red{
-        background-color: $redEB;
-        color: $white;
-    }
+    // .checkbox-number__text--red{
+    //     background-color: $redEB;
+    //     color: $white;
+    // }
 }
 
 .table__toggle--active{
-
     .price__pricelist-text span::before{
         transform: translateY(-55%) rotate(-180deg);
     }
