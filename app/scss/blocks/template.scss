@@ -2,6 +2,12 @@
   color: $black33;
   flex-grow: 1;
   padding-left: 30px;
+  margin-bottom: 180px;
+  &__subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
   &__add{
     margin-bottom: 20px;
     &-text{
@@ -31,11 +37,6 @@
    
   }
   &__notification{
-    &-text{
-      font-size: 15px;
-      font-weight: 300;
-      margin-bottom: 30px;
-    }
     &-warning{
       font-size: 15px;
       font-weight: 300;
@@ -44,5 +45,73 @@
       border: 1px solid $orangeF1;
       border-radius: 6px;
     }
+  }
+  &__form{
+    font-size: 15px;
+    &-wrapper{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &-name{
+      width: 160px;
+      margin-right: 20px;
+    }
+    &-name--align{
+      align-self: flex-start;
+    }
+    &-label{
+      display: block;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+  }
+  &__calculator{
+    color: $black33;
+    &-title{
+      font-weight: 400;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      & input{
+        margin-left: 3px;
+        width: 197px;
+      }
+    }
+    &-add{
+      padding: 10px;
+      border: 1px solid $whiteF2;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+    &-text{
+      font-weight: 300;
+      margin-bottom: 25px;
+     
+    }
+    &-toggle{
+      border-bottom: 1px dashed $black33;
+      cursor: pointer;
+      margin-right: 3px;
+      &:hover{
+        color: $orangeF1;
+        border-bottom: 1px dashed $orangeF1;
+      }
+    }
+    &-add-word{
+      font-weight: 300;
+      display: inline-block;
+      border-bottom: 1px dashed $black33;
+      cursor: pointer;
+      &:hover{
+        color: $orangeF1;
+        border-bottom: 1px dashed $orangeF1;
+      }
+    }
+    &-subtext{
+      font-weight: 300;
+      color: $grey77;
+    }
+
   }
 }

@@ -9,11 +9,7 @@
   @media (max-width:540px){
     font-size: 14px;
   }
-  &:focus{
-    border: 1px solid $orangeF1;
-    padding-top: 17px;
-    padding-bottom: 3px;
-  }
+  
   // &:focus + .headline-elem{
   //   display: block;
   // }
@@ -23,6 +19,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.input-headline:focus{
+  border: 1px solid $orangeF1;
+  padding-top: 17px;
+  padding-bottom: 3px;
 }
 
 .input-error{
@@ -60,4 +62,11 @@
 textarea:focus{
   padding-top: 10px!important;
     padding-bottom: 0px!important;
+}
+
+.input-dashed{
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 1px dashed $black33;
 }
