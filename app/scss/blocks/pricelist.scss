@@ -119,9 +119,9 @@
                 line-height: 160%;
                 padding-left: 38px;
                 padding-bottom: 7px;
+                padding-top: 12px;
                 &--green{
                     color: $green21;
-                    padding-top: 12px;
                 }
                 &--red{
                     color: $redEB;
@@ -223,7 +223,6 @@
     .price__pricelist-text span::before{
         transform: translateY(-55%) rotate(-180deg);
     }
-
 }
 
 .price__pricelist__item--disable{

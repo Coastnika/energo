@@ -767,34 +767,53 @@ $('.price__reload-btn').on('click', () => {
   $('.requisites__upload-text').css('color', '#EB5757');
 })
 
-let priceToggle = document.querySelectorAll('.pricelist__toggle')
-let priceItem = document.querySelectorAll('.price__pricelist__item')
-let pricePosition = document.querySelectorAll('.price__pricelist-position')
 
-if (priceItem && pricePosition && priceToggle) {
-  priceToggle.forEach((item, index) => {
-    item.setAttribute('data-index', index)
-  })
+$('.price__pricelist-content').on('input', function(e) {
+  let buttonRecognized = this.querySelector('.checkbox-number__recognized')
+  let buttonUnrecognized = this.querySelector('.checkbox-number__unrecognized')
 
-  priceItem.forEach((item, index) => {
-    item.setAttribute('data-index', index)
-  })
+  let contentRecognized =  this.querySelector('.price__pricelist-recognized')
+  let contentUnrecognized =  this.querySelector('.price__pricelist-unrecognized')
+  
+  if(buttonRecognized.checked) {
+    contentRecognized.classList.remove('hide')
+    
+  }
+  else if(buttonRecognized.checked == false){
+    contentRecognized.classList.add('hide')
+  }
 
-  pricePosition.forEach((item, index) => {
-    item.setAttribute('data-index', index)
-  })
-}
+  if(buttonUnrecognized.checked) {
+    contentUnrecognized.classList.remove('hide')
+    
+  }
+  else if(buttonUnrecognized.checked == false){
+    contentUnrecognized.classList.add('hide')
+  }
+})
 
-$('.pricelist__toggle').on('click', function (e) {
-  let indexItem = +this.dataset.index
+$('.price__pricelist-content').on('click', function (e) {
+  let {type} = e.target.dataset
 
-  priceItem[indexItem].classList.toggle('price__pricelist__item--active')
+  if(type == 'toggle') {
+    let buttonRecognized = this.querySelector('.checkbox-number__recognized')
+    let buttonUnrecognized = this.querySelector('.checkbox-number__unrecognized')
+    let contentRecognized =  this.querySelector('.price__pricelist-recognized')
+    let contentUnrecognized =  this.querySelector('.price__pricelist-unrecognized')
 
-  $('.price__pricelist-position').each(function (index) {
-    if (indexItem == index) {
-      $(this).toggleClass('hide')
+    if(this.classList.contains('price__pricelist__item--active')) {
+      this.classList.remove('price__pricelist__item--active')
+      contentRecognized.classList.add('hide')
+      contentUnrecognized.classList.add('hide')
+      buttonRecognized.checked = false
+      buttonUnrecognized.checked = false
     }
-  })
+    else if(!this.classList.contains('price__pricelist__item--active')){
+      this.classList.add('price__pricelist__item--active')
+      contentRecognized.classList.remove('hide')
+      buttonRecognized.checked = true 
+    }
+  }
 })
 
 //price list table dropdown
