@@ -14,7 +14,7 @@
         }
         &-wrap{
             overflow: auto;
-            height: 310px;
+            height: 330px;
         }
         &-headline{
             background-color: $whiteF7;
@@ -50,6 +50,9 @@
                         background-repeat: no-repeat ;
                     }
                 }
+            }
+            &--undisclosed{
+                font-weight: 500;
             }
             &--pad{
                 padding-left: 20px;
@@ -143,14 +146,26 @@
                 display: flex;
                 align-items: center;
                 padding: 7px 15px;
+                border-top: 1px solid rgba(255,255,255,0);
                 border-bottom: 1px solid $whiteF2;
+                cursor: pointer;
+                &:hover{
+                    border-top: 1px solid  $orangeF1;
+                    border-bottom: 1px solid  $orangeF1;
+                }
             }
         }
         &__subitem{
             display: flex;
             align-items: center;
             padding: 7px 15px;
+            border-top: 1px solid rgba(255,255,255,0);
             border-bottom: 1px solid $whiteF2;
+            cursor: pointer;
+            &:hover{
+                border-top: 1px solid  $orangeF1;
+                border-bottom: 1px solid  $orangeF1;
+            }
         }
         &-download{
             position: relative;
@@ -215,21 +230,6 @@
 .price__pricelist__item--disable{
     .price__pricelist-text--bold{
         color: $greyAA;
-        & span{
-            display: inline-block;
-            position: relative;
-            &::before{
-                content: '';
-                position: absolute;
-                top: 60%;
-                right:-15px;
-                transform: translateY(-50%) ;
-                width: 9px;
-                height: 6px;
-                background-image: url('../assets/icon/dropdown-arrow-breadcrumbs.svg');
-                background-repeat: no-repeat ;
-            }
-        }
     }
     .price__pricelist-text{
         color: $greyAA;

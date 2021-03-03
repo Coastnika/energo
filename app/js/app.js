@@ -830,8 +830,20 @@ $('.settings__btn-add').on('click', () => {
   $('.settings__btn-add').addClass('hide');
 })
 
+// change-password
+
+$('.settings-password').on('click', () => {
+  $('.change-password').removeClass('hide');
+})
+
+$('.change-password-btn').on('click', () => {
+  $('.change-password').addClass('hide');
+})
 
 
+// let overlayPass = document.querySelector('.password-overlay')
 
-
-
+// let closeModal = () => {
+//   formPass.classList.add('hide');
+// }
+// overlayPass.addEventListener('click', closeModal);
