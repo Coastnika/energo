@@ -3226,6 +3226,36 @@
             <div class="details__info">Имя пользователя: <span class="details__info-text">Константинопольский Константин Константинович</span></div>
             <div class="details__info">Логин/e-mail: <span class="details__info-text">79107776589@yandex.ru</span></div>
             <div class="details__info">Пароль: <span class="details__info-text settings-password">Изменен 19.12.2020</span></div>
+            <form action="" class="change-password form hide">
+              <!-- <div class="password-overlay"></div> -->
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Текущий пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Новый пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Повторите новый пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="change-password-button">
+                <div class="change-password-btn submit">Изменить пароль</div>
+              </div>
+            </form>
             <div class="settings__content">
                 <div class="settings__content-title">Список менеджеров</div>
                 <div class="settings__content-table">
@@ -3240,12 +3270,17 @@
                         <div class="settings__content-text settings__content-text--name">Семенов Игорь Игоревич</div>
                         <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
                         <div class="settings__content-text settings__content-text--person">Менеджер</div>
-                        <div class="settings__content-text settings__content-text--active"><span class=" settings__content-text--green">Активен</span></div>
+                        <div class="sorting__price-dropdown settings-dropdown custom__select">
+                          <div class="custom__select-title settings__content-text settings__content-text--active"><span class=" settings__content-text--green">Активен</span></div>
+                          <div class="custom__select-content hide">
+                            <div class="custom__select-text"><span class=" settings__content-text--inactive">Активен</span></div>
+                          </div>
+                        </div>
                         <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
                     </div>
                 </div>
                 <div class="settings__btn-add settings__content-text--green">Добавить сотрудника</div>
-                <div class="settings__new hide">
+                <form action="" class="settings__new form hide">
                     <div class="settings__content-title">Новый пользователь</div>
                     <div class="requisites__form-wrapper">
                         <div class="requisites__form-name requisites__form-name--settings">Имя пользователя:</div>
@@ -3280,7 +3315,7 @@
                         </div>
                     </div>
                     <div class="button-save submit" type="submit">Сохранить аккаунт сотрудника</div>
-                </div>
+                </form>
                 
             </div>
           </div>
