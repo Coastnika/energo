@@ -177,6 +177,7 @@ function showModal(trigger, content, close, closestParent) {
   trigger.addEventListener('click', () => {
     content.classList.remove('hide')
   })
+  
   close.addEventListener('click', () => {
     content.classList.add('hide')
   })
