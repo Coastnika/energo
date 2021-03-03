@@ -3228,15 +3228,68 @@
               <div class="template__add-text">Создать шаблон для title/description</div>
             </div>
             <div class="template__notification">
-              <div class="template__notification-text">Вы еще не создали ни одного шаблона</div>
+              <div class="template__subtitle">Вы еще не создали ни одного шаблона</div>
               <div class="template__notification-warning">Одиночное редактирование тегов title и description возможно  разделе “Структура каталога” </div>
             </div>
+            <div class="template__content">
+              <div class="template__subtitle">В данном инструменте можно создать шаблоны для тегов  title и description, как для всего каталога так и для  любой марки по отдельности.</div>
+            </div>
+            <form class="template__form">
+                <div class="template__form-wrapper">
+                  <div class="template__form-name">Название шаблона<sup class="input-error-text">*</sup></div>
+                  <div class="template__form-input">
+                    <input type="text" class="input input-valid" placeholder="Шаблон №1">
+                  </div>
+                </div>
+                <div class="template__form-wrapper">
+                  <div class="template__form-name template__form-name--align">Выберите тег<sup class="input-error-text">*</sup></div>
+                  <div class="template__form-checkboxes">
+                    <label class="template__form-label">
+                      <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                      <span class="template__form-span">Title</span>
+                    </label>
+                    <label class="template__form-label">
+                      <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                      <span class="template__form-span">Description</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="template__calculator">
+                  <div class="template__calculator-wrapper">
+                    <div class="template__calculator-title">Шаблон Title</div>
+                    <div class="template__calculator-add">
+                      <div class="template__calculator-text">
+                        <span> Купить </span>
+                        <span class="template__calculator-toggle">[выбрать]</span>
+                        <span class="template__calculator-toggle">[марка]</span>
+                        <span> с изоляцие из </span>
+                        <span class="template__calculator-toggle">[изоляция(род)]</span>
+                      </div>
+                      <div class="template__calculator-add-word">Добавить ключевое слово</div>
+                    </div>
+                  </div>
+                  <div class="template__calculator-wrapper">
+                    <div class="template__calculator-title">
+                      Результат на примере марки 
+                      <input type="text" class="input-dashed" placeholder="введите название марки">
+                    </div>
+                    <div class="template__calculator-add">
+                      <div class="template__calculator-text">
+                        <span> Купить </span>
+                        <span class="template__calculator-toggle">ВВГнг(А)</span>
+                        <span> с изоляцие из </span>
+                        <span class="template__calculator-toggle">ПВХ пластиката</span>
+                      </div>
+                      <div class="template__calculator-subtext">Количество символов 104 (максимальное 250)</div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="template__calculator-submit">
+                  <button type="submit" class="button-default submit">Сохранить шаблон</button>
+                </div>
+            </div>
           </div>
-       
-
-
-
-
         </div>
       </div>
     </main>

@@ -2,6 +2,12 @@
   color: $black33;
   flex-grow: 1;
   padding-left: 30px;
+  margin-bottom: 180px;
+  &__subtitle{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
   &__add{
     margin-bottom: 20px;
     &-text{
@@ -31,11 +37,6 @@
    
   }
   &__notification{
-    &-text{
-      font-size: 15px;
-      font-weight: 300;
-      margin-bottom: 30px;
-    }
     &-warning{
       font-size: 15px;
       font-weight: 300;
