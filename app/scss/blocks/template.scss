@@ -16,7 +16,7 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
-      border-bottom: 1px dashed rgba(241,151,30, 0);
+      border-bottom: 1px dashed rgba(241,151,30, 1);
       cursor: pointer;
       position: relative;
       &::before{
@@ -31,7 +31,7 @@
         background-repeat: no-repeat;
       }
       &:hover{
-        border-bottom: 1px dashed rgba(241,151,30, 1);
+        border-bottom: 1px dashed rgba(241,151,30, 0);
       }
     }
    
@@ -46,72 +46,59 @@
       border-radius: 6px;
     }
   }
-  &__form{
-    font-size: 15px;
-    &-wrapper{
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
+  &__table{
+    margin-bottom: 20px;
+  }
+  &__headline{
+    height: 51px;
+    background: $whiteF7;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 21px 15px;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 120%;
+    color: $black33;
+    &--bold{
+      font-weight: 500;
     }
-    &-name{
-      width: 160px;
-      margin-right: 20px;
+    &--size{
+      font-size: 16px;
+      line-height: 110%;
     }
-    &-name--align{
-      align-self: flex-start;
+    &--name{
+      width: 240px;
     }
-    &-label{
-      display: block;
-      cursor: pointer;
-      margin-bottom: 10px;
+    &--tag{
+      width: 125px;
+    }
+    &--date{
+      width: 407px;
     }
   }
-  &__calculator{
-    color: $black33;
-    &-title{
-      font-weight: 400;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      & input{
-        margin-left: 3px;
-        width: 197px;
-      }
+  &__item{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0);
+    border-bottom: 1px solid $whiteF2;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid $orangeF1;
+        border-radius: 6px;
     }
-    &-add{
-      padding: 10px;
-      border: 1px solid $whiteF2;
-      border-radius: 3px;
-      margin-bottom: 20px;
+    &:hover .template__icons{
+      visibility: visible;
     }
-    &-text{
-      font-weight: 300;
-      margin-bottom: 25px;
-     
-    }
-    &-toggle{
-      border-bottom: 1px dashed $black33;
-      cursor: pointer;
-      margin-right: 3px;
-      &:hover{
-        color: $orangeF1;
-        border-bottom: 1px dashed $orangeF1;
-      }
-    }
-    &-add-word{
-      font-weight: 300;
-      display: inline-block;
-      border-bottom: 1px dashed $black33;
-      cursor: pointer;
-      &:hover{
-        color: $orangeF1;
-        border-bottom: 1px dashed $orangeF1;
-      }
-    }
-    &-subtext{
-      font-weight: 300;
-      color: $grey77;
-    }
-
+  }
+  &__icons{
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+  }
+  &__edit{
+    margin-right: 20px;
   }
 }
