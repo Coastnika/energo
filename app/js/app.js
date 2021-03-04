@@ -177,7 +177,7 @@ function showModal(trigger, content, close, closestParent) {
   trigger.addEventListener('click', () => {
     content.classList.remove('hide')
   })
-  
+
   close.addEventListener('click', () => {
     content.classList.add('hide')
   })
@@ -768,50 +768,50 @@ $('.price__reload-btn').on('click', () => {
 })
 
 
-$('.price__pricelist-content').on('input', function(e) {
+$('.price__pricelist-content').on('input', function (e) {
   let buttonRecognized = this.querySelector('.checkbox-number__recognized')
   let buttonUnrecognized = this.querySelector('.checkbox-number__unrecognized')
 
-  let contentRecognized =  this.querySelector('.price__pricelist-recognized')
-  let contentUnrecognized =  this.querySelector('.price__pricelist-unrecognized')
-  
-  if(buttonRecognized.checked) {
+  let contentRecognized = this.querySelector('.price__pricelist-recognized')
+  let contentUnrecognized = this.querySelector('.price__pricelist-unrecognized')
+
+  if (buttonRecognized.checked) {
     contentRecognized.classList.remove('hide')
-    
+
   }
-  else if(buttonRecognized.checked == false){
+  else if (buttonRecognized.checked == false) {
     contentRecognized.classList.add('hide')
   }
 
-  if(buttonUnrecognized.checked) {
+  if (buttonUnrecognized.checked) {
     contentUnrecognized.classList.remove('hide')
-    
+
   }
-  else if(buttonUnrecognized.checked == false){
+  else if (buttonUnrecognized.checked == false) {
     contentUnrecognized.classList.add('hide')
   }
 })
 
 $('.price__pricelist-content').on('click', function (e) {
-  let {type} = e.target.dataset
+  let { type } = e.target.dataset
 
-  if(type == 'toggle') {
+  if (type == 'toggle') {
     let buttonRecognized = this.querySelector('.checkbox-number__recognized')
     let buttonUnrecognized = this.querySelector('.checkbox-number__unrecognized')
-    let contentRecognized =  this.querySelector('.price__pricelist-recognized')
-    let contentUnrecognized =  this.querySelector('.price__pricelist-unrecognized')
+    let contentRecognized = this.querySelector('.price__pricelist-recognized')
+    let contentUnrecognized = this.querySelector('.price__pricelist-unrecognized')
 
-    if(this.classList.contains('price__pricelist__item--active')) {
+    if (this.classList.contains('price__pricelist__item--active')) {
       this.classList.remove('price__pricelist__item--active')
       contentRecognized.classList.add('hide')
       contentUnrecognized.classList.add('hide')
       buttonRecognized.checked = false
       buttonUnrecognized.checked = false
     }
-    else if(!this.classList.contains('price__pricelist__item--active')){
+    else if (!this.classList.contains('price__pricelist__item--active')) {
       this.classList.add('price__pricelist__item--active')
       contentRecognized.classList.remove('hide')
-      buttonRecognized.checked = true 
+      buttonRecognized.checked = true
     }
   }
 })
@@ -861,9 +861,3 @@ $('.change-password-btn').on('click', () => {
 })
 
 
-// let overlayPass = document.querySelector('.password-overlay')
-
-// let closeModal = () => {
-//   formPass.classList.add('hide');
-// }
-// overlayPass.addEventListener('click', closeModal);

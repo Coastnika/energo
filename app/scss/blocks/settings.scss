@@ -27,8 +27,11 @@
             &--person{
                 width: 165px;
             }
-            &--active{
-                width: 106px;
+            &--inactive{
+                font-size: 14px;
+                line-height: 120%;
+                color: $grey77;
+                cursor: pointer;
             }
             &--green{
                 display: inline-block;
@@ -36,6 +39,9 @@
                 color: $green21;
                 cursor: pointer;
                 &:hover{
+                    border-bottom: 1px dashed $white;
+                }
+                &:active{
                     border-bottom: 1px dashed $white;
                 }
             }
