@@ -169,7 +169,13 @@
       width: 407px;
     }
   }
-  &__wrapper{
+
+  &__item{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 15px;
+    cursor: pointer;
     border: 1px solid rgba(255,255,255,0);
     border-bottom: 1px solid $whiteF2;
     &:hover{
@@ -179,13 +185,6 @@
     &:hover .template__icons{
     visibility: visible;
     }
-  }
-  &__item{
-    display: flex;
-    align-items: center;
-    height: 48px;
-    padding: 15px;
-    cursor: pointer;
   }
   &__icons{
     display: flex;
