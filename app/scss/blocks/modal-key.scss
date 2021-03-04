@@ -23,6 +23,7 @@
     background-color: $white;
     padding: 40px;
     position: relative;
+    border-radius: 6px 6px 0px 0px;
     z-index: 2;
   }
   &__title {
@@ -111,5 +112,8 @@
     bottom: 0;
     background-color: rgba(51,51,51, .4);
     z-index: 1;
+  }
+  &__close{
+    margin-right: 15px;
   }
 }
