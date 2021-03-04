@@ -97,7 +97,8 @@
     &--pad{
       margin-left: 15px;
       margin-top: 12px;
-      margin-bottom: 12px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $whiteF2;
     }
     &-add{
       padding: 10px;
@@ -123,6 +124,7 @@
     &-add-word{
       font-size: 15px;
       font-weight: 300;
+      line-height: 110%;
       display: inline-block;
       border-bottom: 1px dashed $black33;
       cursor: pointer;
