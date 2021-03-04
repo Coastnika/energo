@@ -95,11 +95,42 @@
                 padding-top: 20px;
                 padding-bottom: 5px;
             }
+            &--structure{
+                font-size: 15px; 
+                & span{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 60%;
+                        right:-25px;
+                        transform: translateY(-50%) ;
+                        width: 18px;
+                        height: 18px;
+                        background-image: url('../assets/icon/arrow-top-1.svg');
+                        background-repeat: no-repeat ;
+                    }
+                }
+                &-bottom{
+                    line-height: 100%;
+                    border-bottom: 1px dashed $black33;
+                    margin-top: 3px;
+                    &:hover{
+                        border-bottom: 1px dashed $white;
+                    }
+                }
+            }
         }
     }
     &__checkbox{
         margin-top: 15px;
         margin-bottom: 15px;
+        &--structure{
+            margin: 0;
+        }
+        &--bottom{
+            margin-bottom: 10px;
+        }
     }
     &__line{
         position: absolute;

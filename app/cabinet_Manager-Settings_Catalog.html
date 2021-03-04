@@ -3193,14 +3193,14 @@
               <a href="" class="header__breadcrumbs-link">Кабинет менеджера</a>
             </li>
             <li class="header__breadcrumbs-item">
-              <span href="" class="header__breadcrumbs-current">Структура каталога</span>
+              <span href="" class="header__breadcrumbs-current">Настройки аккаунта</span>
             </li>
           </ul>
         </div>
       </div>
       <div class="header__title">
         <div class="container">
-          <h1>Структура каталога</h1>
+          <h1>Настройки аккаунта</h1>
         </div>
       </div>
     </header>
@@ -3210,92 +3210,118 @@
         <div class="content-wrapper content-wrapper--price">
           <div class="sidebar-menu">
             <ul class="sidebar-menu__nav">
-              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Заказы</a></li>
+              <li class="sidebar-menu__nav-item"><a href=""
+                  class="sidebar-menu__nav-link">Заказы</a></li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Клиенты</a></li>
               <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Загрузка прайса и склада</a>
               </li>
-              <li class="sidebar-menu__nav-item "><a href="" class="sidebar-menu__nav-link">Редактирование контента</a>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Редактирование контента</a>
               </li>
-              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link sidebar-menu__nav-link--active">Структура каталога</a></li>
-              <li class="sidebar-menu__nav-item"><a href=""
-                  class="sidebar-menu__nav-link">Контакты компании</a></li>
-              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Настройки</a></li>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Структура каталога</a></li>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link">Контакты компании</a></li>
+              <li class="sidebar-menu__nav-item"><a href="" class="sidebar-menu__nav-link sidebar-menu__nav-link--active">Настройки аккаунта</a></li>
             </ul>
           </div>
-
-            <div class="structure">
-                <div class="structure__wrap">
-                    <div class="structure__title">Каталог товаров</div>
-                    <div class="price__checkbox--structure">
-                        <label class="sidebar__element-label">
-                            <input type="checkbox" class="sidebar__element-checkbox checkbox" checked>
-                            <span class="price__content-text--structure">Показать неактивные товары</span>
-                        </label>
+          <div class="settings">
+            <div class="details__info">Имя пользователя: <span class="details__info-text">Константинопольский Константин Константинович</span></div>
+            <div class="details__info">Логин/e-mail: <span class="details__info-text">79107776589@yandex.ru</span></div>
+            <div class="details__info">Пароль: <span class="details__info-text settings-password">Изменен 19.12.2020</span></div>
+            <form action="" class="change-password form hide">
+              <!-- <div class="password-overlay"></div> -->
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Текущий пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Новый пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="requisites__form-wrapper">
+                <div class="requisites__form-name requisites__form-name--password">Повторите новый пароль:</div>
+                <div class="form-input">
+                  <input type="password"
+                    class="order__form-input settings__input-password input input-valid"
+                    placeholder='********'>
+                </div>
+              </div>
+              <div class="change-password-button">
+                <div class="change-password-btn submit">Изменить пароль</div>
+              </div>
+            </form>
+            <div class="settings__content">
+                <div class="settings__content-title">Список менеджеров</div>
+                <div class="settings__content-table">
+                    <div class="settings__content-item">
+                        <div class="settings__content-text settings__content-text--name">Константинопольский Константин Константинович</div>
+                        <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
+                        <div class="settings__content-text settings__content-text--person">Администратор</div>
+                        <div class="settings__content-text settings__content-text--active">Активен</div>
+                        <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
+                    </div>
+                    <div class="settings__content-item">
+                        <div class="settings__content-text settings__content-text--name">Семенов Игорь Игоревич</div>
+                        <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
+                        <div class="settings__content-text settings__content-text--person">Менеджер</div>
+                        <div class="sorting__price-dropdown settings-dropdown custom__select">
+                          <div class="custom__select-title settings__content-text"><span class=" settings__content-text--green">Активен</span></div>
+                          <div class="custom__select-content hide">
+                            <div class="custom__select-text"><span class=" settings__content-text--inactive">Неактивен</span></div>
+                          </div>
+                        </div>
+                        <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
                     </div>
                 </div>
-               <div class="structure__actions">
-                    <div class="structure__actions-title">Массовые действия</div>
-                    <div class="structure__actions-subtitle">Применен шаблона “Силовые кабели с  ПВХ (description)”</div>
-                </div>
-
-                <div class="structure__select">
-                     <!--Выбор 1-->
-                    <div class="structure__select-1">
-                        <div class="price__checkbox--structure">
-                            <label class="sidebar__element-label">
-                                <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                <span class="price__content-text--structure"><span>Кабели и провода</span></span>
-                            </label>
-                        </div>
-                      <!--Выбор 2-->
-                        <div class="structure__select-2" style="display: block;">
-                            <div class="structure__subwrapper" >
-                                <div class="price__checkbox--structure">
-                                    <label class="sidebar__element-label">
-                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                        <span class="price__content-text--structure"><span>Кабели силовые</span></span>
-                                    </label>
-                                </div>
-                                <!--Выбор 3-->
-                                <div class="structure__select-3" style="display: block;">
-                                    <div class="wrapper-structure">
-                                        <div class="price__checkbox--structure">
-                                            <label class="sidebar__element-label">
-                                                <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                <span class="price__content-text--structure"><span>С ПВХ изоляцией (0,66/1кВ)</span></span>
-                                            </label>
-                                        </div>
-                                        <!--Выбор 4-->
-                                        <div class="structure__select-4" style="display: block;">
-                                            <div class="price__checkbox--structure">
-                                                <label class="sidebar__element-label">
-                                                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                    <span class="price__content-text--structure"><span>ВВГнг</span></span>
-                                                </label>
-                                            </div>
-                                            <!--Выбор 5-->
-                                            <div class="structure__select-5" style="display: block;">
-                                                <div class="price__checkbox--structure price__checkbox--bottom">
-                                                    <label class="sidebar__element-label">
-                                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                        <span class="price__content-text--structure price__content-text--structure-bottom">АВБШв 4x10</span>
-                                                    </label>
-                                                </div>
-                                                <div class="price__checkbox--structure price__checkbox--bottom">
-                                                    <label class="sidebar__element-label">
-                                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                        <span class="price__content-text--structure price__content-text--structure-bottom">АВБШв 4x16</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
+                <div class="settings__btn-add settings__content-text--green">Добавить сотрудника</div>
+                <form action="" class="settings__new form hide">
+                    <div class="settings__content-title">Новый пользователь</div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Имя пользователя:</div>
+                        <div class="form-input">
+                          <input type="text"
+                            class="order__form-input settings__input-name input input-valid"
+                            placeholder='Константинопольский Константин Константинович'>
                         </div>
                     </div>
-                </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Логин/e-mail:</div>
+                        <div class="form-input">
+                          <input type="text"
+                            class="order__form-input settings__input-mail input input-valid"
+                            placeholder='79107776589@yandex.ru'>
+                        </div>
+                    </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Пароль:</div>
+                        <div class="form-input">
+                          <input type="password"
+                            class="order__form-input settings__input-password input input-valid"
+                            placeholder='********'>
+                        </div>
+                    </div>
+                    <div class="requisites__form-wrapper">
+                        <div class="requisites__form-name requisites__form-name--settings">Повторите пароль:</div>
+                        <div class="form-input">
+                          <input type="password"
+                            class="order__form-input settings__input-password input input-valid"
+                            placeholder='********'>
+                        </div>
+                    </div>
+                    <div class="button-save submit" type="submit">Сохранить аккаунт сотрудника</div>
+                </form>
+                
             </div>
+          </div>
+ 
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -3395,111 +3421,115 @@
       </div>
     </footer>
   </div>
-  <!--POP-UP'S-->
-  <!--callback-->
-  <div class="popup-callback hide">
-    <div class="popup-callback__content">
-      <div class="popup-callback__close">
-        <img src="./assets/icon/close.svg" alt="">
+   <!--POP-UP'S-->
+    <!--callback-->
+    <div class="popup-callback hide">
+      <div class="popup-callback__content">
+          <div class="popup-callback__close">
+              <img src="./assets/icon/close.svg" alt="">
+          </div>
+          <div class="popup-callback__title">Заказать обратный звонок</div>
+          <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее
+              время
+          </div>
+          <form action="" class="popup-callback__form form">
+              <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
+              <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
+          </form>
       </div>
-      <div class="popup-callback__title">Заказать обратный звонок</div>
-      <div class="popup-callback__text">Отправьте свой номер телефона и наш менеджер свяжется с Вами в ближайшее время
-      </div>
-      <form action="" class="popup-callback__form form">
-        <input class="popup-callback__form-input input-phone" type="phone" placeholder="+7 (987) 756-43-21">
-        <button type="submit" class="popup-callback__form-button button-default submit">Отправить</button>
-      </form>
-    </div>
   </div>
   <!--register-->
   <div class="register hide">
-    <div class="register__container">
-      <form class="register__form form">
-        <div class="register__form-content">
-          <div class="register__form-title">Регистрация</div>
-          <div class="register__form-close">
-            <img src="./assets/icon/close.svg" alt="">
+      <div class="register__container">
+          <form class="register__form form">
+              <div class="register__form-content">
+                  <div class="register__form-title">Регистрация</div>
+                  <div class="register__form-close">
+                      <img src="./assets/icon/close.svg" alt="">
+                  </div>
+                  <div class="register__form-input form-input">
+                      <input type="text" class="input input-headline input-valid" placeholder="ФИО">
+                  </div>
+                  <div class="register__form-input form-input">
+                      <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+                  </div>
+                  <div class="register__form-input form-input">
+                      <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+                  </div>
+                  <div class="register__form-button">
+                      <button class="button-default submit">Зарегистрироваться</button>
+                  </div>
+                  <div class="register__mobile">
+                      <div class="register__mobile-text">Есть аккаунт? - </div>
+                      <div class="register__mobile-trigger">Войти</div>
+                  </div>
+              </div>
+              <div class="register__form-footer">
+                  Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+              </div>
+          </form>
+          <div class="register__content">
+              <div class="register__content-title">У вас есть аккаунт на нашем сайте?</div>
+              <div class="register__content-text">Авторизуйтесь, чтобы отследить ваш заказ, посмотреть состояние
+                  текущего
+                  заказа, подписки, и другое</div>
+              <div class="register__content-button">
+                  <button class="button-default login-trigger">Войти</button>
+              </div>
           </div>
-          <div class="register__form-input form-input">
-            <input type="text" class="input input-headline input-valid" placeholder="ФИО">
-          </div>
-          <div class="register__form-input form-input">
-            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
-          </div>
-          <div class="register__form-input form-input">
-            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
-          </div>
-          <div class="register__form-button">
-            <button class="button-default submit">Зарегистрироваться</button>
-          </div>
-          <div class="register__mobile">
-            <div class="register__mobile-text">Есть аккаунт? - </div>
-            <div class="register__mobile-trigger">Войти</div>
-          </div>
-        </div>
-        <div class="register__form-footer">
-          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
-        </div>
-      </form>
-      <div class="register__content">
-        <div class="register__content-title">У вас есть аккаунт на нашем сайте?</div>
-        <div class="register__content-text">Авторизуйтесь, чтобы отследить ваш заказ, посмотреть состояние текущего
-          заказа, подписки, и другое</div>
-        <div class="register__content-button">
-          <button class="button-default login-trigger">Войти</button>
-        </div>
       </div>
-    </div>
   </div>
 
   <!--login-->
   <div class="register login hide">
-    <div class="register__container register__container-login">
-      <form class="register__form register__form-login form">
-        <div class="register__form-content">
-          <div class="register__form-title">Личный кабинет</div>
-          <div class="register__form-close register__form-close-login">
-            <img src="./assets/icon/close.svg" alt="">
-          </div>
-          <div class="register__form-input form-input">
-            <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
-          </div>
-          <div class="register__form-input form-input">
-            <input type="text" class="input input-headline input-valid" placeholder="Пароль">
-          </div>
+      <div class="register__container register__container-login">
+          <form class="register__form register__form-login form">
+              <div class="register__form-content">
+                  <div class="register__form-title">Личный кабинет</div>
+                  <div class="register__form-close register__form-close-login">
+                      <img src="./assets/icon/close.svg" alt="">
+                  </div>
+                  <div class="register__form-input form-input">
+                      <input type="text" class="input input-headline input-valid" placeholder="Логин или E-mail">
+                  </div>
+                  <div class="register__form-input form-input">
+                      <input type="text" class="input input-headline input-valid" placeholder="Пароль">
+                  </div>
 
-          <div class="register__form-wrapper">
-            <label class="register__form-label">
-              <input type="checkbox" class="checkbox register__form-checkbox">
-              <span class="register__form-text">Запомнить меня</span>
-            </label>
-            <a href="#" class="register__form-link">
-              Забыли пароль?
-            </a>
-          </div>
-          <div class="register__form-button">
-            <button class="button-default submit">Войти</button>
-          </div>
-          <div class="register__mobile">
-            <div class="register__mobile-text">Нет аккаунта? - </div>
-            <div class="register__mobile-trigger register__mobile-trigger-login">Зарегистрироваться</div>
-          </div>
-        </div>
+                  <div class="register__form-wrapper">
+                      <label class="register__form-label">
+                          <input type="checkbox" class="checkbox register__form-checkbox">
+                          <span class="register__form-text">Запомнить меня</span>
+                      </label>
+                      <a href="#" class="register__form-link">
+                          Забыли пароль?
+                      </a>
+                  </div>
+                  <div class="register__form-button">
+                      <button class="button-default submit">Войти</button>
+                  </div>
+                  <div class="register__mobile">
+                      <div class="register__mobile-text">Нет аккаунта? - </div>
+                      <div class="register__mobile-trigger register__mobile-trigger-login">Зарегистрироваться</div>
+                  </div>
+              </div>
 
-        <div class="register__form-footer">
-          Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
-        </div>
-      </form>
-      <div class="register__content register__content-login">
-        <div class="register__content-title">У вас нет аккаунта на нашем сайте?</div>
-        <div class="register__content-text">Зарегистрируйтесь, чтобы использовать все возможности личного кабинета:
-          отслеживание заказов, настройку подписки, и другие</div>
-        <div class="register__content-button">
-          <button class="button-default register-trigger">Зарегистрироваться</button>
-        </div>
+              <div class="register__form-footer">
+                  Регистрируясь на нашем сайте, Вы принимаете Согласие на обработку персональных данных
+              </div>
+          </form>
+          <div class="register__content register__content-login">
+              <div class="register__content-title">У вас нет аккаунта на нашем сайте?</div>
+              <div class="register__content-text">Зарегистрируйтесь, чтобы использовать все возможности личного
+                  кабинета:
+                  отслеживание заказов, настройку подписки, и другие</div>
+              <div class="register__content-button">
+                  <button class="button-default register-trigger">Зарегистрироваться</button>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>

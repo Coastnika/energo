@@ -1,0 +1,69 @@
+.structure{
+    margin-left: 30px;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black33;
+        padding-right: 20px;
+    }
+    &__actions{
+        display: flex;
+        align-items: center;
+        &-title{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: $orangeF1;
+            border-bottom: 1px dashed $orangeF1;
+            cursor: pointer;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 60%;
+                right:-25px;
+                transform: translateY(-50%) ;
+                width: 18px;
+                height: 19px;
+                background-image: url('../assets/icon/arrow-down-orange.svg');
+                background-repeat: no-repeat ;
+            }
+            &:hover{
+                border-bottom: 1px dashed $white;
+            }
+        }
+        &-subtitle{
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 160%;
+            color: $black33;
+            margin-left: 40px;
+        }
+    }
+    &__select{
+        margin-top: 20px;
+        &-2{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        &-3{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        &-4{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        &-5{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+    }
+}
+
