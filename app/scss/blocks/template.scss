@@ -5,6 +5,9 @@
   margin-bottom: 180px;
   flex-grow: 1;
   width: 70%;
+  &__content {
+    margin-bottom: 30px;
+  }
   &__subtitle{
     font-size: 15px;
     font-weight: 300;
@@ -184,7 +187,7 @@
   }
     &:hover .template__icons{
     visibility: visible;
-  }
+    }
   }
   &__icons{
     display: flex;

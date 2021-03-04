@@ -3225,7 +3225,68 @@
 
           <div class="template">
             <div class="template__add">
-              <div class="template__add-text">Создать шаблон для title/description</div>
+              <div class="template__add-text" id="make-template">Создать шаблон для title/description</div>
+            </div>
+            <div class="template__notification">
+              <div class="template__subtitle">Вы еще не создали ни одного шаблона</div>
+              
+            </div>
+            <div class="template__content hide">
+              <div class="template__subtitle">В данном инструменте можно создать шаблоны для тегов  title и description, как для всего каталога так и для  любой марки по отдельности.</div>
+              <form class="template__form">
+                  <div class="template__form-wrapper">
+                    <div class="template__form-name">Название шаблона<sup class="input-error-text">*</sup></div>
+                    <div class="template__form-input">
+                      <input type="text" class="input input-valid" placeholder="Шаблон №1">
+                    </div>
+                  </div>
+                  <div class="template__form-wrapper">
+                    <div class="template__form-name template__form-name--align">Выберите тег<sup class="input-error-text">*</sup></div>
+                    <div class="template__form-checkboxes">
+                      <label class="template__form-label">
+                        <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                        <span class="template__form-span">Title</span>
+                      </label>
+                      <label class="template__form-label">
+                        <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                        <span class="template__form-span">Description</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="template__calculator">
+                    <div class="template__calculator-wrapper">
+                      <div class="template__calculator-title">Шаблон Title</div>
+                      <div class="template__calculator-add">
+                        <div class="template__calculator-text">
+                          <span> Купить </span>
+                          <span class="template__calculator-toggle">[выбрать]</span>
+                          <span class="template__calculator">[марка]</span>
+                          <span> с изоляцие из </span>
+                          <span class="template__calculator">[изоляция(род)]</span>
+                        </div>
+                        <div class="template__calculator-add-word">Добавить ключевое слово</div>
+                      </div>
+                    </div>
+                    <div class="template__calculator-wrapper">
+                      <div class="template__calculator-title">
+                        Результат на примере марки 
+                        <input type="text" class="input-dashed" placeholder="введите название марки">
+                      </div>
+                      <div class="template__calculator-add">
+                        <div class="template__calculator-text">
+                          <span> Купить </span>
+                          <span class="template__calculator-toggle">ВВГнг(А)</span>
+                          <span> с изоляцией из </span>
+                          <span class="template__calculator-toggle">ПВХ пластиката</span>
+                        </div>
+                        <div class="template__calculator-subtext">Количество символов 104 (максимальное 250)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="template__calculator-submit">
+                    <button type="submit" class="button-default submit">Сохранить шаблон</button>
+                  </div>
+                </form>
             </div>
             <div class="template__table">
                 <div class="template__headline">
@@ -3592,111 +3653,7 @@
     </div>
   </div>
 
-  <div class="modal-key hide">
-    <div class="modal-key__backdrop"></div>
-    <div class="modal-key__container">
-      <div class="modal-key__close"><img src="./assets/icon/close.svg" alt=""></div>
-      <div class="modal-key__title">Выбор ключевика</div>
-      <form class="modal-key__form">
-        <div class="modal-key__content">
-          <div class="modal-key__wrapper">
-            <div class="modal-key__name">Выбор тип ключевика<sup class="input-error-text">*</sup></div>
-            <div class="modal-key__inputs">
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Марка/маркоразмер</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Тип товара</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Город</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Название компании</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Материал жилы</span>
-                <span class="modal-key__info">
-                  <img class="modal-key__info-icon" src="./assets/icon/info2.svg" alt="">
-                  <div class="modal-key__info-text">
-                    Материал жилы марки кабеля. Пример в тайтле: "Купить кабель ВВГнг 5х50 с жилой из [меди] в Мурманске"
-                  </div>
-                </span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Материал изоляции</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Экран кабеля</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Броня кабеля</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Напряжение</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Пожаробезопасный</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="key" checked>
-                <span class="modal-key__text">Низкотоксичный</span>
-              </label>
-            </div>
-          </div>
-          <div class="modal-key__wrapper">
-            <div class="modal-key__name">Выбрать падеж<sup class="input-error-text">*</sup></div>
-            <div class="modal-key__inputs">
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Именительный</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Родительный</span>
-                <span class="modal-key__info">
-                  <img class="modal-key__info-icon" src="./assets/icon/info2.svg" alt="">
-                  <div class="modal-key__info-text">
-                    Материал жилы марки кабеля. Пример в тайтле: "Купить кабель ВВГнг 5х50 с жилой из [меди] в Мурманске"
-                  </div>
-                </span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Дательный</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Винительный</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Творительный</span>
-              </label>
-              <label class="modal-key__label">
-                <input class="radio" type="radio" class="radio" name="postfix" checked>
-                <span class="modal-key__text">Предложный</span>
-              </label>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal-key__submit">
-          <button type="submit" class="button-default submit">Вставить ключевое слово</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
