@@ -181,10 +181,10 @@
     &:hover{
       border: 1px solid $orangeF1;
       border-radius: 6px;
-  }
+    }
     &:hover .template__icons{
     visibility: visible;
-  }
+    }
   }
   &__icons{
     display: flex;
