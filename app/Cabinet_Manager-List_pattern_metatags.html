@@ -3225,8 +3225,69 @@
 
           <div class="template">
             <div class="template__add">
-              <div class="template__add-text">Создать шаблон для title/description</div>
+              <div class="template__add-text make-template">Создать шаблон для title/description</div>
+              <div class="template__edit hide"><!--Костыль-->
+                <img src="./assets/icon/edit.svg" alt="">
             </div>
+            </div>
+            <div class="template__content hide">
+              <div class="template__subtitle">В данном инструменте можно создать шаблоны для тегов  title и description, как для всего каталога так и для  любой марки по отдельности.</div>
+              <form class="template__form">
+                  <div class="template__form-wrapper">
+                    <div class="template__form-name">Название шаблона<sup class="input-error-text">*</sup></div>
+                    <div class="template__form-input">
+                      <input type="text" class="input input-valid" placeholder="Шаблон №1">
+                    </div>
+                  </div>
+                  <div class="template__form-wrapper">
+                    <div class="template__form-name template__form-name--align">Выберите тег<sup class="input-error-text">*</sup></div>
+                    <div class="template__form-checkboxes">
+                      <label class="template__form-label">
+                        <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                        <span class="template__form-span">Title</span>
+                      </label>
+                      <label class="template__form-label">
+                        <input type="checkbox" class="calculator-delivery__form-checkbox checkbox">
+                        <span class="template__form-span">Description</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="template__calculator">
+                    <div class="template__calculator-wrapper">
+                      <div class="template__calculator-title">Шаблон Title</div>
+                      <div class="template__calculator-add">
+                        <div class="template__calculator-text">
+                          <span> Купить </span>
+                          <span class="template__calculator-toggle">[выбрать]</span>
+                          <span class="template__calculato-toggler">[марка]</span>
+                          <span> с изоляцие из </span>
+                          <span class="template__calculator-toggle">[изоляция(род)]</span>
+                        </div>
+                        <div class="template__calculator-add-word">Добавить ключевое слово</div>
+                      </div>
+                    </div>
+                    <div class="template__calculator-wrapper">
+                      <div class="template__calculator-title">
+                        Результат на примере марки 
+                        <input type="text" class="input-dashed" placeholder="введите название марки">
+                      </div>
+                      <div class="template__calculator-add">
+                        <div class="template__calculator-text">
+                          <span> Купить </span>
+                          <span class="template__calculator-toggle">ВВГнг(А)</span>
+                          <span> с изоляцией из </span>
+                          <span class="template__calculator-toggle">ПВХ пластиката</span>
+                        </div>
+                        <div class="template__calculator-subtext">Количество символов 104 (максимальное 250)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="template__calculator-submit">
+                    <button type="submit" class="button-default submit">Сохранить шаблон</button>
+                  </div>
+                </form>
+            </div>
+            
             <div class="template__table">
                 <div class="template__headline">
                     <div class="template__text--bold template__text--size template__text--name">Название шаблона</div>
@@ -3590,8 +3651,7 @@
         </div>
       </div>
     </div>
-  </div>
-
+  </div>  
   <div class="modal-key hide">
     <div class="modal-key__backdrop"></div>
     <div class="modal-key__container">
