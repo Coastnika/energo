@@ -860,7 +860,7 @@ $('.change-password-btn').on('click', () => {
 
 
 // make template
-$('#make-template').on('click', () => {
+$('.make-template').on('click', () => {
   $('.template__notification').addClass('hide')
   $('.template__content').removeClass('hide')
 })
@@ -885,11 +885,12 @@ $('.template__edit').on('click', function() {
  let index = +this.getAttribute('data-index')
 
   document.querySelectorAll('.template__calculator')[index].classList.remove('hide')
+  console.log(document.querySelectorAll('.template__calculator')[index])
 })
 
 $('.template__calculator-submit').on('click', function() {
   let index = +this.getAttribute('data-index')
- 
+  
    document.querySelectorAll('.template__calculator')[index].classList.add('hide')
  })
 
