@@ -189,6 +189,7 @@ function showModal(trigger, content, close, closestParent) {
   })
 }
 
+
 let mobileMenuTrigger = document.querySelector('.header__toggle')
 let mobileMenuContent = document.querySelector('.mobile-menu')
 let mobileMenuClose = document.querySelector('.mobile-menu__close')
@@ -842,16 +843,13 @@ $('.table__toggle').on('click', function (e) {
   })
 })
 
-
 // new-person ** cabinet_Manager-Structure_Catalog.html **
-
 $('.settings__btn-add').on('click', () => {
   $('.settings__new').removeClass('hide');
   $('.settings__btn-add').addClass('hide');
 })
 
 // change-password
-
 $('.settings-password').on('click', () => {
   $('.change-password').removeClass('hide');
 })
@@ -861,3 +859,55 @@ $('.change-password-btn').on('click', () => {
 })
 
 
+// make template
+$('#make-template').on('click', () => {
+  $('.template__notification').addClass('hide')
+  $('.template__content').removeClass('hide')
+})
+
+//dropdown template 
+
+let templateEdit = document.querySelectorAll('.template__edit')
+let templateSubmit = document.querySelectorAll('.template__calculator-submit')
+
+if(templateSubmit && templateEdit) {
+  templateEdit.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+  
+  templateSubmit.forEach((item, index) => {
+    item.setAttribute('data-index', index)
+  })
+}
+
+// change template
+$('.template__edit').on('click', function() {
+ let index = +this.getAttribute('data-index')
+
+  document.querySelectorAll('.template__calculator')[index].classList.remove('hide')
+})
+
+$('.template__calculator-submit').on('click', function() {
+  let index = +this.getAttribute('data-index')
+ 
+   document.querySelectorAll('.template__calculator')[index].classList.add('hide')
+ })
+
+ // template case
+ let modalkeyTrigger = document.querySelector('.template__calculator-toggle')
+let modalkeyContent = document.querySelector('.modal-key')
+let modalkeyClose = document.querySelector('.modal-key__close')
+
+$('.template__calculator-toggle').on('click', function() {
+  $('.modal-key').removeClass('hide')
+})
+
+
+$('.modal-key__close').on('click', function() {
+  $('.modal-key').addClass('hide')
+})
+
+
+$('.modal-key__backdrop').on('click', function() {
+  $('.modal-key').addClass('hide')
+})
