@@ -73,6 +73,9 @@
   }
   &__form{
     font-size: 15px;
+    &-span{
+      padding-left: 7px;
+    }
     &-wrapper{
       display: flex;
       align-items: center;
@@ -86,7 +89,8 @@
       align-self: flex-start;
     }
     &-label{
-      display: block;
+      display:flex;
+      align-items: center;
       cursor: pointer;
       margin-bottom: 10px;
     }
@@ -137,6 +141,13 @@
       &:hover{
         color: $orangeF1;
         border-bottom: 1px dashed $orangeF1;
+      }
+      &--inactive{
+        cursor: default;
+        &:hover{
+          color: $black33;
+          border-bottom: 1px dashed $black33;
+        }
       }
     }
     &-add-word{

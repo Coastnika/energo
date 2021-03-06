@@ -757,8 +757,8 @@ $('.profile__content').on('click', e => {
 
 // price list dropdown
 $('.price__download-btn').on('click', () => {
-  $('.price__sub').addClass('hide');
-  $('.price__content').css('display', 'block');
+  $('.price__sub').toggleClass('hide');
+  $('.price__content').toggleClass('hide');
 })
 
 $('.price__reload-btn').on('click', () => {
@@ -861,8 +861,8 @@ $('.change-password-btn').on('click', () => {
 
 // make template
 $('.make-template').on('click', () => {
-  $('.template__notification').addClass('hide')
-  $('.template__content').removeClass('hide')
+  $('.template__notification').toggleClass('hide')
+  $('.template__content').toggleClass('hide')
 })
 
 //dropdown template 
@@ -870,45 +870,45 @@ $('.make-template').on('click', () => {
 let templateEdit = document.querySelectorAll('.template__edit')
 let templateSubmit = document.querySelectorAll('.template__calculator-submit')
 
-if(templateSubmit && templateEdit) {
+if (templateSubmit && templateEdit) {
   templateEdit.forEach((item, index) => {
     item.setAttribute('data-index', index)
   })
-  
+
   templateSubmit.forEach((item, index) => {
     item.setAttribute('data-index', index)
   })
 }
 
 // change template
-$('.template__edit').on('click', function() {
- let index = +this.getAttribute('data-index')
+$('.template__edit').on('click', function () {
+  let index = +this.getAttribute('data-index')
 
-  document.querySelectorAll('.template__calculator')[index].classList.remove('hide')
-  console.log(document.querySelectorAll('.template__calculator')[index])
+  document.querySelectorAll('.template__calculator')[index].classList.toggle('hide')
+  console.log(document.querySelectorAll('.template__calculator')[index])  
 })
 
-$('.template__calculator-submit').on('click', function() {
+$('.template__calculator-submit').on('click', function () {
   let index = +this.getAttribute('data-index')
-  
-   document.querySelectorAll('.template__calculator')[index].classList.add('hide')
- })
 
- // template case
- let modalkeyTrigger = document.querySelector('.template__calculator-toggle')
+  document.querySelectorAll('.template__calculator')[index].classList.add('hide')
+})
+
+// template case
+let modalkeyTrigger = document.querySelector('.template__calculator-toggle')
 let modalkeyContent = document.querySelector('.modal-key')
 let modalkeyClose = document.querySelector('.modal-key__close')
 
-$('.template__calculator-toggle').on('click', function() {
+$('.template__calculator-toggle').on('click', function () {
   $('.modal-key').removeClass('hide')
 })
 
 
-$('.modal-key__close').on('click', function() {
+$('.modal-key__close').on('click', function () {
   $('.modal-key').addClass('hide')
 })
 
 
-$('.modal-key__backdrop').on('click', function() {
+$('.modal-key__backdrop').on('click', function () {
   $('.modal-key').addClass('hide')
 })
