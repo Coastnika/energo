@@ -885,7 +885,7 @@ $('.template__edit').on('click', function () {
   let index = +this.getAttribute('data-index')
 
   document.querySelectorAll('.template__calculator')[index].classList.toggle('hide')
-  console.log(document.querySelectorAll('.template__calculator')[index])  
+  console.log(document.querySelectorAll('.template__calculator')[index])
 })
 
 $('.template__calculator-submit').on('click', function () {
@@ -912,3 +912,10 @@ $('.modal-key__close').on('click', function () {
 $('.modal-key__backdrop').on('click', function () {
   $('.modal-key').addClass('hide')
 })
+
+
+$('.modal-key__label').on('click', function () {
+  $('.modal-key__wrapper-hide').css('visibility', 'visible')
+})
+
+let radioModal = document.querySelectorAll('..modal-key__label')
