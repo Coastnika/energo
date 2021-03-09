@@ -922,9 +922,9 @@ if (passwordTrigger) {
       passwordContent.classList.remove('hide')
     })
   })
-  passwordClose.addEventListener('click', () => {
-    passwordContent.classList.add('hide')
-  })
+  // passwordClose.addEventListener('click', () => {
+  //   passwordContent.classList.add('hide')
+  // })
 
   passwordContent.addEventListener('click', (e) => {
     if (e.target.closest('.change-password__content')) {
