@@ -89,10 +89,10 @@
       &::before {
         position: absolute;
         content: '';
-        bottom: -9%;
+        bottom: -10%;
         left: 16px;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         background: $white;
         transform: rotate(45deg);
         border-bottom: 1px solid $orangeF1;

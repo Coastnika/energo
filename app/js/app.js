@@ -849,15 +849,6 @@ $('.settings__btn-add').on('click', () => {
   $('.settings__btn-add').addClass('hide');
 })
 
-// change-password
-$('.settings-password').on('click', () => {
-  $('.change-password').removeClass('hide');
-})
-
-$('.change-password-btn').on('click', () => {
-  $('.change-password').addClass('hide');
-})
-
 
 // make template
 $('.make-template').on('click', () => {
@@ -918,4 +909,26 @@ $('.modal-key__label').on('click', function () {
   $('.modal-key__wrapper-hide').css('visibility', 'visible')
 })
 
-let radioModal = document.querySelectorAll('..modal-key__label')
+
+// // change-password
+
+let passwordTrigger = document.querySelectorAll('.settings-password')
+let passwordContent = document.querySelector('.change-password')
+let passwordClose = document.querySelector('.change-password-btn')
+
+if (passwordTrigger) {
+  passwordTrigger.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      passwordContent.classList.remove('hide')
+    })
+  })
+  // passwordClose.addEventListener('click', () => {
+  //   passwordContent.classList.add('hide')
+  // })
+
+  passwordContent.addEventListener('click', (e) => {
+    if (e.target.closest('.change-password__content')) {
+      passwordContent.classList.add('hide')
+    }
+  })
+}
