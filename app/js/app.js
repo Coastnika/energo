@@ -178,15 +178,25 @@ function showModal(trigger, content, close, closestParent) {
     content.classList.remove('hide')
   })
 
-  close.addEventListener('click', () => {
-    content.classList.add('hide')
-  })
+
+    close.addEventListener('click', () => {
+      content.classList.add('hide')
+    })
+
 
   content.addEventListener('click', (e) => {
     if (!e.target.closest(closestParent)) {
       content.classList.add('hide')
     }
   })
+}
+
+let passwordTrigger = document.querySelector('.settings-password')
+let passwordContent = document.querySelector('.change-password')
+let passwordClose = document.querySelector('.change-password__backdrop')
+
+if (passwordTrigger && passwordContent) {
+  showModal(passwordTrigger, passwordContent,  passwordClose, '.change-password__content')
 }
 
 
@@ -312,7 +322,16 @@ let selectText = document.querySelectorAll('.custom__select-text')
 let selectCustom = document.querySelectorAll('.custom__select')
 
 selectContent.forEach((content, contentIndex) => {
+  let select = content.querySelectorAll('.custom__select-text')
+
   content.addEventListener('click', function (e) {
+
+
+    select.forEach(item => {
+      item.classList.remove('hide')
+    })
+    e.target.classList.add('hide')
+
     if (e.target != this) {
       selectTitle.forEach((title, titleIndex) => {
         if (titleIndex == contentIndex) {
@@ -411,17 +430,14 @@ form.forEach(form => {
 
   submit.forEach(submit => {
     submit.addEventListener('click', (e) => {
-
       formInputs.forEach(input => {
         //Проверяем на наличие пустой строки
         if (input.value.trim() == '') {
           e.preventDefault()
           input.classList.add('input-error')
-
         }
         else {
-          // e.preventDefault()
-          //Асинхронная отправка формы
+          //e.preventDefault()
         }
       })
 
@@ -910,25 +926,5 @@ $('.modal-key__label').on('click', function () {
 })
 
 
-// // change-password
 
-let passwordTrigger = document.querySelectorAll('.settings-password')
-let passwordContent = document.querySelector('.change-password')
-let passwordClose = document.querySelector('.change-password-btn')
-
-if (passwordTrigger) {
-  passwordTrigger.forEach(trigger => {
-    trigger.addEventListener('click', () => {
-      passwordContent.classList.remove('hide')
-    })
-  })
-  // passwordClose.addEventListener('click', () => {
-  //   passwordContent.classList.add('hide')
-  // })
-
-  passwordContent.addEventListener('click', (e) => {
-    if (e.target.closest('.change-password__content')) {
-      passwordContent.classList.add('hide')
-    }
-  })
-}
+ 
