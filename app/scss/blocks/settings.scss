@@ -1,5 +1,8 @@
 .settings{
     margin-left: 30px;
+    .custom__select-content {
+        border-top: none;
+    }
     &__submit{
         margin-bottom: 98px;
     }
@@ -96,7 +99,17 @@
     padding: 15px;
     margin-left: 66px;
     position: absolute;
-    z-index: 10;
+    z-index: 99;
+
+    &__backdrop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0, 0);
+        z-index: -10;
+    }
 }
 .change-password-button{
     display: flex;
@@ -123,8 +136,9 @@
     }
 }
 .change-password__content{
-
+    z-index: 1;
 }
+
 .settings-dropdown{
     background: #FFFFFF;
     box-shadow: 0px 16px 24px rgba(119, 119, 119, 0.07), 0px 2px 6px rgba(119, 119, 119, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.01);

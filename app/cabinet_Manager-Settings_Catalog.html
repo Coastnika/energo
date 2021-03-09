@@ -3227,7 +3227,9 @@
             <div class="details__info">Логин/e-mail: <span class="details__info-text">79107776589@yandex.ru</span></div>
             <div class="details__info">Пароль: <span class="details__info-text settings-password">Изменен 19.12.2020</span></div>
             <form action="" class="change-password form hide">
+              
               <div class="change-password__content">
+                <div class="change-password__backdrop"></div>
                 <div class="requisites__form-wrapper">
                   <div class="requisites__form-name requisites__form-name--password">Текущий пароль:</div>
                   <div class="form-input">
@@ -3264,7 +3266,13 @@
                         <div class="settings__content-text settings__content-text--name">Константинопольский Константин Константинович</div>
                         <div class="settings__content-text settings__content-text--mail">79107776589@yandex.ru</div>
                         <div class="settings__content-text settings__content-text--person">Администратор</div>
-                        <div class="settings__content-text settings__content-text--active">Активен</div>
+                        <div class="sorting__price-dropdown settings-dropdown custom__select">
+                          <div class="settings__select-title custom__select-title settings__content-text settings__content-text--green">Активен</div>
+                          <div class="settings__select-content custom__select-content hide">
+                            <div class="custom__select-text settings__content-text--inactive">Неактивен</div>
+                            <div class="custom__select-text settings__content-text--inactive hide">Активен</div>
+                          </div>
+                        </div>
                         <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
                     </div>
                     <div class="settings__content-item">
@@ -3274,7 +3282,8 @@
                         <div class="sorting__price-dropdown settings-dropdown custom__select">
                           <div class="custom__select-title settings__content-text"><span class=" settings__content-text--green">Активен</span></div>
                           <div class="custom__select-content hide">
-                            <div class="custom__select-text"><span class=" settings__content-text--inactive">Неактивен</span></div>
+                            <div class="custom__select-text settings__content-text--inactive">Неактивен</div>
+                            <div class="custom__select-text settings__content-text--inactive hide">Активен</div>
                           </div>
                         </div>
                         <div class="settings__content-delete"><img src="./assets/icon/delete.svg" alt=""></div>
