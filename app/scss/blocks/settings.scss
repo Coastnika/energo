@@ -3,6 +3,50 @@
     .custom__select-content {
         border-top: none;
     }
+    .custom__select-content{
+        border: none;
+        background-color: #FFFFFF;
+        padding: 0;
+        top: 27px;
+        box-shadow: 0px 16px 24px rgba(119, 119, 119, 0.07), 0px 2px 6px rgba(119, 119, 119, 0.04), 0px 0px 5px rgba(0, 0, 0, 0.01);
+        border-radius: 6px;
+    }
+    .custom__select--active{
+        border: none;
+        border-radius: 0px;
+    }
+    .custom__select-title--active::before {
+        background-image: none;
+    }
+    .custom__select-title{
+        color: $black33;
+        border-bottom: 1px dashed $black33;
+        line-height: 100%;
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+        &:hover{
+            border-bottom: 1px dashed $white;
+        }
+    }
+    .custom__select-title::before{
+        background-image: none;
+    }
+    .custom__select-text:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .custom__select-text{
+        color: $black33;
+        font-size: 15px;
+        display: inline-block;
+        padding: 5px;
+        padding-bottom: 7px;
+        &:hover{
+          color: $black33;
+        }
+      }
     &__submit{
         margin-bottom: 98px;
     }
@@ -29,15 +73,6 @@
             }
             &--mail{
                 width: 225px;
-            }
-            &--person{
-                width: 165px;
-            }
-            &--inactive{
-                font-size: 14px;
-                line-height: 120%;
-                color: $grey77;
-                cursor: pointer;
             }
             &--green{
                 display: inline-block;
@@ -68,6 +103,7 @@
         font-size: 15px;
         line-height: 110%;
         position: relative;
+        margin-top: 20px;
         &::before{
             content: '';
             position: absolute;
@@ -140,9 +176,15 @@
 }
 
 .settings-dropdown{
-    background: #FFFFFF;
-    box-shadow: 0px 16px 24px rgba(119, 119, 119, 0.07), 0px 2px 6px rgba(119, 119, 119, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.01);
-    border-radius: 6px;
-    padding: 5px;
-    width: 89px;
+    width: 92px;
+    margin-right: 21px;
+}
+
+
+.settings__content-item:last-child{
+    margin-bottom: 0px;
+}
+.settings__content-text--person{
+    width: 132px;
+    margin-right: 28px;
 }
