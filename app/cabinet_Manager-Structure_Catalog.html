@@ -3223,79 +3223,624 @@
             </ul>
           </div>
 
-            <div class="structure">
-                <div class="structure__wrap">
-                    <div class="structure__title">Каталог товаров</div>
-                    <div class="price__checkbox--structure">
-                        <label class="sidebar__element-label">
-                            <input type="checkbox" class="sidebar__element-checkbox checkbox" checked>
-                            <span class="price__content-text--structure">Показать неактивные товары</span>
-                        </label>
-                    </div>
-                </div>
-               <div class="structure__actions">
-                    <div class="structure__actions-title">Массовые действия</div>
-                    <div class="structure__actions-subtitle">Применен шаблона “Силовые кабели с  ПВХ (description)”</div>
-                </div>
+          <div class="structure">
+            <div class="structure__wrap">
+              <div class="structure__title">Каталог товаров</div>
+              <div class="price__checkbox--structure">
+                <label class="sidebar__element-label">
+                  <input type="checkbox" class="sidebar__element-checkbox checkbox" checked>
+                    <span class="price__content-text--structure">Показать неактивные товары</span>
+                  </label>
+              </div>
+            </div>
+            <div class="structure__actions">
+              <div class="structure__actions-title">Массовые действия</div>
+                <div class="structure__actions-subtitle">Применен шаблона “Силовые кабели с  ПВХ (description)”</div>
+            </div>
 
-                <div class="structure__select">
-                     <!--Выбор 1-->
-                    <div class="structure__select-1">
-                        <div class="price__checkbox--structure">
-                            <label class="sidebar__element-label">
-                                <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                <span class="price__content-text--structure"><span>Кабели и провода</span></span>
-                            </label>
-                        </div>
-                      <!--Выбор 2-->
-                        <div class="structure__select-2" style="display: block;">
-                            <div class="structure__subwrapper" >
-                                <div class="price__checkbox--structure">
-                                    <label class="sidebar__element-label">
-                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                        <span class="price__content-text--structure"><span>Кабели силовые</span></span>
-                                    </label>
+            <div class="mass-actions hide">
+              
+              <div class="mass-actions__content">
+                    <div class="mass-actions__backdrop"></div>
+                    <div class="price__checkbox--structure price__checkbox--structure--pad">
+                      <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="price__content-text--structure">Убрать позиции из активного каталога</span>
+                      </label>
+                    </div>
+                    <div class="price__checkbox--structure price__checkbox--structure--pad">
+                      <label class="sidebar__element-label">
+                          <input type="checkbox" class="sidebar__element-checkbox checkbox">
+                          <span class="price__content-text--structure">Выгрузить цены и остатки склада</span>
+                      </label>
+                    </div>
+                    <form class="form-list form-list--pad" id="form-list">
+                      <!--first-list-->
+                      <div class="first-list">
+                          <div class="first-list__title" >
+                              <input class="first-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                              <span class="list-toggle" data-type="toggle">Применить шаблон title/description</span>
+                          </div>
+                          <!--second-container-->
+                          <div class="second-container hide">
+                              <div class="second-list" >
+                                  <div class="second-list__title">
+                                      <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure no-list__checkbox checkbox" type="checkbox">
+                                      <span class="five-list__toggle--bottom">Шаблон №1 (title)</span>
+                                  </div>
+                                  <div class="second-list__title">
+                                    <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure no-list__checkbox checkbox" type="checkbox">
+                                    <span class="five-list__toggle--bottom">Показать неактивные товары</span>
+                                  </div>
+                                  <div class="second-list__title">
+                                    <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure no-list__checkbox checkbox" type="checkbox">
+                                    <span class="five-list__toggle--bottom">Общие (title)</span>
+                                  </div>
+                                  <div class="second-list__title">
+                                    <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure no-list__checkbox checkbox" type="checkbox">
+                                    <span class="five-list__toggle--bottom">Шаблон 5 (title)</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </form>
+              </div>
+              <div class="mass-actions-button">
+                <button type="submit" class="mass-actions-btn">Применить</button>
+              </div>
+            </div>
+
+            <form class="form-list" id="form-list">
+              <!--first-list-->
+              <div class="first-list">
+                      <div class="first-list__title" >
+                          <input class="first-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                          <span class="list-toggle" data-type="toggle">Кабели и провода</span>
+                      </div>
+                      <!--second-container-->
+                      <div class="second-container hide">
+                          <div class="second-list" >
+                              <div class="second-list__title">
+                                  <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                  <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                              </div>
+                              <!--third-container-->
+                              <div class="third-container hide">
+                                  <div class="third-list">
+                                      <div class="third-list__title">
+                                          <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                      </div>
+                                      <!--fourth-container-->
+                                      <div class="fourth-container hide">
+                                        <div class="fourth-list">
+                                            <div class="fourth-list__title">
+                                                <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                            </div>
+                                            <!--five-container-->
+                                            <div class="five-container hide">
+                                                <div class="five-list">
+                                                    <div class="five-list__title">
+                                                        <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                        <span class="five-list__toggle">АВБШв 4x10</span>
+                                                    </div>
+                                                    <div class="five-list__title">
+                                                        <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                        <span class="five-list__toggle">АВБШв 4x16</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fourth-list">
+                                          <div class="fourth-list__title">
+                                              <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                              <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                          </div>
+                                          <!--five-container-->
+                                          <div class="five-container hide">
+                                              <div class="five-list">
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x10</span>
+                                                  </div>
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x16</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="second-list" >
+                            <div class="second-list__title">
+                                <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                            </div>
+                            <!--third-container-->
+                            <div class="third-container hide">
+                                <div class="third-list">
+                                    <div class="third-list__title">
+                                        <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                        <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                    </div>
+                                    <!--fourth-container-->
+                                    <div class="fourth-container hide">
+                                      <div class="fourth-list">
+                                          <div class="fourth-list__title">
+                                              <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                              <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                          </div>
+                                          <!--five-container-->
+                                          <div class="five-container hide">
+                                              <div class="five-list">
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x10</span>
+                                                  </div>
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x16</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
-                                <!--Выбор 3-->
-                                <div class="structure__select-3" style="display: block;">
-                                    <div class="wrapper-structure">
-                                        <div class="price__checkbox--structure">
-                                            <label class="sidebar__element-label">
-                                                <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                <span class="price__content-text--structure"><span>С ПВХ изоляцией (0,66/1кВ)</span></span>
-                                            </label>
-                                        </div>
-                                        <!--Выбор 4-->
-                                        <div class="structure__select-4" style="display: block;">
-                                            <div class="price__checkbox--structure">
-                                                <label class="sidebar__element-label">
-                                                    <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                    <span class="price__content-text--structure"><span>ВВГнг</span></span>
-                                                </label>
+                            </div>
+                        </div>
+                      </div>
+                      <!--second-container-->
+                      <div class="second-container hide">
+                          <div class="second-list" >
+                              <div class="second-list__title">
+                                  <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                  <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                              </div>
+                              <!--third-container-->
+                              <div class="third-container hide">
+                                  <div class="third-list">
+                                      <div class="third-list__title">
+                                          <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                      </div>
+                                      <!--fourth-container-->
+                                      <div class="fourth-container hide">
+                                        <div class="fourth-list">
+                                            <div class="fourth-list__title">
+                                                <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                <span class="list-toggle" data-type="toggle">ВВГнг</span>
                                             </div>
-                                            <!--Выбор 5-->
-                                            <div class="structure__select-5" style="display: block;">
-                                                <div class="price__checkbox--structure price__checkbox--bottom">
-                                                    <label class="sidebar__element-label">
-                                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                        <span class="price__content-text--structure price__content-text--structure-bottom">АВБШв 4x10</span>
-                                                    </label>
-                                                </div>
-                                                <div class="price__checkbox--structure price__checkbox--bottom">
-                                                    <label class="sidebar__element-label">
-                                                        <input type="checkbox" class="sidebar__element-checkbox checkbox">
-                                                        <span class="price__content-text--structure price__content-text--structure-bottom">АВБШв 4x16</span>
-                                                    </label>
+                                            <!--five-container-->
+                                            <div class="five-container hide">
+                                                <div class="five-list">
+                                                    <div class="five-list__title">
+                                                        <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                        <span class="five-list__toggle">АВБШв 4x10</span>
+                                                    </div>
+                                                    <div class="five-list__title">
+                                                        <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                        <span class="five-list__toggle">АВБШв 4x16</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                        <div class="fourth-list">
+                                          <div class="fourth-list__title">
+                                              <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                              <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                          </div>
+                                          <!--five-container-->
+                                          <div class="five-container hide">
+                                              <div class="five-list">
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x10</span>
+                                                  </div>
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x16</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </div>
+              <!--/first-list-->
+
+              <!--first-list-->
+              <div class="first-list">
+                    <div class="first-list__title" >
+                        <input class="first-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                        <span class="list-toggle" data-type="toggle">Кабели и провода</span>
+                    </div>
+                    <!--second-container-->
+                    <div class="second-container hide">
+                        <div class="second-list" >
+                            <div class="second-list__title">
+                                <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                            </div>
+                            <!--third-container-->
+                            <div class="third-container hide">
+                                <div class="third-list">
+                                    <div class="third-list__title">
+                                        <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                        <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                    </div>
+                                    <!--fourth-container-->
+                                    <div class="fourth-container hide">
+                                      <div class="fourth-list">
+                                          <div class="fourth-list__title">
+                                              <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                              <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                          </div>
+                                          <!--five-container-->
+                                          <div class="five-container hide">
+                                              <div class="five-list">
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x10</span>
+                                                  </div>
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x16</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-list" >
+                          <div class="second-list__title">
+                              <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                              <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                          </div>
+                          <!--third-container-->
+                          <div class="third-container hide">
+                              <div class="third-list">
+                                  <div class="third-list__title">
+                                      <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                      <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                  </div>
+                                  <!--fourth-container-->
+                                  <div class="fourth-container hide">
+                                    <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fourth-list">
+                                      <div class="fourth-list__title">
+                                          <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                      </div>
+                                      <!--five-container-->
+                                      <div class="five-container hide">
+                                          <div class="five-list">
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x10</span>
+                                              </div>
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x16</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!--second-container-->
+                    <div class="second-container hide">
+                        <div class="second-list" >
+                            <div class="second-list__title">
+                                <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                            </div>
+                            <!--third-container-->
+                            <div class="third-container hide">
+                                <div class="third-list">
+                                    <div class="third-list__title">
+                                        <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                        <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                    </div>
+                                    <!--fourth-container-->
+                                    <div class="fourth-container hide">
+                                      <div class="fourth-list">
+                                          <div class="fourth-list__title">
+                                              <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                              <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                          </div>
+                                          <!--five-container-->
+                                          <div class="five-container hide">
+                                              <div class="five-list">
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x10</span>
+                                                  </div>
+                                                  <div class="five-list__title">
+                                                      <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                      <span class="five-list__toggle">АВБШв 4x16</span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+              </div>
+              <!--/first-list-->
+
+              <!--first-list-->
+              <div class="first-list">
+                  <div class="first-list__title" >
+                      <input class="first-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                      <span class="list-toggle" data-type="toggle">Кабели и провода</span>
+                  </div>
+                  <!--second-container-->
+                  <div class="second-container hide">
+                      <div class="second-list" >
+                          <div class="second-list__title">
+                              <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                              <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                          </div>
+                          <!--third-container-->
+                          <div class="third-container hide">
+                              <div class="third-list">
+                                  <div class="third-list__title">
+                                      <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                      <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                  </div>
+                                  <!--fourth-container-->
+                                  <div class="fourth-container hide">
+                                    <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fourth-list">
+                                      <div class="fourth-list__title">
+                                          <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                      </div>
+                                      <!--five-container-->
+                                      <div class="five-container hide">
+                                          <div class="five-list">
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x10</span>
+                                              </div>
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x16</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="second-list" >
+                        <div class="second-list__title">
+                            <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                            <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                        </div>
+                        <!--third-container-->
+                        <div class="third-container hide">
+                            <div class="third-list">
+                                <div class="third-list__title">
+                                    <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                    <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                </div>
+                                <!--fourth-container-->
+                                <div class="fourth-container hide">
+                                  <div class="fourth-list">
+                                      <div class="fourth-list__title">
+                                          <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                      </div>
+                                      <!--five-container-->
+                                      <div class="five-container hide">
+                                          <div class="five-list">
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x10</span>
+                                              </div>
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x16</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="fourth-list">
+                                    <div class="fourth-list__title">
+                                        <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                        <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                    </div>
+                                    <!--five-container-->
+                                    <div class="five-container hide">
+                                        <div class="five-list">
+                                            <div class="five-list__title">
+                                                <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                <span class="five-list__toggle">АВБШв 4x10</span>
+                                            </div>
+                                            <div class="five-list__title">
+                                                <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                <span class="five-list__toggle">АВБШв 4x16</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!--second-container-->
+                  <div class="second-container hide">
+                      <div class="second-list" >
+                          <div class="second-list__title">
+                              <input class="second-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                              <span class="list-toggle" data-type="toggle">Кабели силовые</span>
+                          </div>
+                          <!--third-container-->
+                          <div class="third-container hide">
+                              <div class="third-list">
+                                  <div class="third-list__title">
+                                      <input class="third-list__checkbox sidebar__element-checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                      <span class="list-toggle" data-type="toggle">С ПВХ изоляцией (0,66/1кВ)</span>
+                                  </div>
+                                  <!--fourth-container-->
+                                  <div class="fourth-container hide">
+                                    <div class="fourth-list">
+                                        <div class="fourth-list__title">
+                                            <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                            <span class="list-toggle" data-type="toggle">ВВГнг</span>
+                                        </div>
+                                        <!--five-container-->
+                                        <div class="five-container hide">
+                                            <div class="five-list">
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x10</span>
+                                                </div>
+                                                <div class="five-list__title">
+                                                    <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                    <span class="five-list__toggle">АВБШв 4x16</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fourth-list">
+                                      <div class="fourth-list__title">
+                                          <input class="fourth-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                          <span class="list-toggle" data-type="toggle">АВВГ</span>
+                                      </div>
+                                      <!--five-container-->
+                                      <div class="five-container hide">
+                                          <div class="five-list">
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x10</span>
+                                              </div>
+                                              <div class="five-list__title">
+                                                  <input class="no-list__checkbox sidebar__element-checkbox--structure checkbox" type="checkbox">
+                                                  <span class="five-list__toggle">АВБШв 4x16</span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--/first-list-->
+            </form>
+          </div>
         </div>
       </div>
     </main>
@@ -3499,6 +4044,176 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="modal-edit hide">
+    <form class="modal-edit__content form">
+      <div class="modal-edit__title">Редактирование АВБШв 4х10</div>
+      <div class="modal-edit__subtitle">Кабель АВБШв 4х10</div>
+      <div class="template__form-wrapper form">
+        <div class="template__form-name">Цена на сайте<sup class="input-error-text">*</sup></div>
+        <div class="template__form-input">
+          <input type="text" class="input input-orange input-valid" placeholder="194,45 р/м">
+        </div>
+      </div>
+      <div class="template__calculator">
+        <div class="template__calculator-wrapper">
+          <div class="template__calculator-title">Шаблон Title</div>
+          <div class="template__calculator-add">
+            <div class="template__calculator-text">
+              <span> Купить </span>
+              <span class="template__calculator-toggle">[выбрать]</span>
+              <span class="template__calculator-toggle">[марка]</span>
+              <span> с изоляцией из </span>
+              <span class="template__calculator-toggle">[изоляция(род)]</span>
+            </div>
+            <div class="template__calculator-add-word">Добавить ключевое слово</div>
+          </div>
+        </div>
+        <div class="template__calculator-wrapper">
+          <div class="template__calculator-title">
+            Результат на примере марки
+            <input type="text" class="input-dashed" placeholder="введите название марки">
+          </div>
+          <div class="template__calculator-add">
+            <div class="template__calculator-text">
+              <span> Купить </span>
+              <span class="template__calculator-toggle template__calculator-toggle--inactive">ВВГнг(А)</span>
+              <span> с изоляцией из </span>
+              <span class="template__calculator-toggle template__calculator-toggle--inactive">ПВХ
+                пластиката</span>
+            </div>
+            <div class="template__calculator-subtext">Количество символов 104 (максимальное 250)</div>
+          </div>
+        </div>
+      </div>
+      <div class="price__checkbox--structure">
+        <label class="sidebar__element-label">
+            <input type="checkbox" class="sidebar__element-checkbox checkbox">
+            <span class="price__content-text--structure">Убрать позицию из активного каталога</span>
+        </label>
+      </div>
+      <div class="modal-edit__buttons">
+        <div class="modal-edit-button">
+          <button type="submit" class="change-password-btn">Свернуть</button>
+        </div>
+        <div class="modal-edit__submit">
+          <button class="button-default submit" type="submit">Сохранить</button>
+        </div> 
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-key hide">
+    <div class="modal-key__backdrop"></div>
+
+    <div class="modal-key__container modal-edit__content">
+      <div class="modal-key__close"><img src="./assets/icon/close.svg" alt=""></div>
+      <div class="modal-key__title">Выбор ключевика</div>
+      <form class="modal-key__form form form-radio">
+        <div class="modal-key__content">
+          <div class="modal-key__inputs">
+            <div class="modal-key__wrapper">
+              <div class="modal-key__name">Выбор тип ключевика<sup class="input-error-text">*</sup></div>
+
+              <div class="radio-container">
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Марка/маркоразмер</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Тип товара</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Город</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Название компании</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Материал жилы</span>
+                  <span class="modal-key__info">
+                    <img class="modal-key__info-icon" src="./assets/icon/info2.svg" alt="">
+                    <div class="modal-key__info-text">
+                      Материал жилы марки кабеля. Пример в тайтле: "Купить кабель ВВГнг 5х50 с жилой из [меди] в
+                      Мурманске"
+                    </div>
+                  </span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Материал изоляции</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Экран кабеля</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Броня кабеля</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Напряжение</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Пожаробезопасный</span>
+                </label>
+                <label class="modal-key__label">
+                  <input class="radio" type="radio" class="radio" name="key" required>
+                  <span class="modal-key__text">Низкотоксичный</span>
+                </label>
+              </div>
+            </div>
+            <div class="modal-key__wrapper modal-key__wrapper-hide">
+              <div class="modal-key__name">Выбрать падеж<sup class="input-error-text">*</sup></div>
+              <div class="radio-container">
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Именительный</span>
+                </label>
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Родительный</span>
+                  <span class="modal-key__info">
+                    <img class="modal-key__info-icon" src="./assets/icon/info2.svg" alt="">
+                    <div class="modal-key__info-text">
+                      Материал жилы марки кабеля. Пример в тайтле: "Купить кабель ВВГнг 5х50 с жилой из [меди] в
+                      Мурманске"
+                    </div>
+                  </span>
+                </label>
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Дательный</span>
+                </label>
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Винительный</span>
+                </label>
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Творительный</span>
+                </label>
+                <label class="modal-key__label">
+                  <input type="radio" class="radio" name="postfix" required>
+                  <span class="modal-key__text">Предложный</span>
+                </label>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="modal-key__submit">
+          <button type="submit" class="button-default submit">Вставить ключевое слово</button>
+        </div>
+      </form>
   </div>
   <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>

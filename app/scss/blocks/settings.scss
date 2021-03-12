@@ -9,7 +9,7 @@
         padding: 0;
         top: 27px;
         box-shadow: 0px 16px 24px rgba(119, 119, 119, 0.07), 0px 2px 6px rgba(119, 119, 119, 0.04), 0px 0px 5px rgba(0, 0, 0, 0.01);
-        border-radius: 6px;
+        border-radius: 0px 0px 6px 6px;
     }
     .custom__select--active{
         border: none;
@@ -22,6 +22,7 @@
         color: $black33;
         border-bottom: 1px dashed $black33;
         line-height: 100%;
+        font-size: 15px;
         display: inline-block;
         margin-top: 5px;
         margin-left: 5px;
@@ -29,6 +30,22 @@
         padding: 0;
         &:hover{
             border-bottom: 1px dashed $white;
+        }
+        &--grey{
+            border-bottom: 1px dashed $grey77;
+            color: $grey77;
+            cursor: pointer;
+            &:hover{
+                border-bottom: 1px dashed $white;
+            }
+        }
+        &--green{
+            border-bottom: 1px dashed $green21;
+            color: $green21;
+            cursor: pointer;
+            &:hover{
+                border-bottom: 1px dashed $white;
+            }
         }
     }
     .custom__select-title::before{
@@ -46,9 +63,21 @@
         &:hover{
           color: $black33;
         }
+        &--grey{
+            color: $grey77;
+            &:hover{
+                color: $grey77;
+              }
+        }
+        &--green{
+            color: $green21;
+            &:hover{
+                color: $green21;
+            }
+        }
       }
-    &__submit{
-        margin-bottom: 98px;
+    &__new{
+        padding-bottom: 98px;
     }
     &__content{
         &-title{

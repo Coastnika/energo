@@ -226,3 +226,14 @@
     margin-right: 20px;
   }
 }
+.ui-widget.ui-widget-content{
+  border: 1px solid $orangeF1;
+}
+
+.ui-menu-item{
+  font-size: 15px;
+}
+.ui-menu-item :hover{
+  background-color: $orangeF1;
+  border: 1px solid $orangeF1;
+}

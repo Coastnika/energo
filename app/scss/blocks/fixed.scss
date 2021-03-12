@@ -6,6 +6,9 @@
   @media(max-width:540px){
     top: 173px;
   }
+  &-more{
+    top: 360px;
+  }
   &__user{
     border: 1px solid $whiteF7;
     border-radius: 6px 0px 0px 0px;
@@ -38,6 +41,46 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @media(max-width:540px){
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__mail{
+    border: 1px solid $whiteF7;
+    border-radius: 6px 0px 0px 0px;
+    background: $white;
+    &:hover{
+      background: $whiteF7;
+    }
+    &-link{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      @media(max-width:540px){
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__call{
+    border: 1px solid $whiteF7;
+    border-radius: 0px 0px 0px 6px;
+    background: $white;
+    &:hover{
+      background: $whiteF7;
+    }
+    &-link{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
       @media(max-width:540px){
         width: 40px;
         height: 40px;

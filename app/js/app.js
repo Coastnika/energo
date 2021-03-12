@@ -179,9 +179,9 @@ function showModal(trigger, content, close, closestParent) {
   })
 
 
-    close.addEventListener('click', () => {
-      content.classList.add('hide')
-    })
+  close.addEventListener('click', () => {
+    content.classList.add('hide')
+  })
 
 
   content.addEventListener('click', (e) => {
@@ -196,7 +196,7 @@ let passwordContent = document.querySelector('.change-password')
 let passwordClose = document.querySelector('.change-password__backdrop')
 
 if (passwordTrigger && passwordContent) {
-  showModal(passwordTrigger, passwordContent,  passwordClose, '.change-password__content')
+  showModal(passwordTrigger, passwordContent, passwordClose, '.change-password__content')
 }
 
 
@@ -245,6 +245,7 @@ if (registerTrigger) {
   showModal(registerTrigger, registerContent, registerClose, '.register__container')
 }
 
+
 let profileTrigger = document.querySelector('.client__download-link')
 let profileContent = document.querySelector('.profile')
 let profileClose = document.querySelector('.profile__close')
@@ -252,6 +253,8 @@ let profileClose = document.querySelector('.profile__close')
 if (profileTrigger) {
   showModal(profileTrigger, profileContent, profileClose, '.profile__content')
 }
+
+
 
 let loginTrigger = document.querySelector('.login-trigger')
 let loginContent = document.querySelector('.login')
@@ -314,6 +317,42 @@ if (callbackTrigger) {
   })
 }
 
+let modalEditTrigger = document.querySelectorAll('.five-list__toggle')
+let modalEditContent = document.querySelector('.modal-edit')
+let modalEditClose = document.querySelector('.modal-edit-button')
+
+if (modalEditTrigger) {
+  modalEditTrigger.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      modalEditContent.classList.remove('hide')
+    })
+  })
+
+  modalEditClose.addEventListener('click', () => {
+    modalEditContent.classList.add('hide')
+  })
+
+  modalEditContent.addEventListener('click', (e) => {
+
+    if (!e.target.closest('.modal-edit__content')) {
+      modalEditContent.classList.add('hide')
+    }
+  })
+}
+
+
+let fastOrderTrigger = document.querySelector('.fixed__mail-link')
+let fastOrderContent = document.querySelector('.fast-order')
+let fastOrderClose = document.querySelector('.fast-order__close')
+
+if (fastOrderTrigger) {
+  showModal(fastOrderTrigger, fastOrderContent, fastOrderClose, '.fast-order__content')
+}
+
+
+
+
+
 //custom select
 
 let selectTitle = document.querySelectorAll('.custom__select-title')
@@ -326,7 +365,6 @@ selectContent.forEach((content, contentIndex) => {
 
   content.addEventListener('click', function (e) {
 
-
     select.forEach(item => {
       item.classList.remove('hide')
     })
@@ -337,6 +375,18 @@ selectContent.forEach((content, contentIndex) => {
         if (titleIndex == contentIndex) {
           title.textContent = e.target.textContent
         }
+        if (titleIndex == contentIndex && title.textContent.toLowerCase() == 'активен') {
+          title.classList.add('custom__select-title--green')
+          title.classList.remove('custom__select-title--grey')
+          console.log('active')
+        }
+        else if (titleIndex == contentIndex && title.textContent.toLowerCase() == 'неактивен') {
+          title.classList.add('custom__select-title--grey')
+          title.classList.remove('custom__select-title--green')
+          console.log('inactive')
+        }
+
+
       })
       selectTitle.forEach((select) => {
         select.classList.remove('custom__select-title--active')
@@ -865,6 +915,13 @@ $('.settings__btn-add').on('click', () => {
   $('.settings__btn-add').addClass('hide');
 })
 
+$('.button-settings-cancel').on('click', () => {
+  $('.settings__new').addClass('hide');
+  $('.settings__btn-add').removeClass('hide');
+})
+
+
+
 
 // make template
 $('.make-template').on('click', () => {
@@ -926,5 +983,131 @@ $('.modal-key__label').on('click', function () {
 })
 
 
+// radio validate
 
- 
+$('.modal-key__form').validate({
+  errorClass: 'radio-validate--error',
+  messages: {
+    key: '',
+    postfix: '',
+  }
+})
+
+$('.form-radio').on('input', function () {
+  $('.radio').removeClass('radio-validate--error')
+})
+
+
+// search
+
+// $( "#mr_search" ).autocomplete({
+//   source: function(request, response){
+
+//       v = request.term.trim().toLowerCase();
+
+//       data = [];
+
+//       console.log("autocomplete v="+v);
+//       limit = $( "#mr_search" ).data('limit')?$( "#mr_search" ).data('limit'):5;
+
+//       console.log("SEARCH: "+v);
+//       $.get("/search/cable/?q="+v + '&limit='+limit+'&agg=1').done(function(data) 	{
+//           if (data.length==0)
+//           {
+//               data = [{'real_name':'<i style="font-style:italic !important">Введите название марки, например ААБ2л 1x10</i>', 'power':'', 'p_id':0}];
+//           }
+//           search_res = data;
+//           response(data);
+//       });
+
+//   },
+
+//   //Клик по выбранному элементу
+//   select: function(event, ui){
+//       event.preventDefault();
+//       event.stopPropagation();
+
+//       if (ui.p_id > 0)
+//           $( "#mr_search" ).val(ui.real_name);
+//       redirectToSearchRes(ui.item);
+//   },
+
+//   minLength: 2,
+//   appendTo : '#search_cable',
+//   open: function () {
+//       //console.log($(this).data("uiAutocomplete").menu.element[0].className);
+//       $(this).data("uiAutocomplete").menu.element.addClass("autocomplete2");
+//       //$(this).data("uiAutocomplete").menu.element[0].className = "autocomplete2";
+//       //console.log($(this).data("uiAutocomplete").menu.element[0].className);
+//   }
+// }).autocomplete("instance")._renderItem = function( ul, item ) {
+
+//   return $( "<li>" )
+//       .append( '<span class="autocomplete2-item"><em style="font-style:normal">' + item.real_name+'</em>' + item.power + "</span>" )
+//       .appendTo( ul );
+// };
+
+$(function () {
+
+  let cabels = ["АВВГ", "АВВГ 2х10", "АВВГ 2х16", "АВВГ 2х250", "АВВГ 2х12",
+    "АВВГ 2х18", "АВВГ 2х121", "АВВГ 2х230", "АВВГ 2х150", "АВВГ 2х11"];
+
+  $('.input-dashed').autocomplete({
+    source: cabels
+  })
+});
+
+
+// form-structure
+
+$('.form-list').on('click', function (e) {
+  let { type } = e.target.dataset
+
+  if (type == 'toggle') {
+    toggleList(e)
+  }
+})
+
+$('.form-list').on('input', function (e) {
+  toggleCheckbox(e)
+})
+
+// toggle lists
+function toggleList(e) {
+  let parentNode = e.target.parentNode
+  let nextElem = parentNode.nextElementSibling
+
+  e.target.classList.toggle('list-toggle--active')
+  nextElem.classList.toggle('hide')
+}
+
+// toggle checkboxes
+let toggleCheckbox = function (e) {
+  if (!e.target.classList.contains('no-list__checkbox')) {
+    let parentNode = e.target.parentNode
+    let nextElem = parentNode.nextElementSibling
+    let checkboxes = nextElem.querySelectorAll('.checkbox')
+
+    if (e.target.checked == true) {
+      checkboxes.forEach(element => {
+        element.checked = true
+      })
+    }
+
+    else {
+      checkboxes.forEach(element => {
+        element.checked = false
+      })
+    }
+  }
+}
+
+let actionsTrigger = document.querySelector('.structure__actions-title')
+let actionsContent = document.querySelector('.mass-actions')
+let actionsClose = document.querySelector('.mass-actions__backdrop')
+
+if (actionsTrigger && actionsContent) {
+  showModal(actionsTrigger, actionsContent, actionsClose, '.mass-actions__content')
+}
+
+
