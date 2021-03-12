@@ -40,6 +40,8 @@ function js(){
 function concatJs() {
   return src([
     'app/libs/jQuery/jquery.min.js',
+    'app/libs/jQuery/jquery.validate.min.js',
+    'app/libs/jQuery/jquery-ui.min.js',
       'app/libs/swiper/js/swiper.min.js',
       'app/js/script.js' // Всегда в конце
   ])

@@ -1,5 +1,8 @@
 .structure{
     margin-left: 30px;
+    .price__checkbox--structure--pad{
+        padding-bottom: 10px;
+    }
     &__wrap{
         display: flex;
         align-items: center;
@@ -18,7 +21,7 @@
         &-title{
             font-weight: 500;
             font-size: 18px;
-            line-height: 22px;
+            line-height: 120%;
             color: $orangeF1;
             border-bottom: 1px dashed $orangeF1;
             cursor: pointer;
@@ -46,24 +49,9 @@
             margin-left: 40px;
         }
     }
-    &__select{
-        margin-top: 20px;
-        &-2{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        &-3{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        &-4{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        &-5{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-    }
 }
 
+.structure__actions-title--active::before{
+    transform:rotate(-180deg);
+    top: 5px;
+}

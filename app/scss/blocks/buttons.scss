@@ -307,6 +307,12 @@
   width: 420px;
   justify-content: space-between;
 }
+.buttons-settings{
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+}
 .button-details{
   position: relative;
   display: inline-block;
@@ -397,5 +403,16 @@
   border-bottom: 1px dotted $orangeF1;
   &:hover{
     border-bottom: 1px dotted #FFFFFF;
+  }
+}
+.button-settings-cancel{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: $orangeF1;
+  cursor: pointer;
+  border-bottom: 1px dashed $orangeF1;
+  &:hover{
+    border-bottom: 1px dashed #FFFFFF;
   }
 }

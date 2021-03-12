@@ -89,6 +89,10 @@
     &-checkbox{
       margin-right: 9px;
       transform: translateY(5px);
+      &--structure{
+        margin-right: 7px;
+        transform: translateY(1px);
+      }
     }
     &-span{
       font-size: 15px;

@@ -1,0 +1,97 @@
+.form-list {
+    overflow: auto;
+    padding-top: 20px;
+}
+.form-list--pad{
+    padding-top: 0;
+
+}
+.first-list__title{
+    margin-bottom: 10px;
+}
+.second-list__title{
+    margin-bottom: 10px;
+}
+.third-list__title{
+    margin-bottom: 10px;
+}
+.fourth-list__title{
+    margin-bottom: 10px;
+}
+.five-list__title{
+    margin-bottom: 10px;
+}
+.first-list span {
+    cursor: pointer;
+}
+
+.second-list {
+    margin-left: 20px;
+}
+
+.third-list {
+    margin-left: 20px;
+}
+
+.fourth-list {
+    margin-left: 20px;
+}
+.five-list {
+    margin-left: 20px;
+}
+
+.five-list__toggle{
+    font-size: 15px;
+    line-height: 110%;
+    border-bottom: 1px dashed $black33;
+    &:hover{
+        border-bottom: 1px dashed $white;
+    }
+
+}
+.five-list__toggle--bottom{
+    font-size: 15px;
+    line-height: 110%;
+}
+.list-toggle {
+    position: relative;
+    font-size: 15px; 
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 59%;
+        right:-25px;
+        transform: translateY(-50%) ;
+        width: 18px;
+        height: 18px;
+        background-image: url('../assets/icon/arrow-top-1.svg');
+        background-repeat: no-repeat ;
+    }
+}
+
+
+.list-toggle--active::before {
+    transform:rotate(-180deg);
+    top: 1px;
+}
+
+.hide {
+    display: none;
+}
+
+.form-list__submit {
+    position: absolute;
+    left: 300px;
+    bottom: 20px;
+}
+
+.list-submit {
+    background: none;
+    background: green;
+    
+    padding: 10px;
+    border: 1px solid green;
+    color: white;
+    border-radius: 6px;
+}

@@ -1,0 +1,46 @@
+.mass-actions{
+    width: 368px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(119, 119, 119, 0.07), 0px 2px 6px rgba(119, 119, 119, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.01);
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 99;
+
+    &__backdrop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0, 0);
+        z-index: -10;
+    }
+}
+.mass-actions-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.mass-actions-btn{
+    border: 1px solid $black33;
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 18px;
+    color: $black33;
+    padding: 6px 10px;
+    width: 111px;
+    &:hover{
+        border: 1px solid $orangeF1;
+        color: $orangeF1;
+    }
+    &:active{
+        border: 1px solid $orangeF1;
+        color: $orangeF1;
+        box-shadow: inset 0px 2px 15px rgba(218, 125, 0, 0.2);
+    }
+}
+.mass-actions__content{
+    z-index: 1;
+}
