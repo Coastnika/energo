@@ -321,7 +321,7 @@ let modalEditTrigger = document.querySelectorAll('.five-list__toggle')
 let modalEditContent = document.querySelector('.modal-edit')
 let modalEditClose = document.querySelector('.modal-edit-button')
 
-if (modalEditTrigger) {
+if (modalEditTrigger && modalEditClose && modalEditContent) {
   modalEditTrigger.forEach(trigger => {
     trigger.addEventListener('click', () => {
       modalEditContent.classList.remove('hide')
@@ -1109,5 +1109,17 @@ let actionsClose = document.querySelector('.mass-actions__backdrop')
 if (actionsTrigger && actionsContent) {
   showModal(actionsTrigger, actionsContent, actionsClose, '.mass-actions__content')
 }
+
+$('.structure__actions-title').on('click', function () {
+  $('.structure__actions-title').toggleClass('structure__actions-title--active')
+})
+
+$('.mass-actions-btn').on('click', function () {
+  $('.structure__actions-title').removeClass('structure__actions-title--active')
+})
+
+$('.mass-actions__backdrop').on('click', function () {
+  $('.structure__actions-title').removeClass('structure__actions-title--active')
+})
 
 
